@@ -1,4 +1,4 @@
-<% content_for :title, "Login" %>
+<% content_for :title, "Forgot Password" %>
 <div class="row mt-5">
   <div class="col-md-5 offset-4">
     <div class="card">
@@ -6,20 +6,14 @@
         <h3 class="text-center">Log in</h3>
         <%= render partial: "shared/alertmainpage" %>
         <hr />
-        <%= form_with url: loginstore_path, method: :post, multipart: true do |form| %>
+        <%= form_with url: forgotpasswordstore_path do |form| %>
         <div class="mb-3">
           <label class="form-label">Email address</label>
           <%= form.email_field :email, class:"form-control",
           placeholder:"email@email.com" %>
         </div>
-        <div class="mb-3">
-          <label class="form-label">Password</label>
-          <%= form.password_field :password, class:"form-control",
-          placeholder:"password" %>
-        </div>
         <div class="mb-3 text-end">
-          <%= link_to "Forgot Password", forgotpassword_path, class:"btn
-          btn-secondary" %> <%= form.submit "Log In", class:"btn btn-primary" %>
+          <%= form.submit "Forgot Password", class:"btn btn-primary" %>
         </div>
         <% end %>
       </div>

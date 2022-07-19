@@ -1749,3 +1749,819 @@ Processing by LoginController#index as HTML
 Completed 200 OK in 21ms (Views: 13.7ms | Allocations: 3029)
 
 
+  [1m[35m (73.9ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (33.0ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT GET_LOCK('2023920071367314085', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateUsers (20220719071906)
+  [1m[35m (39.1ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) NOT NULL, `name` varchar(255), `password_digest` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (4.9ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220719071906')[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.6ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2022-07-19 07:28:13.761448', '2022-07-19 07:28:13.761448')[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('2023920071367314085')[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO `users` (`email`, `name`, `password_digest`, `created_at`, `updated_at`) VALUES ('admin@admin.com', 'admin', '$2a$12$zaBALu8C.q/oD.ArCXCZhOaejMxccDJQxq1kDPHYDMxD0pbMJao.G', '2022-07-19 07:32:35.757176', '2022-07-19 07:32:35.757176')[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 14:38:42 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/login/store"):
+  
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 14:40:15 +0700
+  
+ActionController::RoutingError (No route matches [POST] "/login/store"):
+  
+Started GET "/login" for 127.0.0.1 at 2022-07-19 14:41:16 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered login/index.html.erb within layouts/login (Duration: 5.5ms | Allocations: 2446)
+  Rendered layout layouts/login.html.erb (Duration: 7.6ms | Allocations: 2733)
+Completed 200 OK in 21ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 4807)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-07-19 14:41:27 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered login/index.html.erb within layouts/login (Duration: 2.1ms | Allocations: 1747)
+  Rendered layout layouts/login.html.erb (Duration: 4.5ms | Allocations: 1867)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 2499)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-07-19 14:41:32 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered login/index.html.erb within layouts/login (Duration: 1.1ms | Allocations: 1538)
+  Rendered layout layouts/login.html.erb (Duration: 2.0ms | Allocations: 1647)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 1941)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-07-19 14:41:34 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered login/index.html.erb within layouts/login (Duration: 2.9ms | Allocations: 1532)
+  Rendered layout layouts/login.html.erb (Duration: 3.8ms | Allocations: 1641)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 1917)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-07-19 14:44:10 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered login/index.html.erb within layouts/login (Duration: 1.9ms | Allocations: 2022)
+  Rendered layout layouts/login.html.erb (Duration: 3.7ms | Allocations: 2270)
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 3168)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-07-19 14:44:46 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered login/index.html.erb within layouts/login (Duration: 2.3ms | Allocations: 2029)
+  Rendered layout layouts/login.html.erb (Duration: 4.2ms | Allocations: 2278)
+Completed 200 OK in 10ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 3059)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-07-19 14:50:41 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered login/index.html.erb within layouts/login (Duration: 2.3ms | Allocations: 2788)
+  Rendered layout layouts/login.html.erb (Duration: 3.2ms | Allocations: 2882)
+Completed 500 Internal Server Error in 12ms (Allocations: 3634)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+     7:         <hr />
+     8:         <%= form_with url: loginstore_path, method: :post, multipart: true do |form| %>
+     9:         <div class="mb-3">
+    10:           <% invalidEmail = form.object.errors.include?(:email) %>
+    11:           <label class="form-label">Email address</label>
+    12:           <%= form.email_field :email, class:"form-control",
+    13:           placeholder:"email@email.com" %>
+  
+app/views/login/index.html.erb:10
+app/views/login/index.html.erb:8
+Started GET "/login" for 127.0.0.1 at 2022-07-19 14:56:07 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered login/index.html.erb within layouts/login (Duration: 3.7ms | Allocations: 2712)
+  Rendered layout layouts/login.html.erb (Duration: 5.5ms | Allocations: 2806)
+Completed 500 Internal Server Error in 11ms (Allocations: 3536)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+     6:         <h3 class="text-center">Log in</h3>
+     7:         <hr />
+     8:         <%= form_with url: loginstore_path, method: :post, multipart: true do |form| %>
+     9:         <% if form.object.errors.any? %>
+    10:         <br />
+    11:         <div class="alert alert-danger alert-dismissible fade show"
+    12:           role="alert">
+  
+app/views/login/index.html.erb:9
+app/views/login/index.html.erb:8
+Started GET "/login" for 127.0.0.1 at 2022-07-19 15:01:43 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered login/index.html.erb within layouts/login (Duration: 7.3ms | Allocations: 2009)
+  Rendered layout layouts/login.html.erb (Duration: 11.3ms | Allocations: 2258)
+Completed 200 OK in 17ms (Views: 13.5ms | Allocations: 3024)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:01:45 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 11ms (Allocations: 692)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:01:45 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 3ms (Allocations: 356)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:01:46 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 362)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:01:46 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 368)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:01:47 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 3ms (Allocations: 359)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:01:47 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 353)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:04:25 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 356)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:04:30 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 3ms (Allocations: 359)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:04:31 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 380)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:04:54 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 3ms (Allocations: 359)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:04:55 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 3ms (Allocations: 371)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:04:56 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 3ms (Allocations: 359)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:04:56 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 380)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:04:56 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 3ms (Allocations: 353)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:04:56 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 3ms (Allocations: 362)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:04:57 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 350)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-07-19 15:04:58 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered login/index.html.erb within layouts/login (Duration: 2.2ms | Allocations: 1615)
+  Rendered layout layouts/login.html.erb (Duration: 3.3ms | Allocations: 1726)
+Completed 200 OK in 6ms (Views: 4.8ms | Allocations: 2036)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:04 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 365)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:05 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 3ms (Allocations: 365)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:05 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 3ms (Allocations: 371)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:05 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 353)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:06 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 3ms (Allocations: 350)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:06 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 3ms (Allocations: 362)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:06 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 362)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:06 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 371)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:06 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 353)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:06 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 365)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:07 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 365)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:07 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 3ms (Allocations: 371)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:07 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 359)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:07 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 7ms (Allocations: 371)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:07 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 353)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:08 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 356)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:08 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 347)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:08 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 3ms (Allocations: 368)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:08 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 365)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:08 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 4ms (Allocations: 356)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:08 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 3ms (Allocations: 356)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:09 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 353)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:09 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 353)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:09 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 380)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-07-19 15:05:24 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered login/index.html.erb within layouts/login (Duration: 1.7ms | Allocations: 1560)
+  Rendered layout layouts/login.html.erb (Duration: 2.5ms | Allocations: 1669)
+Completed 200 OK in 5ms (Views: 3.6ms | Allocations: 1942)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:32 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 3ms (Allocations: 356)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:33 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 353)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:33 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 3ms (Allocations: 341)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:33 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 4ms (Allocations: 356)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:05:33 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+No template found for LoginController#store, rendering head :no_content
+Completed 204 No Content in 16ms (Allocations: 362)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:08:46 +0700
+  
+SyntaxError (C:/Rsites/perpustakaan-ror/app/controllers/login_controller.rb:8: syntax error, unexpected local variable or method, expecting `end'
+    render :plain params
+                  ^~~~~~
+):
+  
+app/controllers/login_controller.rb:8: syntax error, unexpected local variable or method, expecting `end'
+app/controllers/login_controller.rb:8: syntax error, unexpected local variable or method, expecting `end'
+app/controllers/login_controller.rb:8: syntax error, unexpected local variable or method, expecting `end'
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:09:24 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  Rendering text template
+  Rendered text template (Duration: 0.4ms | Allocations: 8)
+Completed 200 OK in 18ms (Views: 14.7ms | Allocations: 1037)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-07-19 15:09:43 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered login/index.html.erb within layouts/login (Duration: 2.1ms | Allocations: 1732)
+  Rendered layout layouts/login.html.erb (Duration: 3.1ms | Allocations: 1846)
+Completed 200 OK in 8ms (Views: 4.3ms | Allocations: 2166)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:09:44 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.6ms | Allocations: 438)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:55:25 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 18ms (Views: 7.1ms | Allocations: 826)
+
+
+Started GET "/login/store" for 127.0.0.1 at 2022-07-19 15:55:38 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/login/store"):
+  
+Started GET "/login" for 127.0.0.1 at 2022-07-19 15:55:58 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered login/index.html.erb within layouts/login (Duration: 9.9ms | Allocations: 1715)
+  Rendered layout layouts/login.html.erb (Duration: 11.4ms | Allocations: 1834)
+Completed 200 OK in 18ms (Views: 15.1ms | Allocations: 2448)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 15:56:06 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 6ms (Views: 2.0ms | Allocations: 453)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 16:11:10 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 6)
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'taufikmuhammad550@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:9:in `store'
+Completed 500 Internal Server Error in 145ms (Views: 2.4ms | ActiveRecord: 7.8ms | Allocations: 5106)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/login_controller.rb:16:in `store'
+Started GET "/login" for 127.0.0.1 at 2022-07-19 16:11:41 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered login/index.html.erb within layouts/login (Duration: 32.7ms | Allocations: 2837)
+  Rendered layout layouts/login.html.erb (Duration: 34.0ms | Allocations: 2931)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.0ms | Allocations: 3736)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_flash with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Rsites/perpustakaan-ror/app/views"
+  * "C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actiontext-7.0.3.1/app/views"
+  * "C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actionmailbox-7.0.3.1/app/views"
+
+Did you mean?  shared/footermainpage
+               shared/alertmainpage
+               shared/headermainpage
+               active_storage/blobs/blob
+               action_text/attachment_galleries/attachment_gallery
+               action_text/attachables/missing_attachable):
+    4:     <div class="card">
+    5:       <div class="card-body">
+    6:         <h3 class="text-center">Log in</h3>
+    7:         <%= render partial: "shared/flash" %>
+    8:         <hr />
+    9:         <%= form_with url: loginstore_path, method: :post, multipart: true do |form| %>
+   10:         <div class="mb-3">
+  
+app/views/login/index.html.erb:7
+Started GET "/login" for 127.0.0.1 at 2022-07-19 16:12:11 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 2.5ms | Allocations: 404)
+  Rendered login/index.html.erb within layouts/login (Duration: 11.7ms | Allocations: 2389)
+  Rendered layout layouts/login.html.erb (Duration: 15.4ms | Allocations: 2637)
+Completed 200 OK in 24ms (Views: 20.4ms | ActiveRecord: 0.0ms | Allocations: 3416)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 16:12:14 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = '' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:8:in `store'
+Completed 500 Internal Server Error in 146ms (ActiveRecord: 2.9ms | Allocations: 10587)
+
+
+  
+ActionView::MissingTemplate (Missing template login/login, application/login with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Rsites/perpustakaan-ror/app/views"
+  * "C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actiontext-7.0.3.1/app/views"
+  * "C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actionmailbox-7.0.3.1/app/views"
+
+Did you mean?  layouts/login
+               layouts/application
+               layouts/rails/conductor
+               rails/conductor/action_mailbox/inbound_emails/show
+               layouts/mailer
+               login/index):
+  
+app/controllers/login_controller.rb:15:in `store'
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 16:12:27 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = '' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:8:in `store'
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered login/index.html.erb within layouts/login (Duration: 2.6ms | Allocations: 1623)
+  Rendered layout layouts/login.html.erb (Duration: 4.5ms | Allocations: 1742)
+Completed 200 OK in 22ms (Views: 7.6ms | ActiveRecord: 1.9ms | Allocations: 4847)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 16:12:36 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'taufikmuhammad550@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:8:in `store'
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.2ms | Allocations: 29)
+  Rendered login/index.html.erb within layouts/login (Duration: 4.2ms | Allocations: 1470)
+  Rendered layout layouts/login.html.erb (Duration: 5.8ms | Allocations: 1579)
+Completed 200 OK in 18ms (Views: 7.9ms | ActiveRecord: 0.6ms | Allocations: 2732)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 16:24:17 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (8.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'taufikmuhammad550@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:8:in `store'
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 1.7ms | Allocations: 179)
+  Rendered login/index.html.erb within layouts/login (Duration: 8.7ms | Allocations: 2103)
+  Rendered layout layouts/login.html.erb (Duration: 11.3ms | Allocations: 2351)
+Completed 200 OK in 49ms (Views: 16.9ms | ActiveRecord: 10.7ms | Allocations: 5645)
+
+
+Started GET "/forgotpassword" for 127.0.0.1 at 2022-07-19 16:24:21 +0700
+Processing by LoginController#forgotpass as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/forgotpass.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.5ms | Allocations: 254)
+  Rendered login/forgotpass.html.erb within layouts/login (Duration: 3.6ms | Allocations: 1435)
+  Rendered layout layouts/login.html.erb (Duration: 6.8ms | Allocations: 1544)
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 1897)
+
+
+Started GET "/forgotpassword" for 127.0.0.1 at 2022-07-19 16:24:26 +0700
+Processing by LoginController#forgotpass as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/forgotpass.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.7ms | Allocations: 189)
+  Rendered login/forgotpass.html.erb within layouts/login (Duration: 3.3ms | Allocations: 1128)
+  Rendered layout layouts/login.html.erb (Duration: 5.1ms | Allocations: 1237)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 1513)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-07-19 16:24:46 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.5ms | Allocations: 204)
+  Rendered login/index.html.erb within layouts/login (Duration: 3.3ms | Allocations: 1664)
+  Rendered layout layouts/login.html.erb (Duration: 5.0ms | Allocations: 1773)
+Completed 200 OK in 12ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 2049)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-07-19 16:24:47 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.7ms | Allocations: 177)
+  Rendered login/index.html.erb within layouts/login (Duration: 5.1ms | Allocations: 1637)
+  Rendered layout layouts/login.html.erb (Duration: 7.2ms | Allocations: 1746)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 2022)
+
+
+Started GET "/forgotpassword" for 127.0.0.1 at 2022-07-19 16:24:48 +0700
+Processing by LoginController#forgotpass as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/forgotpass.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.9ms | Allocations: 201)
+  Rendered login/forgotpass.html.erb within layouts/login (Duration: 2.9ms | Allocations: 1140)
+  Rendered layout layouts/login.html.erb (Duration: 4.6ms | Allocations: 1249)
+Completed 200 OK in 10ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 1525)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-07-19 16:24:51 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.5ms | Allocations: 204)
+  Rendered login/index.html.erb within layouts/login (Duration: 2.5ms | Allocations: 1664)
+  Rendered layout layouts/login.html.erb (Duration: 3.9ms | Allocations: 1773)
+Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 2049)
+
+
+Started GET "/forgotpassword" for 127.0.0.1 at 2022-07-19 16:24:55 +0700
+Processing by LoginController#forgotpass as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/forgotpass.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.8ms | Allocations: 207)
+  Rendered login/forgotpass.html.erb within layouts/login (Duration: 5.9ms | Allocations: 1147)
+  Rendered layout layouts/login.html.erb (Duration: 8.1ms | Allocations: 1256)
+Completed 200 OK in 14ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 1532)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-07-19 16:24:59 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.4ms | Allocations: 180)
+  Rendered login/index.html.erb within layouts/login (Duration: 2.2ms | Allocations: 1640)
+  Rendered layout layouts/login.html.erb (Duration: 3.9ms | Allocations: 1749)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 2025)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 16:25:04 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"testemail@mail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'testemail@mail.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:8:in `store'
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 29)
+  Rendered login/index.html.erb within layouts/login (Duration: 2.0ms | Allocations: 1470)
+  Rendered layout layouts/login.html.erb (Duration: 4.4ms | Allocations: 1579)
+Completed 200 OK in 14ms (Views: 5.5ms | ActiveRecord: 0.8ms | Allocations: 2621)
+
+
+Started GET "/forgotpassword" for 127.0.0.1 at 2022-07-19 16:25:05 +0700
+Processing by LoginController#forgotpass as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/forgotpass.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.5ms | Allocations: 224)
+  Rendered login/forgotpass.html.erb within layouts/login (Duration: 2.2ms | Allocations: 1163)
+  Rendered layout layouts/login.html.erb (Duration: 3.3ms | Allocations: 1272)
+Completed 200 OK in 12ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 1548)
+
+
+Started GET "/forgotpassword" for 127.0.0.1 at 2022-07-19 16:25:30 +0700
+Processing by LoginController#forgotpass as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/forgotpass.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered login/forgotpass.html.erb within layouts/login (Duration: 1.9ms | Allocations: 1089)
+  Rendered layout layouts/login.html.erb (Duration: 3.5ms | Allocations: 1208)
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 2055)
+
+
+Started GET "/forgotpassword" for 127.0.0.1 at 2022-07-19 16:25:44 +0700
+Processing by LoginController#forgotpass as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/forgotpass.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.5ms | Allocations: 297)
+  Rendered login/forgotpass.html.erb within layouts/login (Duration: 4.7ms | Allocations: 1377)
+  Rendered layout layouts/login.html.erb (Duration: 6.2ms | Allocations: 1496)
+Completed 200 OK in 17ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 2122)
+
+
+Started GET "/forgotpassword" for 127.0.0.1 at 2022-07-19 16:25:48 +0700
+Processing by LoginController#forgotpass as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/forgotpass.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.6ms | Allocations: 180)
+  Rendered login/forgotpass.html.erb within layouts/login (Duration: 2.6ms | Allocations: 1119)
+  Rendered layout layouts/login.html.erb (Duration: 4.5ms | Allocations: 1228)
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 1522)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-07-19 16:25:51 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.7ms | Allocations: 195)
+  Rendered login/index.html.erb within layouts/login (Duration: 4.3ms | Allocations: 1674)
+  Rendered layout layouts/login.html.erb (Duration: 6.0ms | Allocations: 1783)
+Completed 200 OK in 13ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 2059)
+
+
+Started POST "/login/store" for 127.0.0.1 at 2022-07-19 16:25:58 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"testemail@mail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'testemail@mail.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:8:in `store'
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.2ms | Allocations: 30)
+  Rendered login/index.html.erb within layouts/login (Duration: 2.9ms | Allocations: 1539)
+  Rendered layout layouts/login.html.erb (Duration: 4.9ms | Allocations: 1651)
+Completed 200 OK in 21ms (Views: 6.4ms | ActiveRecord: 2.9ms | Allocations: 4427)
+
+
+Started GET "/forgotpassword" for 127.0.0.1 at 2022-07-19 16:26:02 +0700
+Processing by LoginController#forgotpass as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/forgotpass.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.5ms | Allocations: 265)
+  Rendered login/forgotpass.html.erb within layouts/login (Duration: 2.1ms | Allocations: 1204)
+  Rendered layout layouts/login.html.erb (Duration: 3.6ms | Allocations: 1313)
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 1593)
+
+

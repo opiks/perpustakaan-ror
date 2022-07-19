@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "mainpages#index", as: "home"
   get "login", to: "login#index", as: "login"
-  get "login/store", to: "login#store", as: "loginstore"
+  post "login/store", to: "login#store", as: "loginstore"
   get "forgotpassword", to: "login#forgotpass", as: "forgotpassword"
+  post "forgotpassword/store", to: "login#forgotpassstore", as: "forgotpasswordstore"
+
 end
