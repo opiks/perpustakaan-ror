@@ -313,3 +313,1099 @@ and restart your server):
     17: 
   
 app/views/layouts/application.html.erb:14
+Started GET "/" for 127.0.0.1 at 2022-07-19 09:04:25 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 21.5ms | Allocations: 327)
+  Rendered layout layouts/application.html.erb (Duration: 79.2ms | Allocations: 3547)
+Completed 500 Internal Server Error in 257ms (ActiveRecord: 0.0ms | Allocations: 6746)
+
+
+  
+ActionView::Template::Error (The asset "mainpage/css/bootstrap.min.css" is not present in the asset pipeline.
+):
+    11:     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    12:         rel="stylesheet">
+    13: 
+    14:     <%= stylesheet_link_tag "mainpage/css/bootstrap.min" %>
+    15:     <!-- <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %> -->
+    16:   </head>
+    17: 
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for 127.0.0.1 at 2022-07-19 09:04:43 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 2680)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 3500)
+
+
+  
+ActionView::Template::Error (The asset "mainpage/css/bootstrap.min.css" is not present in the asset pipeline.
+):
+    11:     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    12:         rel="stylesheet">
+    13: 
+    14:     <!-- <%= stylesheet_link_tag "mainpage/css/bootstrap.min" %> -->
+    15:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    16:   </head>
+    17: 
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for 127.0.0.1 at 2022-07-19 09:04:54 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 2679)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.0ms | Allocations: 3495)
+
+
+  
+ActionView::Template::Error (The asset "mainpage/css/bootstrap.min.css" is not present in the asset pipeline.
+):
+    11:     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    12:         rel="stylesheet">
+    13: 
+    14:     <%= stylesheet_link_tag "mainpage/css/bootstrap.min" %>
+    15:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    16:   </head>
+    17: 
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for 127.0.0.1 at 2022-07-19 09:05:02 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 2678)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 3494)
+
+
+  
+ActionView::Template::Error (The asset "mainpage/css/bootstrap.min.css" is not present in the asset pipeline.
+):
+    11:     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    12:         rel="stylesheet">
+    13: 
+    14:     <%= stylesheet_link_tag "mainpage/css/bootstrap.min.css" %>
+    15:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    16:   </head>
+    17: 
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for 127.0.0.1 at 2022-07-19 09:05:32 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2692)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 3508)
+
+
+  
+ActionView::Template::Error (The asset "mainpage/css/style.css" is not present in the asset pipeline.
+):
+    11:     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    12:         rel="stylesheet">
+    13: 
+    14:     <%= stylesheet_link_tag "mainpage/css/style" %>
+    15:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    16:   </head>
+    17: 
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for 127.0.0.1 at 2022-07-19 09:52:46 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 327)
+  Rendered layout layouts/application.html.erb (Duration: 1085.5ms | Allocations: 90412)
+Completed 500 Internal Server Error in 1123ms (ActiveRecord: 0.0ms | Allocations: 93612)
+
+
+  
+ActionView::Template::Error (Permission denied @ rb_file_s_rename - (C:/Rsites/perpustakaan-ror/tmp/cache/assets/sprockets/v4.0.0/bN/bNjhbABaFBhRi-L--_g2PLGusjwehzAUI8Q0U9_5BRs.cache.20860.32628.98242, C:/Rsites/perpustakaan-ror/tmp/cache/assets/sprockets/v4.0.0/bN/bNjhbABaFBhRi-L--_g2PLGusjwehzAUI8Q0U9_5BRs.cache)):
+  
+sprockets (4.1.1) lib/sprockets/path_utils.rb:362:in `rename'
+sprockets (4.1.1) lib/sprockets/path_utils.rb:362:in `atomic_write'
+sprockets (4.1.1) lib/sprockets/cache/file_store.rb:112:in `set'
+sprockets (4.1.1) lib/sprockets/cache.rb:227:in `set'
+sprockets (4.1.1) lib/sprockets/cache.rb:143:in `set'
+sprockets (4.1.1) lib/sprockets/loader.rb:266:in `store_asset'
+sprockets (4.1.1) lib/sprockets/loader.rb:226:in `load_from_unloaded'
+sprockets (4.1.1) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.1.1) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.1.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `fetch'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.1.1) lib/sprockets/bundle.rb:27:in `call'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.1.1) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.1.1) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.1.1) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.1.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `fetch'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.1.1) lib/sprockets/bundle.rb:32:in `block in call'
+C:/Ruby31-x64/lib/ruby/3.1.0/set.rb:511:in `each_key'
+C:/Ruby31-x64/lib/ruby/3.1.0/set.rb:511:in `each'
+sprockets (4.1.1) lib/sprockets/bundle.rb:31:in `call'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.1.1) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.1.1) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.1.1) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.1.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `fetch'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.1.1) lib/sprockets/base.rb:81:in `find_asset'
+sprockets (4.1.1) lib/sprockets/base.rb:88:in `find_all_linked_assets'
+sprockets (4.1.1) lib/sprockets/manifest.rb:125:in `each'
+sprockets (4.1.1) lib/sprockets/manifest.rb:125:in `to_a'
+sprockets (4.1.1) lib/sprockets/manifest.rb:125:in `block (2 levels) in find'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in `block in execute'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `block in synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in `execute'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/promise.rb:564:in `block in realize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:352:in `run_task'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:343:in `block (3 levels) in create_worker'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `loop'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `block (2 levels) in create_worker'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `catch'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `block in create_worker'
+Started GET "/" for 127.0.0.1 at 2022-07-19 09:53:04 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 135)
+  Rendered layout layouts/application.html.erb (Duration: 100.4ms | Allocations: 24164)
+Completed 200 OK in 111ms (Views: 106.0ms | ActiveRecord: 0.0ms | Allocations: 25057)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-19 09:53:50 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 1587)
+Completed 200 OK in 16ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 1912)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-19 09:53:59 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 1550)
+Completed 200 OK in 15ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 1849)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-19 10:14:36 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 2784)
+Completed 200 OK in 26ms (Views: 21.4ms | Allocations: 3606)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-19 10:14:41 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 2764)
+Completed 200 OK in 25ms (Views: 20.1ms | Allocations: 3599)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-19 10:16:05 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 2091)
+Completed 200 OK in 26ms (Views: 19.9ms | Allocations: 2933)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-19 10:16:06 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 1547)
+Completed 200 OK in 13ms (Views: 9.7ms | Allocations: 1861)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-19 10:16:14 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 1541)
+Completed 200 OK in 16ms (Views: 13.2ms | Allocations: 1837)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-19 10:16:14 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 1559)
+Completed 200 OK in 13ms (Views: 9.4ms | Allocations: 1855)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-19 10:16:18 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 133)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 2756)
+Completed 200 OK in 24ms (Views: 19.6ms | Allocations: 3573)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-19 10:16:21 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 2986)
+Completed 500 Internal Server Error in 28ms (Allocations: 3795)
+
+
+  
+ActionView::Template::Error (The asset "styles.css" is not present in the asset pipeline.
+):
+    11:     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    12:         rel="stylesheet">
+    13: 
+    14:     <%= stylesheet_link_tag "styles", "data-turbo-track": "reload" %>
+    15:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    16:   </head>
+    17: 
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for 127.0.0.1 at 2022-07-19 10:18:57 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 40.8ms | Allocations: 2983)
+Completed 500 Internal Server Error in 49ms (Allocations: 3784)
+
+
+  
+ActionView::Template::Error (The asset "style.css" is not present in the asset pipeline.
+):
+    11:     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    12:         rel="stylesheet">
+    13: 
+    14:     <%= stylesheet_link_tag "style", "data-turbo-track": "reload" %>
+    15:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    16:   </head>
+    17: 
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for 127.0.0.1 at 2022-07-19 10:20:02 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 545.9ms | Allocations: 55385)
+Completed 500 Internal Server Error in 555ms (Allocations: 56183)
+
+
+  
+LoadError (cannot load such file -- sassc):
+  
+bootsnap (1.12.0) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:15:in `require'
+bootsnap (1.12.0) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:15:in `require'
+zeitwerk (2.6.0) lib/zeitwerk/kernel.rb:35:in `require'
+sprockets (4.1.1) lib/sprockets/autoload/sassc.rb:2:in `<main>'
+bootsnap (1.12.0) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+bootsnap (1.12.0) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+zeitwerk (2.6.0) lib/zeitwerk/kernel.rb:35:in `require'
+sprockets (4.1.1) lib/sprockets/sassc_processor.rb:42:in `initialize'
+sprockets (4.1.1) lib/sprockets/sassc_processor.rb:27:in `new'
+sprockets (4.1.1) lib/sprockets/sassc_processor.rb:27:in `instance'
+sprockets (4.1.1) lib/sprockets/sassc_processor.rb:31:in `call'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:22:in `block in <class:CompositeProcessor>'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:33:in `call'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.1.1) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.1.1) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.1.1) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.1.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `fetch'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.1.1) lib/sprockets/bundle.rb:41:in `block in call'
+sprockets (4.1.1) lib/sprockets/utils.rb:170:in `dfs'
+sprockets (4.1.1) lib/sprockets/bundle.rb:42:in `call'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.1.1) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.1.1) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.1.1) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.1.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `fetch'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.1.1) lib/sprockets/bundle.rb:32:in `block in call'
+C:/Ruby31-x64/lib/ruby/3.1.0/set.rb:511:in `each_key'
+C:/Ruby31-x64/lib/ruby/3.1.0/set.rb:511:in `each'
+sprockets (4.1.1) lib/sprockets/bundle.rb:31:in `call'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.1.1) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.1.1) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.1.1) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.1.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `fetch'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.1.1) lib/sprockets/base.rb:81:in `find_asset'
+sprockets (4.1.1) lib/sprockets/base.rb:88:in `find_all_linked_assets'
+sprockets (4.1.1) lib/sprockets/manifest.rb:125:in `each'
+sprockets (4.1.1) lib/sprockets/manifest.rb:125:in `to_a'
+sprockets (4.1.1) lib/sprockets/manifest.rb:125:in `block (2 levels) in find'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in `block in execute'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `block in synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in `execute'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/promise.rb:564:in `block in realize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:352:in `run_task'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:343:in `block (3 levels) in create_worker'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `loop'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `block (2 levels) in create_worker'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `catch'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `block in create_worker'
+Started GET "/" for 127.0.0.1 at 2022-07-19 10:20:08 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 104.0ms | Allocations: 28115)
+Completed 500 Internal Server Error in 109ms (Allocations: 28403)
+
+
+  
+LoadError (cannot load such file -- sassc):
+  
+bootsnap (1.12.0) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:15:in `require'
+bootsnap (1.12.0) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:15:in `require'
+zeitwerk (2.6.0) lib/zeitwerk/kernel.rb:35:in `require'
+sprockets (4.1.1) lib/sprockets/autoload/sassc.rb:2:in `<main>'
+bootsnap (1.12.0) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+bootsnap (1.12.0) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+zeitwerk (2.6.0) lib/zeitwerk/kernel.rb:35:in `require'
+sprockets (4.1.1) lib/sprockets/sassc_processor.rb:42:in `initialize'
+sprockets (4.1.1) lib/sprockets/sassc_processor.rb:27:in `new'
+sprockets (4.1.1) lib/sprockets/sassc_processor.rb:27:in `instance'
+sprockets (4.1.1) lib/sprockets/sassc_processor.rb:31:in `call'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:22:in `block in <class:CompositeProcessor>'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:33:in `call'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.1.1) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.1.1) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.1.1) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.1.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `fetch'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.1.1) lib/sprockets/bundle.rb:41:in `block in call'
+sprockets (4.1.1) lib/sprockets/utils.rb:170:in `dfs'
+sprockets (4.1.1) lib/sprockets/bundle.rb:42:in `call'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.1.1) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.1.1) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.1.1) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.1.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `fetch'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.1.1) lib/sprockets/bundle.rb:32:in `block in call'
+C:/Ruby31-x64/lib/ruby/3.1.0/set.rb:511:in `each_key'
+C:/Ruby31-x64/lib/ruby/3.1.0/set.rb:511:in `each'
+sprockets (4.1.1) lib/sprockets/bundle.rb:31:in `call'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.1.1) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.1.1) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.1.1) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.1.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `fetch'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.1.1) lib/sprockets/base.rb:81:in `find_asset'
+sprockets (4.1.1) lib/sprockets/base.rb:88:in `find_all_linked_assets'
+sprockets (4.1.1) lib/sprockets/manifest.rb:125:in `each'
+sprockets (4.1.1) lib/sprockets/manifest.rb:125:in `to_a'
+sprockets (4.1.1) lib/sprockets/manifest.rb:125:in `block (2 levels) in find'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in `block in execute'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `block in synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in `execute'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/promise.rb:564:in `block in realize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:352:in `run_task'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:343:in `block (3 levels) in create_worker'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `loop'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `block (2 levels) in create_worker'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `catch'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `block in create_worker'
+Started GET "/" for 127.0.0.1 at 2022-07-19 10:21:45 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 327)
+  Rendered layout layouts/application.html.erb (Duration: 330.3ms | Allocations: 35937)
+Completed 500 Internal Server Error in 363ms (ActiveRecord: 0.0ms | Allocations: 39114)
+
+
+  
+LoadError (cannot load such file -- sassc):
+  
+bootsnap (1.12.0) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:15:in `require'
+bootsnap (1.12.0) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:15:in `require'
+zeitwerk (2.6.0) lib/zeitwerk/kernel.rb:35:in `require'
+sprockets (4.1.1) lib/sprockets/autoload/sassc.rb:2:in `<main>'
+bootsnap (1.12.0) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+bootsnap (1.12.0) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+zeitwerk (2.6.0) lib/zeitwerk/kernel.rb:35:in `require'
+sprockets (4.1.1) lib/sprockets/sassc_processor.rb:42:in `initialize'
+sprockets (4.1.1) lib/sprockets/sassc_processor.rb:27:in `new'
+sprockets (4.1.1) lib/sprockets/sassc_processor.rb:27:in `instance'
+sprockets (4.1.1) lib/sprockets/sassc_processor.rb:31:in `call'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:22:in `block in <class:CompositeProcessor>'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:33:in `call'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.1.1) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.1.1) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.1.1) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.1.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `fetch'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.1.1) lib/sprockets/bundle.rb:41:in `block in call'
+sprockets (4.1.1) lib/sprockets/utils.rb:170:in `dfs'
+sprockets (4.1.1) lib/sprockets/bundle.rb:42:in `call'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.1.1) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.1.1) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.1.1) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.1.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `fetch'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.1.1) lib/sprockets/bundle.rb:32:in `block in call'
+C:/Ruby31-x64/lib/ruby/3.1.0/set.rb:511:in `each_key'
+C:/Ruby31-x64/lib/ruby/3.1.0/set.rb:511:in `each'
+sprockets (4.1.1) lib/sprockets/bundle.rb:31:in `call'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.1.1) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.1.1) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.1.1) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.1.1) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.1.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `fetch'
+sprockets (4.1.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.1.1) lib/sprockets/base.rb:81:in `find_asset'
+sprockets (4.1.1) lib/sprockets/base.rb:88:in `find_all_linked_assets'
+sprockets (4.1.1) lib/sprockets/manifest.rb:125:in `each'
+sprockets (4.1.1) lib/sprockets/manifest.rb:125:in `to_a'
+sprockets (4.1.1) lib/sprockets/manifest.rb:125:in `block (2 levels) in find'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in `block in execute'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `block in synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:47:in `synchronize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in `execute'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/promise.rb:564:in `block in realize'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:352:in `run_task'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:343:in `block (3 levels) in create_worker'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `loop'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `block (2 levels) in create_worker'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `catch'
+concurrent-ruby (1.1.10) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `block in create_worker'
+Started GET "/" for 127.0.0.1 at 2022-07-19 10:25:33 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 327)
+  Rendered layout layouts/application.html.erb (Duration: 357.0ms | Allocations: 35586)
+Completed 500 Internal Server Error in 406ms (ActiveRecord: 0.0ms | Allocations: 38785)
+
+
+  
+ActionView::Template::Error (Error: Undefined variable: "$white-color".
+        on line 29:16 of app/assets/stylesheets/mainpage/sass/_anime-details.scss
+>>         color: $white-color;
+
+   ---------------^
+):
+  
+app/assets/stylesheets/mainpage/sass/_anime-details.scss:29
+Started GET "/" for 127.0.0.1 at 2022-07-19 10:26:14 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 394.6ms | Allocations: 48483)
+Completed 500 Internal Server Error in 398ms (ActiveRecord: 0.0ms | Allocations: 48803)
+
+
+  
+ActionView::Template::Error (Asset `mainpage/css/style.css` was not declared to be precompiled in production.
+Declare links to your assets in `app/assets/config/manifest.js`.
+
+  //= link mainpage/css/style.css
+
+and restart your server):
+    11:     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    12:         rel="stylesheet">
+    13: 
+    14:     <%= stylesheet_link_tag "mainpage/css/style", "data-turbo-track": "reload" %>
+    15:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    16:   </head>
+    17: 
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for 127.0.0.1 at 2022-07-19 10:27:21 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 327)
+  Rendered layout layouts/application.html.erb (Duration: 424.7ms | Allocations: 41674)
+Completed 500 Internal Server Error in 456ms (ActiveRecord: 0.0ms | Allocations: 44873)
+
+
+  
+ActionView::Template::Error (Error: Undefined variable: "$white-color".
+        on line 41:16 of app/assets/stylesheets/mainpage/sass/_anime-details.scss
+>>         color: $white-color;
+
+   ---------------^
+):
+  
+app/assets/stylesheets/mainpage/sass/_anime-details.scss:41
+Started GET "/" for 127.0.0.1 at 2022-07-19 10:28:44 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 129.8ms | Allocations: 30460)
+Completed 500 Internal Server Error in 134ms (ActiveRecord: 0.0ms | Allocations: 30778)
+
+
+  
+ActionView::Template::Error (Error: Undefined variable: "$primary-color".
+        on line 128:21 of app/assets/stylesheets/mainpage/sass/_anime-details.scss
+>>         background: $primary-color;
+
+   --------------------^
+):
+  
+app/assets/stylesheets/mainpage/sass/_anime-details.scss:128
+Started GET "/" for 127.0.0.1 at 2022-07-19 10:29:02 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 232.5ms | Allocations: 43424)
+Completed 500 Internal Server Error in 237ms (ActiveRecord: 0.0ms | Allocations: 43704)
+
+
+  
+ActionView::Template::Error (Asset `mainpage/css/style.css` was not declared to be precompiled in production.
+Declare links to your assets in `app/assets/config/manifest.js`.
+
+  //= link mainpage/css/style.css
+
+and restart your server):
+    11:     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    12:         rel="stylesheet">
+    13: 
+    14:     <%= stylesheet_link_tag "mainpage/css/style", "data-turbo-track": "reload" %>
+    15:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    16:   </head>
+    17: 
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for 127.0.0.1 at 2022-07-19 10:29:22 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 327)
+  Rendered layout layouts/application.html.erb (Duration: 185.7ms | Allocations: 47355)
+Completed 500 Internal Server Error in 242ms (ActiveRecord: 0.0ms | Allocations: 50554)
+
+
+  
+ActionView::Template::Error (Asset `mainpage/css/style.css` was not declared to be precompiled in production.
+Declare links to your assets in `app/assets/config/manifest.js`.
+
+  //= link mainpage/css/style.css
+
+and restart your server):
+    11:     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    12:         rel="stylesheet">
+    13: 
+    14:     <%= stylesheet_link_tag "mainpage/css/style", "data-turbo-track": "reload" %>
+    15:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    16:   </head>
+    17: 
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for 127.0.0.1 at 2022-07-19 10:40:00 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 327)
+  Rendered layout layouts/application.html.erb (Duration: 428.3ms | Allocations: 43734)
+Completed 200 OK in 490ms (Views: 446.0ms | ActiveRecord: 0.0ms | Allocations: 46983)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-19 10:43:19 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 208.1ms | Allocations: 33038)
+Completed 500 Internal Server Error in 225ms (ActiveRecord: 0.0ms | Allocations: 33923)
+
+
+  
+ActionView::Template::Error (Asset `mainpage/css/bootstrap.min.css` was not declared to be precompiled in production.
+Declare links to your assets in `app/assets/config/manifest.js`.
+
+  //= link mainpage/css/bootstrap.min.css
+
+and restart your server):
+    11:     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    12:         rel="stylesheet">
+    13: 
+    14:     <%= stylesheet_link_tag "mainpage/css/bootstrap.min", "data-turbo-track": "reload" %>
+    15:     <%= stylesheet_link_tag "mainpage/css/font-awesome.min", "data-turbo-track": "reload" %>
+    16:     <%= stylesheet_link_tag "mainpage/css/elegant-icons", "data-turbo-track": "reload" %>
+    17:     <%= stylesheet_link_tag "mainpage/css/plyr", "data-turbo-track": "reload" %>
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for 127.0.0.1 at 2022-07-19 10:44:25 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 243.5ms | Allocations: 43423)
+Completed 200 OK in 255ms (Views: 244.9ms | ActiveRecord: 0.0ms | Allocations: 43769)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-19 10:56:58 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 15.1ms | Allocations: 135)
+  Rendered shared/_headermainpage.html.erb (Duration: 1.5ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 149.5ms | Allocations: 7608)
+Completed 200 OK in 214ms (Views: 194.0ms | Allocations: 8423)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-19 11:05:44 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 20)
+  Rendered shared/_headermainpage.html.erb (Duration: 0.5ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 91.1ms | Allocations: 6748)
+Completed 200 OK in 119ms (Views: 106.6ms | Allocations: 7062)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-19 11:06:16 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 20)
+  Rendered shared/_headermainpage.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 38.2ms | Allocations: 6757)
+Completed 200 OK in 45ms (Views: 42.1ms | Allocations: 7054)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-19 11:06:35 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 20)
+  Rendered shared/_headermainpage.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 44.5ms | Allocations: 6730)
+Completed 200 OK in 49ms (Views: 45.7ms | Allocations: 7026)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-19 12:05:09 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 133)
+  Rendered shared/_headermainpage.html.erb (Duration: 1.2ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 155.5ms | Allocations: 12766)
+Completed 500 Internal Server Error in 211ms (Allocations: 13557)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<ActionView::Base:0x0000000000b1d0>
+Did you mean?  javascript_path
+               javascript_tag):
+    31:       </div>
+    32:     </section>
+    33: 
+    34:     <%= javascript_pack_tag 'mainpage/js/jquery-3.3.1.min'%>
+    35:     <%= javascript_pack_tag 'mainpage/js/bootstrap.min'%>
+    36:     <%= javascript_pack_tag 'mainpage/js/player'%>
+    37:     <%= javascript_pack_tag 'mainpage/js/jquery.nice-select.min'%>
+  
+app/views/layouts/application.html.erb:34
+Started GET "/" for 127.0.0.1 at 2022-07-19 12:05:48 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 132)
+  Rendered shared/_headermainpage.html.erb (Duration: 0.6ms | Allocations: 127)
+  Rendered layout layouts/application.html.erb (Duration: 131.8ms | Allocations: 34527)
+Completed 500 Internal Server Error in 139ms (Allocations: 35329)
+
+
+  
+ActionView::Template::Error (Asset `mainpage/js/jquery-3.3.1.min.js` was not declared to be precompiled in production.
+Declare links to your assets in `app/assets/config/manifest.js`.
+
+  //= link mainpage/js/jquery-3.3.1.min.js
+
+and restart your server):
+    31:       </div>
+    32:     </section>
+    33: 
+    34:     <%= javascript_path 'mainpage/js/jquery-3.3.1.min'%>
+    35:     <%= javascript_path 'mainpage/js/bootstrap.min'%>
+    36:     <%= javascript_path 'mainpage/js/player'%>
+    37:     <%= javascript_path 'mainpage/js/jquery.nice-select.min'%>
+  
+app/views/layouts/application.html.erb:34
+Started GET "/" for 127.0.0.1 at 2022-07-19 12:28:47 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 132)
+  Rendered shared/_headermainpage.html.erb (Duration: 0.7ms | Allocations: 127)
+  Rendered layout layouts/application.html.erb (Duration: 41.0ms | Allocations: 12708)
+Completed 500 Internal Server Error in 48ms (Allocations: 13516)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<ActionView::Base:0x0000000000b9a0>
+Did you mean?  javascript_path
+               javascript_tag):
+    31:       </div>
+    32:     </section>
+    33: 
+    34:     <%= javascript_pack_tag 'mainpage/js/jquery-3.3.1.min'%>
+    35:     <%= javascript_pack_tag 'mainpage/js/bootstrap.min'%>
+    36:     <%= javascript_pack_tag 'mainpage/js/player'%>
+    37:     <%= javascript_pack_tag 'mainpage/js/jquery.nice-select.min'%>
+  
+app/views/layouts/application.html.erb:34
+Started GET "/" for 127.0.0.1 at 2022-07-19 13:04:07 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 20)
+  Rendered shared/_headermainpage.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 61.7ms | Allocations: 11657)
+Completed 500 Internal Server Error in 69ms (Allocations: 11947)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<ActionView::Base:0x0000000000bd38>
+Did you mean?  javascript_path
+               javascript_tag):
+    31:       </div>
+    32:     </section>
+    33: 
+    34:     <%= javascript_pack_tag 'mainpage/js/jquery-3.3.1.min'%>
+    35:     <%= javascript_pack_tag 'mainpage/js/bootstrap.min'%>
+    36:     <%= javascript_pack_tag 'mainpage/js/player'%>
+    37:     <%= javascript_pack_tag 'mainpage/js/jquery.nice-select.min'%>
+  
+app/views/layouts/application.html.erb:34
+Started GET "/" for 127.0.0.1 at 2022-07-19 13:06:28 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 132)
+  Rendered shared/_headermainpage.html.erb (Duration: 1.9ms | Allocations: 127)
+  Rendered layout layouts/application.html.erb (Duration: 68.3ms | Allocations: 12691)
+Completed 500 Internal Server Error in 81ms (Allocations: 13474)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<ActionView::Base:0x0000000000c120>
+Did you mean?  javascript_path
+               javascript_tag):
+    32:     </section>
+    33: 
+    34:     
+    35:     <%= javascript_pack_tag 'mainpage/js/bootstrap.min'%>
+    36:     <%= javascript_pack_tag 'mainpage/js/player'%>
+    37:     <%= javascript_pack_tag 'mainpage/js/jquery.nice-select.min'%>
+    38:     <%= javascript_pack_tag 'mainpage/js/mixitup.min'%>
+  
+app/views/layouts/application.html.erb:35
+Started GET "/" for 127.0.0.1 at 2022-07-19 13:29:23 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 132)
+  Rendered shared/_headermainpage.html.erb (Duration: 2.4ms | Allocations: 127)
+  Rendered layout layouts/application.html.erb (Duration: 191.3ms | Allocations: 32785)
+Completed 500 Internal Server Error in 202ms (Allocations: 33586)
+
+
+  
+ActionView::Template::Error (Asset `mainpage/js/jquery-3.3.1.min.js` was not declared to be precompiled in production.
+Declare links to your assets in `app/assets/config/manifest.js`.
+
+  //= link mainpage/js/jquery-3.3.1.min.js
+
+and restart your server):
+    31:       </div>
+    32:     </section>
+    33: 
+    34:     <%= javascript_path 'mainpage/js/jquery-3.3.1.min'%>
+    35:     <%= javascript_path 'mainpage/js/bootstrap.min'%>
+    36:     <%= javascript_path 'mainpage/js/player'%>
+    37:     <%= javascript_path 'mainpage/js/jquery.nice-select.min'%>
+  
+app/views/layouts/application.html.erb:34
+Started GET "/" for 127.0.0.1 at 2022-07-19 13:33:51 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 327)
+  Rendered layout layouts/application.html.erb (Duration: 379.5ms | Allocations: 38614)
+Completed 500 Internal Server Error in 432ms (ActiveRecord: 0.0ms | Allocations: 41813)
+
+
+  
+ActionView::Template::Error (couldn't find file 'mainpage/js/jquery.nice-select.js'
+Checked in these paths: 
+  C:/Rsites/perpustakaan-ror/app/assets/config
+  C:/Rsites/perpustakaan-ror/app/assets/fonts
+  C:/Rsites/perpustakaan-ror/app/assets/images
+  C:/Rsites/perpustakaan-ror/app/assets/stylesheets
+  C:/Rsites/perpustakaan-ror/app/assets/templates
+  C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/stimulus-rails-1.0.4/app/assets/javascripts
+  C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/turbo-rails-1.1.1/app/assets/javascripts
+  C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/importmap-rails-1.1.2/app/assets/javascripts
+  C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actiontext-7.0.3.1/app/assets/javascripts
+  C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actiontext-7.0.3.1/app/assets/stylesheets
+  C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actioncable-7.0.3.1/app/assets/javascripts
+  C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/activestorage-7.0.3.1/app/assets/javascripts
+  C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actionview-7.0.3.1/lib/assets/compiled
+  C:/Rsites/perpustakaan-ror/app/javascript
+  C:/Rsites/perpustakaan-ror/vendor/javascript):
+  
+app/assets/config/manifest.js:15
+Started GET "/" for 127.0.0.1 at 2022-07-19 13:34:34 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 20)
+  Rendered shared/_headermainpage.html.erb (Duration: 0.7ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 1005.2ms | Allocations: 89676)
+Completed 200 OK in 1014ms (Views: 1006.8ms | ActiveRecord: 0.0ms | Allocations: 90065)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-19 13:36:40 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 132)
+  Rendered shared/_headermainpage.html.erb (Duration: 1.1ms | Allocations: 127)
+  Rendered shared/_footermainpage.html.erb (Duration: 0.8ms | Allocations: 120)
+  Rendered layout layouts/application.html.erb (Duration: 65.9ms | Allocations: 18965)
+Completed 200 OK in 77ms (Views: 71.7ms | ActiveRecord: 0.0ms | Allocations: 19784)
+
+
+Started GET "/fonts/ElegantIcons.woff" for 127.0.0.1 at 2022-07-19 13:36:41 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/ElegantIcons.woff"):
+  
+Started GET "/fonts/ElegantIcons.ttf" for 127.0.0.1 at 2022-07-19 13:36:41 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/ElegantIcons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2022-07-19 13:42:34 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 132)
+  Rendered shared/_headermainpage.html.erb (Duration: 0.8ms | Allocations: 127)
+  Rendered shared/_footermainpage.html.erb (Duration: 0.9ms | Allocations: 119)
+  Rendered layout layouts/application.html.erb (Duration: 67.7ms | Allocations: 18959)
+Completed 200 OK in 79ms (Views: 74.4ms | Allocations: 19798)
+
+
+Started GET "/fonts/ElegantIcons.woff" for 127.0.0.1 at 2022-07-19 13:42:34 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/ElegantIcons.woff"):
+  
+Started GET "/fonts/ElegantIcons.ttf" for 127.0.0.1 at 2022-07-19 13:42:34 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/ElegantIcons.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2022-07-19 13:44:14 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 132)
+  Rendered shared/_headermainpage.html.erb (Duration: 0.6ms | Allocations: 127)
+  Rendered shared/_footermainpage.html.erb (Duration: 1.2ms | Allocations: 122)
+  Rendered layout layouts/application.html.erb (Duration: 73.8ms | Allocations: 18966)
+Completed 200 OK in 88ms (Views: 81.4ms | Allocations: 19802)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for 127.0.0.1 at 2022-07-19 13:44:14 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for 127.0.0.1 at 2022-07-19 13:44:15 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for 127.0.0.1 at 2022-07-19 13:44:15 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2022-07-19 13:44:26 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 132)
+  Rendered shared/_headermainpage.html.erb (Duration: 0.6ms | Allocations: 127)
+  Rendered shared/_footermainpage.html.erb (Duration: 0.5ms | Allocations: 122)
+  Rendered layout layouts/application.html.erb (Duration: 57.9ms | Allocations: 18969)
+Completed 200 OK in 71ms (Views: 66.7ms | Allocations: 19798)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-19 13:44:42 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 132)
+  Rendered shared/_headermainpage.html.erb (Duration: 0.6ms | Allocations: 127)
+  Rendered shared/_footermainpage.html.erb (Duration: 0.8ms | Allocations: 122)
+  Rendered layout layouts/application.html.erb (Duration: 71.3ms | Allocations: 18987)
+Completed 200 OK in 83ms (Views: 76.6ms | Allocations: 19821)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for 127.0.0.1 at 2022-07-19 13:44:43 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for 127.0.0.1 at 2022-07-19 13:44:43 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for 127.0.0.1 at 2022-07-19 13:44:43 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2022-07-19 13:45:44 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 132)
+  Rendered shared/_headermainpage.html.erb (Duration: 1.0ms | Allocations: 127)
+  Rendered shared/_footermainpage.html.erb (Duration: 0.9ms | Allocations: 122)
+  Rendered layout layouts/application.html.erb (Duration: 85.0ms | Allocations: 18985)
+Completed 200 OK in 97ms (Views: 92.1ms | Allocations: 19814)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for 127.0.0.1 at 2022-07-19 13:45:45 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for 127.0.0.1 at 2022-07-19 13:45:45 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for 127.0.0.1 at 2022-07-19 13:45:45 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2022-07-19 13:47:03 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 132)
+  Rendered shared/_headermainpage.html.erb (Duration: 0.5ms | Allocations: 127)
+  Rendered shared/_footermainpage.html.erb (Duration: 0.6ms | Allocations: 119)
+  Rendered layout layouts/application.html.erb (Duration: 64.1ms | Allocations: 18997)
+Completed 200 OK in 75ms (Views: 69.6ms | Allocations: 19826)
+
+
+Started GET "/fonts/ElegantIcons.woff" for 127.0.0.1 at 2022-07-19 13:47:04 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/ElegantIcons.woff"):
+  
+Started GET "/fonts/ElegantIcons.ttf" for 127.0.0.1 at 2022-07-19 13:47:04 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/ElegantIcons.ttf"):
+  

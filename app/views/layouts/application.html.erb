@@ -11,11 +11,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-    <%= stylesheet_link_tag "mainpage/css/bootstrap.min" %>
-    <!-- <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %> -->
+    <%= stylesheet_link_tag "mainpage/css/bootstrap.min", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "mainpage/css/font-awesome.min", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "mainpage/css/elegant-icons", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "mainpage/css/plyr", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "mainpage/css/owl.carousel.min", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "mainpage/css/slicknav.min", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "mainpage/css/style", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
   </head>
 
   <body>
-    <%= yield %>
+    <%= render partial: "shared/headermainpage" %>
+    <section class="product spad">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </section>
+    <%= render partial: "shared/footermainpage" %>
+
+    <script src="<%= javascript_path 'mainpage/js/jquery-3.3.1.min'%>"></script>
+    <script src="<%= javascript_path 'mainpage/js/bootstrap.min'%>"></script>
+    <script src="<%= javascript_path 'mainpage/js/player'%>"></script>
+    <script src="<%= javascript_path 'mainpage/js/jquery.nice-select.min'%>"></script>
+    <script src="<%= javascript_path 'mainpage/js/mixitup.min'%>"></script>
+    <script src="<%= javascript_path 'mainpage/js/jquery.slicknav'%>"></script>
+    <script src="<%= javascript_path 'mainpage/js/owl.carousel.min'%>"></script>
+    <script src="<%= javascript_path 'mainpage/js/main'%>"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   </body>
 </html>
