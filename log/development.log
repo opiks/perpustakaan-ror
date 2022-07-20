@@ -4107,3 +4107,1075 @@ Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 13:59:52 +0700
   
 ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
   
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 14:06:12 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 1.3ms | Allocations: 125)
+  Rendered shared/_headeradminpage.html.erb (Duration: 7.5ms | Allocations: 837)
+  Rendered layout layouts/admin.html.erb (Duration: 38.0ms | Allocations: 8897)
+Completed 200 OK in 100ms (Views: 43.8ms | ActiveRecord: 4.6ms | Allocations: 10791)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 14:06:13 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 14:06:13 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 14:06:13 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 14:06:13 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 14:11:17 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 6.4ms | Allocations: 151)
+  Rendered shared/_headeradminpage.html.erb (Duration: 13.0ms | Allocations: 1404)
+  Rendered layout layouts/admin.html.erb (Duration: 60.1ms | Allocations: 3918)
+Completed 500 Internal Server Error in 171ms (ActiveRecord: 1.8ms | Allocations: 5683)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- BEGIN #header -->
+<div id="header" class="app-header">
+    <!-- BEGIN mobile-toggler -->
+    <div class="mobile-toggler">
+        <button type="button" class="menu-toggler" data-toggle="sidebar-mobile">
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+    <!-- END mobile-toggler -->
+
+    <!-- BEGIN brand -->
+    <div class="brand">
+        <div class="desktop-toggler">
+            <button type="button" class="menu-toggler" data-toggle="sidebar-minify">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+
+        <a href="#" class="brand-logo">
+            Perpustakaan
+        </a>
+    </div>
+    <!-- END brand -->
+
+    <!-- BEGIN menu -->
+    <div class="menu">
+        <div class="menu-search">
+        </div>
+        <div class="menu-item dropdown">
+        </div>
+        <div class="menu-item dropdown">
+            <a href="#" data-bs-toggle="dropdown" data-bs-display="static" class="menu-link">
+                <div class="menu-img online">
+                    <img src="<%= image_path('adminpage/img/user/user.jpg') %>" alt=""
+                        class="mw-100 mh-100 rounded-circle" />
+                </div>
+                <div class="menu-text">Admin</div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end me-lg-3">
+                <%= button_to "Log out <i class="fa fa-toggle-off fa-fw ms-auto text-gray-400 fs-16px"></i>", logout_path,class: "dropdown-item d-flex align-items-center", method: :delete %>
+            </div>
+        </div>
+    </div>
+    <!-- END menu -->
+</div>
+<!-- END #header -->
+
+<!-- BEGIN #sidebar -->
+<div id="sidebar" class="app-sidebar">
+    <!-- BEGIN scrollbar -->
+    <div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+        <!-- BEGIN menu -->
+        <div class="menu">
+            <div class="menu-header">Menu</div>
+            <div class="menu-item active">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-laptop"></i></span>
+                    <span class="menu-text">Dashboard</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-bookmark"></i></span>
+                    <span class="menu-text">Kategori Buku</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-location-arrow"></i></span>
+                    <span class="menu-text">Lokasi Buku</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-tags"></i></span>
+                    <span class="menu-text">Tipe Buku</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-book"></i></span>
+                    <span class="menu-text">Buku</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-tasks"></i></span>
+                    <span class="menu-text">Peminjaman</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-user-circle"></i></span>
+                    <span class="menu-text">Member</span>
+                </a>
+            </div>
+        </div>
+        <!-- END menu -->
+    </div>
+    <!-- END scrollbar -->
+
+    <!-- BEGIN mobile-sidebar-backdrop -->
+    <button class="app-sidebar-mobile-backdrop" data-dismiss="sidebar-mobile"></button>
+    <!-- END mobile-sidebar-backdrop -->
+</div>
+<!-- END #sidebar -->
+):
+1:    <!-- BEGIN #header -->
+2:    <div id="header" class="app-header">
+3:        <!-- BEGIN mobile-toggler -->
+4:        <div class="mobile-toggler">
+5:            <button type="button" class="menu-toggler" data-toggle="sidebar-mobile">
+6:                <span class="bar"></span>
+7:                <span class="bar"></span>
+8:            </button>
+9:        </div>
+10:        <!-- END mobile-toggler -->
+11:    
+12:        <!-- BEGIN brand -->
+13:        <div class="brand">
+14:            <div class="desktop-toggler">
+15:                <button type="button" class="menu-toggler" data-toggle="sidebar-minify">
+16:                    <span class="bar"></span>
+17:                    <span class="bar"></span>
+18:                </button>
+19:            </div>
+20:    
+21:            <a href="#" class="brand-logo">
+22:                Perpustakaan
+23:            </a>
+24:        </div>
+25:        <!-- END brand -->
+26:    
+27:        <!-- BEGIN menu -->
+28:        <div class="menu">
+29:            <div class="menu-search">
+30:            </div>
+31:            <div class="menu-item dropdown">
+32:            </div>
+33:            <div class="menu-item dropdown">
+34:                <a href="#" data-bs-toggle="dropdown" data-bs-display="static" class="menu-link">
+35:                    <div class="menu-img online">
+36:                        <img src="<%= image_path('adminpage/img/user/user.jpg') %>" alt=""
+37:                            class="mw-100 mh-100 rounded-circle" />
+38:                    </div>
+39:                    <div class="menu-text">Admin</div>
+40:                </a>
+41:                <div class="dropdown-menu dropdown-menu-end me-lg-3">
+42:                    <%= button_to "Log out <i class="fa fa-toggle-off fa-fw ms-auto text-gray-400 fs-16px"></i>", logout_path,class: "dropdown-item d-flex align-items-center", method: :delete %>
+43:                </div>
+44:            </div>
+45:        </div>
+46:        <!-- END menu -->
+47:    </div>
+48:    <!-- END #header -->
+49:    
+50:    <!-- BEGIN #sidebar -->
+51:    <div id="sidebar" class="app-sidebar">
+52:        <!-- BEGIN scrollbar -->
+53:        <div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+54:            <!-- BEGIN menu -->
+55:            <div class="menu">
+56:                <div class="menu-header">Menu</div>
+57:                <div class="menu-item active">
+58:                    <a href="#" class="menu-link">
+59:                        <span class="menu-icon"><i class="fa fa-laptop"></i></span>
+60:                        <span class="menu-text">Dashboard</span>
+61:                    </a>
+62:                </div>
+63:                <div class="menu-item">
+64:                    <a href="#" class="menu-link">
+65:                        <span class="menu-icon"><i class="fa fa-bookmark"></i></span>
+66:                        <span class="menu-text">Kategori Buku</span>
+67:                    </a>
+68:                </div>
+69:                <div class="menu-item">
+70:                    <a href="#" class="menu-link">
+71:                        <span class="menu-icon"><i class="fa fa-location-arrow"></i></span>
+72:                        <span class="menu-text">Lokasi Buku</span>
+73:                    </a>
+74:                </div>
+75:                <div class="menu-item">
+76:                    <a href="#" class="menu-link">
+77:                        <span class="menu-icon"><i class="fa fa-tags"></i></span>
+78:                        <span class="menu-text">Tipe Buku</span>
+79:                    </a>
+80:                </div>
+81:                <div class="menu-item">
+82:                    <a href="#" class="menu-link">
+83:                        <span class="menu-icon"><i class="fa fa-book"></i></span>
+84:                        <span class="menu-text">Buku</span>
+85:                    </a>
+86:                </div>
+87:                <div class="menu-item">
+88:                    <a href="#" class="menu-link">
+89:                        <span class="menu-icon"><i class="fa fa-tasks"></i></span>
+90:                        <span class="menu-text">Peminjaman</span>
+91:                    </a>
+92:                </div>
+93:                <div class="menu-item">
+94:                    <a href="#" class="menu-link">
+95:                        <span class="menu-icon"><i class="fa fa-user-circle"></i></span>
+96:                        <span class="menu-text">Member</span>
+97:                    </a>
+98:                </div>
+99:            </div>
+100:            <!-- END menu -->
+101:        </div>
+102:        <!-- END scrollbar -->
+103:    
+104:        <!-- BEGIN mobile-sidebar-backdrop -->
+105:        <button class="app-sidebar-mobile-backdrop" data-dismiss="sidebar-mobile"></button>
+106:        <!-- END mobile-sidebar-backdrop -->
+107:    </div>
+108:    <!-- END #sidebar -->
+  
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/admin.html.erb:22
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 14:11:55 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 0.9ms | Allocations: 149)
+  Rendered shared/_headeradminpage.html.erb (Duration: 49.2ms | Allocations: 6182)
+  Rendered layout layouts/admin.html.erb (Duration: 64.5ms | Allocations: 8694)
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 2.3ms | Allocations: 10503)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `logout_path' for #<ActionView::Base:0x0000000000df48>
+Did you mean?  loginstore_path):
+    39:                 <div class="menu-text">Admin</div>
+    40:             </a>
+    41:             <div class="dropdown-menu dropdown-menu-end me-lg-3">
+    42:                 <%= button_to "Log out", logout_path,class: "dropdown-item d-flex align-items-center", method: :delete %>
+    43:             </div>
+    44:         </div>
+    45:     </div>
+  
+app/views/shared/_headeradminpage.html.erb:42
+app/views/layouts/admin.html.erb:22
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 14:12:07 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 0.7ms | Allocations: 149)
+  Rendered shared/_headeradminpage.html.erb (Duration: 18.4ms | Allocations: 6118)
+  Rendered layout layouts/admin.html.erb (Duration: 33.5ms | Allocations: 8629)
+Completed 500 Internal Server Error in 81ms (ActiveRecord: 1.0ms | Allocations: 10450)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `logout_path' for #<ActionView::Base:0x0000000000e330>
+Did you mean?  loginstore_path):
+    39:                 <div class="menu-text">Admin</div>
+    40:             </a>
+    41:             <div class="dropdown-menu dropdown-menu-end me-lg-3">
+    42:                 <%= button_to "Log out", logout_path,class: "", method: :delete %>
+    43:             </div>
+    44:         </div>
+    45:     </div>
+  
+app/views/shared/_headeradminpage.html.erb:42
+app/views/layouts/admin.html.erb:22
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 14:15:55 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 3.0ms | Allocations: 352)
+  Rendered shared/_headeradminpage.html.erb (Duration: 5.7ms | Allocations: 1661)
+  Rendered layout layouts/admin.html.erb (Duration: 568.4ms | Allocations: 66561)
+Completed 500 Internal Server Error in 664ms (ActiveRecord: 5.0ms | Allocations: 78045)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- BEGIN #header -->
+<div id="header" class="app-header">
+    <!-- BEGIN mobile-toggler -->
+    <div class="mobile-toggler">
+        <button type="button" class="menu-toggler" data-toggle="sidebar-mobile">
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+    <!-- END mobile-toggler -->
+
+    <!-- BEGIN brand -->
+    <div class="brand">
+        <div class="desktop-toggler">
+            <button type="button" class="menu-toggler" data-toggle="sidebar-minify">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+
+        <a href="#" class="brand-logo">
+            Perpustakaan
+        </a>
+    </div>
+    <!-- END brand -->
+
+    <!-- BEGIN menu -->
+    <div class="menu">
+        <div class="menu-search">
+        </div>
+        <div class="menu-item dropdown">
+        </div>
+        <div class="menu-item dropdown">
+            <a href="#" data-bs-toggle="dropdown" data-bs-display="static" class="menu-link">
+                <div class="menu-img online">
+                    <img src="<%= image_path('adminpage/img/user/user.jpg') %>" alt=""
+                        class="mw-100 mh-100 rounded-circle" />
+                </div>
+                <div class="menu-text">Admin</div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end me-lg-3">
+                <%= button_to "Log out <i class="fa fa-toggle-off fa-fw ms-auto text-gray-400 fs-16px"></i>", logout_path,class: "dropdown-item d-flex align-items-center", method: :delete %>
+            </div>
+        </div>
+    </div>
+    <!-- END menu -->
+</div>
+<!-- END #header -->
+
+<!-- BEGIN #sidebar -->
+<div id="sidebar" class="app-sidebar">
+    <!-- BEGIN scrollbar -->
+    <div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+        <!-- BEGIN menu -->
+        <div class="menu">
+            <div class="menu-header">Menu</div>
+            <div class="menu-item active">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-laptop"></i></span>
+                    <span class="menu-text">Dashboard</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-bookmark"></i></span>
+                    <span class="menu-text">Kategori Buku</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-location-arrow"></i></span>
+                    <span class="menu-text">Lokasi Buku</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-tags"></i></span>
+                    <span class="menu-text">Tipe Buku</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-book"></i></span>
+                    <span class="menu-text">Buku</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-tasks"></i></span>
+                    <span class="menu-text">Peminjaman</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-user-circle"></i></span>
+                    <span class="menu-text">Member</span>
+                </a>
+            </div>
+        </div>
+        <!-- END menu -->
+    </div>
+    <!-- END scrollbar -->
+
+    <!-- BEGIN mobile-sidebar-backdrop -->
+    <button class="app-sidebar-mobile-backdrop" data-dismiss="sidebar-mobile"></button>
+    <!-- END mobile-sidebar-backdrop -->
+</div>
+<!-- END #sidebar -->
+):
+1:    <!-- BEGIN #header -->
+2:    <div id="header" class="app-header">
+3:        <!-- BEGIN mobile-toggler -->
+4:        <div class="mobile-toggler">
+5:            <button type="button" class="menu-toggler" data-toggle="sidebar-mobile">
+6:                <span class="bar"></span>
+7:                <span class="bar"></span>
+8:            </button>
+9:        </div>
+10:        <!-- END mobile-toggler -->
+11:    
+12:        <!-- BEGIN brand -->
+13:        <div class="brand">
+14:            <div class="desktop-toggler">
+15:                <button type="button" class="menu-toggler" data-toggle="sidebar-minify">
+16:                    <span class="bar"></span>
+17:                    <span class="bar"></span>
+18:                </button>
+19:            </div>
+20:    
+21:            <a href="#" class="brand-logo">
+22:                Perpustakaan
+23:            </a>
+24:        </div>
+25:        <!-- END brand -->
+26:    
+27:        <!-- BEGIN menu -->
+28:        <div class="menu">
+29:            <div class="menu-search">
+30:            </div>
+31:            <div class="menu-item dropdown">
+32:            </div>
+33:            <div class="menu-item dropdown">
+34:                <a href="#" data-bs-toggle="dropdown" data-bs-display="static" class="menu-link">
+35:                    <div class="menu-img online">
+36:                        <img src="<%= image_path('adminpage/img/user/user.jpg') %>" alt=""
+37:                            class="mw-100 mh-100 rounded-circle" />
+38:                    </div>
+39:                    <div class="menu-text">Admin</div>
+40:                </a>
+41:                <div class="dropdown-menu dropdown-menu-end me-lg-3">
+42:                    <%= button_to "Log out <i class="fa fa-toggle-off fa-fw ms-auto text-gray-400 fs-16px"></i>", logout_path,class: "dropdown-item d-flex align-items-center", method: :delete %>
+43:                </div>
+44:            </div>
+45:        </div>
+46:        <!-- END menu -->
+47:    </div>
+48:    <!-- END #header -->
+49:    
+50:    <!-- BEGIN #sidebar -->
+51:    <div id="sidebar" class="app-sidebar">
+52:        <!-- BEGIN scrollbar -->
+53:        <div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+54:            <!-- BEGIN menu -->
+55:            <div class="menu">
+56:                <div class="menu-header">Menu</div>
+57:                <div class="menu-item active">
+58:                    <a href="#" class="menu-link">
+59:                        <span class="menu-icon"><i class="fa fa-laptop"></i></span>
+60:                        <span class="menu-text">Dashboard</span>
+61:                    </a>
+62:                </div>
+63:                <div class="menu-item">
+64:                    <a href="#" class="menu-link">
+65:                        <span class="menu-icon"><i class="fa fa-bookmark"></i></span>
+66:                        <span class="menu-text">Kategori Buku</span>
+67:                    </a>
+68:                </div>
+69:                <div class="menu-item">
+70:                    <a href="#" class="menu-link">
+71:                        <span class="menu-icon"><i class="fa fa-location-arrow"></i></span>
+72:                        <span class="menu-text">Lokasi Buku</span>
+73:                    </a>
+74:                </div>
+75:                <div class="menu-item">
+76:                    <a href="#" class="menu-link">
+77:                        <span class="menu-icon"><i class="fa fa-tags"></i></span>
+78:                        <span class="menu-text">Tipe Buku</span>
+79:                    </a>
+80:                </div>
+81:                <div class="menu-item">
+82:                    <a href="#" class="menu-link">
+83:                        <span class="menu-icon"><i class="fa fa-book"></i></span>
+84:                        <span class="menu-text">Buku</span>
+85:                    </a>
+86:                </div>
+87:                <div class="menu-item">
+88:                    <a href="#" class="menu-link">
+89:                        <span class="menu-icon"><i class="fa fa-tasks"></i></span>
+90:                        <span class="menu-text">Peminjaman</span>
+91:                    </a>
+92:                </div>
+93:                <div class="menu-item">
+94:                    <a href="#" class="menu-link">
+95:                        <span class="menu-icon"><i class="fa fa-user-circle"></i></span>
+96:                        <span class="menu-text">Member</span>
+97:                    </a>
+98:                </div>
+99:            </div>
+100:            <!-- END menu -->
+101:        </div>
+102:        <!-- END scrollbar -->
+103:    
+104:        <!-- BEGIN mobile-sidebar-backdrop -->
+105:        <button class="app-sidebar-mobile-backdrop" data-dismiss="sidebar-mobile"></button>
+106:        <!-- END mobile-sidebar-backdrop -->
+107:    </div>
+108:    <!-- END #sidebar -->
+  
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/admin.html.erb:22
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 14:16:47 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 0.2ms | Allocations: 36)
+  Rendered shared/_headeradminpage.html.erb (Duration: 1.4ms | Allocations: 1333)
+  Rendered layout layouts/admin.html.erb (Duration: 10.7ms | Allocations: 3314)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 3.4ms | Allocations: 8473)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- BEGIN #header -->
+<div id="header" class="app-header">
+    <!-- BEGIN mobile-toggler -->
+    <div class="mobile-toggler">
+        <button type="button" class="menu-toggler" data-toggle="sidebar-mobile">
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+    <!-- END mobile-toggler -->
+
+    <!-- BEGIN brand -->
+    <div class="brand">
+        <div class="desktop-toggler">
+            <button type="button" class="menu-toggler" data-toggle="sidebar-minify">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+
+        <a href="#" class="brand-logo">
+            Perpustakaan
+        </a>
+    </div>
+    <!-- END brand -->
+
+    <!-- BEGIN menu -->
+    <div class="menu">
+        <div class="menu-search">
+        </div>
+        <div class="menu-item dropdown">
+        </div>
+        <div class="menu-item dropdown">
+            <a href="#" data-bs-toggle="dropdown" data-bs-display="static" class="menu-link">
+                <div class="menu-img online">
+                    <img src="<%= image_path('adminpage/img/user/user.jpg') %>" alt=""
+                        class="mw-100 mh-100 rounded-circle" />
+                </div>
+                <div class="menu-text">Admin</div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end me-lg-3">
+                <%= button_to "Log out <i class="fa fa-toggle-off fa-fw ms-auto text-gray-400 fs-16px"></i>", logout_path,class: "dropdown-item d-flex align-items-center", method: :delete %>
+            </div>
+        </div>
+    </div>
+    <!-- END menu -->
+</div>
+<!-- END #header -->
+
+<!-- BEGIN #sidebar -->
+<div id="sidebar" class="app-sidebar">
+    <!-- BEGIN scrollbar -->
+    <div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+        <!-- BEGIN menu -->
+        <div class="menu">
+            <div class="menu-header">Menu</div>
+            <div class="menu-item active">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-laptop"></i></span>
+                    <span class="menu-text">Dashboard</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-bookmark"></i></span>
+                    <span class="menu-text">Kategori Buku</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-location-arrow"></i></span>
+                    <span class="menu-text">Lokasi Buku</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-tags"></i></span>
+                    <span class="menu-text">Tipe Buku</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-book"></i></span>
+                    <span class="menu-text">Buku</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-tasks"></i></span>
+                    <span class="menu-text">Peminjaman</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-user-circle"></i></span>
+                    <span class="menu-text">Member</span>
+                </a>
+            </div>
+        </div>
+        <!-- END menu -->
+    </div>
+    <!-- END scrollbar -->
+
+    <!-- BEGIN mobile-sidebar-backdrop -->
+    <button class="app-sidebar-mobile-backdrop" data-dismiss="sidebar-mobile"></button>
+    <!-- END mobile-sidebar-backdrop -->
+</div>
+<!-- END #sidebar -->
+):
+1:    <!-- BEGIN #header -->
+2:    <div id="header" class="app-header">
+3:        <!-- BEGIN mobile-toggler -->
+4:        <div class="mobile-toggler">
+5:            <button type="button" class="menu-toggler" data-toggle="sidebar-mobile">
+6:                <span class="bar"></span>
+7:                <span class="bar"></span>
+8:            </button>
+9:        </div>
+10:        <!-- END mobile-toggler -->
+11:    
+12:        <!-- BEGIN brand -->
+13:        <div class="brand">
+14:            <div class="desktop-toggler">
+15:                <button type="button" class="menu-toggler" data-toggle="sidebar-minify">
+16:                    <span class="bar"></span>
+17:                    <span class="bar"></span>
+18:                </button>
+19:            </div>
+20:    
+21:            <a href="#" class="brand-logo">
+22:                Perpustakaan
+23:            </a>
+24:        </div>
+25:        <!-- END brand -->
+26:    
+27:        <!-- BEGIN menu -->
+28:        <div class="menu">
+29:            <div class="menu-search">
+30:            </div>
+31:            <div class="menu-item dropdown">
+32:            </div>
+33:            <div class="menu-item dropdown">
+34:                <a href="#" data-bs-toggle="dropdown" data-bs-display="static" class="menu-link">
+35:                    <div class="menu-img online">
+36:                        <img src="<%= image_path('adminpage/img/user/user.jpg') %>" alt=""
+37:                            class="mw-100 mh-100 rounded-circle" />
+38:                    </div>
+39:                    <div class="menu-text">Admin</div>
+40:                </a>
+41:                <div class="dropdown-menu dropdown-menu-end me-lg-3">
+42:                    <%= button_to "Log out <i class="fa fa-toggle-off fa-fw ms-auto text-gray-400 fs-16px"></i>", logout_path,class: "dropdown-item d-flex align-items-center", method: :delete %>
+43:                </div>
+44:            </div>
+45:        </div>
+46:        <!-- END menu -->
+47:    </div>
+48:    <!-- END #header -->
+49:    
+50:    <!-- BEGIN #sidebar -->
+51:    <div id="sidebar" class="app-sidebar">
+52:        <!-- BEGIN scrollbar -->
+53:        <div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+54:            <!-- BEGIN menu -->
+55:            <div class="menu">
+56:                <div class="menu-header">Menu</div>
+57:                <div class="menu-item active">
+58:                    <a href="#" class="menu-link">
+59:                        <span class="menu-icon"><i class="fa fa-laptop"></i></span>
+60:                        <span class="menu-text">Dashboard</span>
+61:                    </a>
+62:                </div>
+63:                <div class="menu-item">
+64:                    <a href="#" class="menu-link">
+65:                        <span class="menu-icon"><i class="fa fa-bookmark"></i></span>
+66:                        <span class="menu-text">Kategori Buku</span>
+67:                    </a>
+68:                </div>
+69:                <div class="menu-item">
+70:                    <a href="#" class="menu-link">
+71:                        <span class="menu-icon"><i class="fa fa-location-arrow"></i></span>
+72:                        <span class="menu-text">Lokasi Buku</span>
+73:                    </a>
+74:                </div>
+75:                <div class="menu-item">
+76:                    <a href="#" class="menu-link">
+77:                        <span class="menu-icon"><i class="fa fa-tags"></i></span>
+78:                        <span class="menu-text">Tipe Buku</span>
+79:                    </a>
+80:                </div>
+81:                <div class="menu-item">
+82:                    <a href="#" class="menu-link">
+83:                        <span class="menu-icon"><i class="fa fa-book"></i></span>
+84:                        <span class="menu-text">Buku</span>
+85:                    </a>
+86:                </div>
+87:                <div class="menu-item">
+88:                    <a href="#" class="menu-link">
+89:                        <span class="menu-icon"><i class="fa fa-tasks"></i></span>
+90:                        <span class="menu-text">Peminjaman</span>
+91:                    </a>
+92:                </div>
+93:                <div class="menu-item">
+94:                    <a href="#" class="menu-link">
+95:                        <span class="menu-icon"><i class="fa fa-user-circle"></i></span>
+96:                        <span class="menu-text">Member</span>
+97:                    </a>
+98:                </div>
+99:            </div>
+100:            <!-- END menu -->
+101:        </div>
+102:        <!-- END scrollbar -->
+103:    
+104:        <!-- BEGIN mobile-sidebar-backdrop -->
+105:        <button class="app-sidebar-mobile-backdrop" data-dismiss="sidebar-mobile"></button>
+106:        <!-- END mobile-sidebar-backdrop -->
+107:    </div>
+108:    <!-- END #sidebar -->
+  
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/admin.html.erb:22
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 14:22:42 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 1.2ms | Allocations: 149)
+  Rendered shared/_headeradminpage.html.erb (Duration: 20.6ms | Allocations: 1270)
+  Rendered layout layouts/admin.html.erb (Duration: 55.7ms | Allocations: 9421)
+Completed 200 OK in 98ms (Views: 59.0ms | ActiveRecord: 2.2ms | Allocations: 11476)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 14:22:42 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 14:22:42 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 14:22:43 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 14:22:43 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started DELETE "/logout" for ::1 at 2022-07-20 14:23:01 +0700
+Processing by LoginController#logout as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+Redirected to http://localhost:3000/
+Completed 302 Found in 44ms (ActiveRecord: 0.6ms | Allocations: 1616)
+
+
+Started GET "/" for ::1 at 2022-07-20 14:23:01 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 171)
+  Rendered shared/_headermainpage.html.erb (Duration: 1.3ms | Allocations: 128)
+  Rendered shared/_footermainpage.html.erb (Duration: 0.9ms | Allocations: 120)
+  Rendered layout layouts/application.html.erb (Duration: 90.2ms | Allocations: 19460)
+Completed 200 OK in 128ms (Views: 96.9ms | ActiveRecord: 0.0ms | Allocations: 20851)
+
+
+Started GET "/fonts/ElegantIcons.woff" for ::1 at 2022-07-20 14:23:02 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/ElegantIcons.woff"):
+  
+Started GET "/fonts/ElegantIcons.ttf" for ::1 at 2022-07-20 14:23:02 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/ElegantIcons.ttf"):
+  
+Started GET "/login" for ::1 at 2022-07-20 14:23:06 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.8ms | Allocations: 202)
+  Rendered login/index.html.erb within layouts/login (Duration: 120.4ms | Allocations: 2514)
+  Rendered layout layouts/login.html.erb (Duration: 126.6ms | Allocations: 2799)
+Completed 200 OK in 160ms (Views: 130.3ms | ActiveRecord: 0.0ms | Allocations: 3919)
+
+
+Started POST "/login/store" for ::1 at 2022-07-20 14:23:23 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"admin@admin.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@admin.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:10:in `store'
+Redirected to http://localhost:3000/admin/dashboard
+Completed 302 Found in 404ms (ActiveRecord: 0.5ms | Allocations: 1616)
+
+
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 14:23:24 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 0.2ms | Allocations: 28)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.8ms | Allocations: 872)
+  Rendered layout layouts/admin.html.erb (Duration: 33.4ms | Allocations: 8344)
+Completed 200 OK in 66ms (Views: 35.8ms | ActiveRecord: 0.4ms | Allocations: 9629)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 14:23:24 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 14:23:24 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 14:23:25 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 14:23:25 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 14:26:19 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 1.1ms | Allocations: 198)
+  Rendered shared/_headeradminpage.html.erb (Duration: 9.5ms | Allocations: 1149)
+  Rendered layout layouts/admin.html.erb (Duration: 45.7ms | Allocations: 9285)
+Completed 200 OK in 96ms (Views: 50.6ms | ActiveRecord: 1.2ms | Allocations: 10996)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 14:26:20 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 14:26:20 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 14:26:20 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 14:26:21 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 14:27:41 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 3.2ms | Allocations: 198)
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 6.9ms | Allocations: 547)
+  Rendered shared/_headeradminpage.html.erb (Duration: 4.7ms | Allocations: 1145)
+  Rendered layout layouts/admin.html.erb (Duration: 39.3ms | Allocations: 9617)
+Completed 200 OK in 84ms (Views: 42.5ms | ActiveRecord: 0.7ms | Allocations: 11389)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 14:27:42 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 14:27:42 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 14:27:42 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 14:27:42 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 14:27:46 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 1.0ms | Allocations: 125)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.3ms | Allocations: 857)
+  Rendered layout layouts/admin.html.erb (Duration: 31.8ms | Allocations: 8314)
+Completed 200 OK in 73ms (Views: 33.5ms | ActiveRecord: 0.5ms | Allocations: 9632)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 14:27:46 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 14:27:46 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 14:27:47 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 14:27:47 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  

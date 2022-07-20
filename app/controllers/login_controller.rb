@@ -1,5 +1,6 @@
 class LoginController < ApplicationController
   before_action :check_user_not_login
+  skip_before_action :check_user_not_login, only: [:logout]
   layout "login"
 
   def index
@@ -53,5 +54,11 @@ class LoginController < ApplicationController
 
   def password_params
     params.require(:user).permit(:password, :password_confirmation)
+  end
+
+  def logout
+    # set session
+    session[:user_id] = nil
+    redirect_to home_path, flash: { :message => "Logged out", :type => "success" }
   end
 end

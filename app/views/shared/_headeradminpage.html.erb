@@ -33,13 +33,13 @@
         <div class="menu-item dropdown">
             <a href="#" data-bs-toggle="dropdown" data-bs-display="static" class="menu-link">
                 <div class="menu-img online">
-                    <img src="#" alt=""
+                    <img src="<%= image_path('adminpage/img/user/user.jpg') %>" alt=""
                         class="mw-100 mh-100 rounded-circle" />
                 </div>
                 <div class="menu-text">Admin</div>
             </a>
             <div class="dropdown-menu dropdown-menu-end me-lg-3">
-               logout
+                <%= button_to "Log out", logout_path,class: "dropdown-item d-flex align-items-center", method: :delete %>
             </div>
         </div>
     </div>

@@ -12,6 +12,9 @@ Rails.application.routes.draw do
   get "forgotpassword/edit", to: "login#forgotpassedit", as: "forgotpassedit"
   patch "forgotpassword/update", to: "login#forgotpassupdate", as: "forgotpassupdate"
 
+
+  delete "logout", to: "login#logout", as: "logout"
+
   # harusnya only admin
   namespace :admin do
     get "dashboard", to: "dashboard#index", as: "dashboard"
