@@ -1,108 +1,116 @@
 <!-- BEGIN #header -->
 <div id="header" class="app-header">
-    <!-- BEGIN mobile-toggler -->
-    <div class="mobile-toggler">
-        <button type="button" class="menu-toggler" data-toggle="sidebar-mobile">
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-    </div>
-    <!-- END mobile-toggler -->
+  <!-- BEGIN mobile-toggler -->
+  <div class="mobile-toggler">
+    <button type="button" class="menu-toggler" data-toggle="sidebar-mobile">
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </div>
+  <!-- END mobile-toggler -->
 
-    <!-- BEGIN brand -->
-    <div class="brand">
-        <div class="desktop-toggler">
-            <button type="button" class="menu-toggler" data-toggle="sidebar-minify">
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-        </div>
-
-        <a href="#" class="brand-logo">
-            Perpustakaan
-        </a>
+  <!-- BEGIN brand -->
+  <div class="brand">
+    <div class="desktop-toggler">
+      <button type="button" class="menu-toggler" data-toggle="sidebar-minify">
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
     </div>
-    <!-- END brand -->
 
-    <!-- BEGIN menu -->
-    <div class="menu">
-        <div class="menu-search">
+    <%= link_to "Perpustakaan", admin_dashboard_path, class: "brand-logo" %>
+  </div>
+  <!-- END brand -->
+
+  <!-- BEGIN menu -->
+  <div class="menu">
+    <div class="menu-search"></div>
+    <div class="menu-item dropdown"></div>
+    <div class="menu-item dropdown">
+      <a
+        href="#"
+        data-bs-toggle="dropdown"
+        data-bs-display="static"
+        class="menu-link"
+      >
+        <div class="menu-img online">
+          <img
+            src="<%= image_path('adminpage/img/user/user.jpg') %>"
+            alt=""
+            class="mw-100 mh-100 rounded-circle"
+          />
         </div>
-        <div class="menu-item dropdown">
-        </div>
-        <div class="menu-item dropdown">
-            <a href="#" data-bs-toggle="dropdown" data-bs-display="static" class="menu-link">
-                <div class="menu-img online">
-                    <img src="<%= image_path('adminpage/img/user/user.jpg') %>" alt=""
-                        class="mw-100 mh-100 rounded-circle" />
-                </div>
-                <div class="menu-text">Admin</div>
-            </a>
-            <div class="dropdown-menu dropdown-menu-end me-lg-3">
-                <%= button_to "Log out", logout_path,class: "dropdown-item d-flex align-items-center", method: :delete %>
-            </div>
-        </div>
+        <div class="menu-text">Admin</div>
+      </a>
+      <div class="dropdown-menu dropdown-menu-end me-lg-3">
+        <%= button_to "Log out", logout_path,class: "dropdown-item d-flex
+        align-items-center", method: :delete %>
+      </div>
     </div>
-    <!-- END menu -->
+  </div>
+  <!-- END menu -->
 </div>
 <!-- END #header -->
 
 <!-- BEGIN #sidebar -->
 <div id="sidebar" class="app-sidebar">
-    <!-- BEGIN scrollbar -->
-    <div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
-        <!-- BEGIN menu -->
-        <div class="menu">
-            <div class="menu-header">Menu</div>
-            <div class="menu-item active">
-                <a href="#" class="menu-link">
-                    <span class="menu-icon"><i class="fa fa-laptop"></i></span>
-                    <span class="menu-text">Dashboard</span>
-                </a>
-            </div>
-            <div class="menu-item">
-                <a href="#" class="menu-link">
-                    <span class="menu-icon"><i class="fa fa-bookmark"></i></span>
-                    <span class="menu-text">Kategori Buku</span>
-                </a>
-            </div>
-            <div class="menu-item">
-                <a href="#" class="menu-link">
-                    <span class="menu-icon"><i class="fa fa-location-arrow"></i></span>
-                    <span class="menu-text">Lokasi Buku</span>
-                </a>
-            </div>
-            <div class="menu-item">
-                <a href="#" class="menu-link">
-                    <span class="menu-icon"><i class="fa fa-tags"></i></span>
-                    <span class="menu-text">Tipe Buku</span>
-                </a>
-            </div>
-            <div class="menu-item">
-                <a href="#" class="menu-link">
-                    <span class="menu-icon"><i class="fa fa-book"></i></span>
-                    <span class="menu-text">Buku</span>
-                </a>
-            </div>
-            <div class="menu-item">
-                <a href="#" class="menu-link">
-                    <span class="menu-icon"><i class="fa fa-tasks"></i></span>
-                    <span class="menu-text">Peminjaman</span>
-                </a>
-            </div>
-            <div class="menu-item">
-                <a href="#" class="menu-link">
-                    <span class="menu-icon"><i class="fa fa-user-circle"></i></span>
-                    <span class="menu-text">Member</span>
-                </a>
-            </div>
-        </div>
-        <!-- END menu -->
+  <!-- BEGIN scrollbar -->
+  <div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+    <!-- BEGIN menu -->
+    <div class="menu">
+      <div class="menu-header">Menu</div>
+      <div class="menu-item active">
+        <a href="<%= logout_path %>" class="menu-link">
+          <span class="menu-icon"><i class="fa fa-laptop"></i></span>
+          <span class="menu-text">Dashboard</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="<%= admin_genre_index_path %>" class="menu-link">
+          <span class="menu-icon"><i class="fa fa-bookmark"></i></span>
+          <span class="menu-text">Kategori Buku</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#" class="menu-link">
+          <span class="menu-icon"><i class="fa fa-location-arrow"></i></span>
+          <span class="menu-text">Lokasi Buku</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#" class="menu-link">
+          <span class="menu-icon"><i class="fa fa-tags"></i></span>
+          <span class="menu-text">Tipe Buku</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#" class="menu-link">
+          <span class="menu-icon"><i class="fa fa-book"></i></span>
+          <span class="menu-text">Buku</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#" class="menu-link">
+          <span class="menu-icon"><i class="fa fa-tasks"></i></span>
+          <span class="menu-text">Peminjaman</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#" class="menu-link">
+          <span class="menu-icon"><i class="fa fa-user-circle"></i></span>
+          <span class="menu-text">Member</span>
+        </a>
+      </div>
     </div>
-    <!-- END scrollbar -->
+    <!-- END menu -->
+  </div>
+  <!-- END scrollbar -->
 
-    <!-- BEGIN mobile-sidebar-backdrop -->
-    <button class="app-sidebar-mobile-backdrop" data-dismiss="sidebar-mobile"></button>
-    <!-- END mobile-sidebar-backdrop -->
+  <!-- BEGIN mobile-sidebar-backdrop -->
+  <button
+    class="app-sidebar-mobile-backdrop"
+    data-dismiss="sidebar-mobile"
+  ></button>
+  <!-- END mobile-sidebar-backdrop -->
 </div>
 <!-- END #sidebar -->

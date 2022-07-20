@@ -1,0 +1,28 @@
+<% content_for :title, "Genre Buku" %>
+<h1 class="page-header mb-3">List Genre Buku</h1>
+<div class="row">
+  <div class="col-xl-12">
+    <div class="card">
+      <div class="card-header">
+        <a href="<%= admin_genre_add_path %>" class="btn btn-primary"
+          ><i class="fa fa-plus"></i> Tambah Kategori Buku</a>
+      </div>
+      <div class="card-body">
+        <%= render partial: "shared/alertmainpage" %>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nama Kategori Buku</th>
+                <th scope="col">Aksi</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END row -->

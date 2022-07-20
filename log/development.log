@@ -5179,3 +5179,3244 @@ Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 14:27:47 +0700
   
 ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
   
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 14:29:35 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 1.0ms | Allocations: 125)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.4ms | Allocations: 857)
+  Rendered layout layouts/admin.html.erb (Duration: 40.0ms | Allocations: 8314)
+Completed 200 OK in 75ms (Views: 41.6ms | ActiveRecord: 0.7ms | Allocations: 9545)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 14:29:36 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 14:29:36 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 14:29:36 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 14:29:36 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT GET_LOCK('2023920071367314085', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateGenres (20220720073906)
+  [1m[35m (67.6ms)[0m  [1m[35mCREATE TABLE `genres` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220720073906')[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT RELEASE_LOCK('2023920071367314085')[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 14:45:36 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.7ms | Allocations: 217)
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 11.5ms | Allocations: 837)
+  Rendered shared/_headeradminpage.html.erb (Duration: 5.3ms | Allocations: 1270)
+  Rendered layout layouts/admin.html.erb (Duration: 516.8ms | Allocations: 72260)
+Completed 200 OK in 660ms (Views: 533.7ms | ActiveRecord: 6.9ms | Allocations: 83788)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 14:45:38 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 14:45:38 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 14:45:38 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 14:45:38 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 14:47:58 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.9ms | Allocations: 188)
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 4.6ms | Allocations: 535)
+  Rendered shared/_headeradminpage.html.erb (Duration: 16.0ms | Allocations: 5594)
+  Rendered layout layouts/admin.html.erb (Duration: 32.3ms | Allocations: 8482)
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 0.6ms | Allocations: 10224)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `dashboard_path' for #<ActionView::Base:0x0000000000bfb8>):
+    18:             </button>
+    19:         </div>
+    20:         
+    21:         <%= link_to "Perpustakaan", dashboard_path, class: "brand-logo" %>
+    22:     </div>
+    23:     <!-- END brand -->
+    24: 
+  
+app/views/shared/_headeradminpage.html.erb:21
+app/views/layouts/admin.html.erb:22
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 14:48:14 +0700
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 14:48:14 +0700
+Processing by Admin::DashboardController#index as HTML
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.7ms | Allocations: 211)
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 3.3ms | Allocations: 599)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.9ms | Allocations: 1238)
+  Rendered layout layouts/admin.html.erb (Duration: 37.7ms | Allocations: 9976)
+Completed 200 OK in 91ms (Views: 42.3ms | ActiveRecord: 0.5ms | Allocations: 12416)
+
+
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 2.1ms | Allocations: 125)
+  Rendered shared/_headeradminpage.html.erb (Duration: 2.9ms | Allocations: 896)
+  Rendered layout layouts/admin.html.erb (Duration: 31.8ms | Allocations: 8352)
+Completed 200 OK in 100ms (Views: 34.8ms | ActiveRecord: 0.7ms | Allocations: 21971)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 14:48:15 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 14:48:15 +0700
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 14:48:15 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 14:48:15 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 14:54:02 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 1.7ms | Allocations: 188)
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 4.8ms | Allocations: 535)
+  Rendered shared/_headeradminpage.html.erb (Duration: 5.2ms | Allocations: 1281)
+  Rendered layout layouts/admin.html.erb (Duration: 35.5ms | Allocations: 9741)
+Completed 200 OK in 88ms (Views: 38.6ms | ActiveRecord: 4.7ms | Allocations: 11629)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 14:54:02 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 14:54:02 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 14:54:02 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 14:54:03 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 14:54:53 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 2.1ms | Allocations: 188)
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 5.2ms | Allocations: 535)
+  Rendered shared/_headeradminpage.html.erb (Duration: 7.6ms | Allocations: 1461)
+  Rendered layout layouts/admin.html.erb (Duration: 23.7ms | Allocations: 4348)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.6ms | Allocations: 6091)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- BEGIN #header -->
+<div id="header" class="app-header">
+  <!-- BEGIN mobile-toggler -->
+  <div class="mobile-toggler">
+    <button type="button" class="menu-toggler" data-toggle="sidebar-mobile">
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </div>
+  <!-- END mobile-toggler -->
+
+  <!-- BEGIN brand -->
+  <div class="brand">
+    <div class="desktop-toggler">
+      <button type="button" class="menu-toggler" data-toggle="sidebar-minify">
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+    <%= link_to "Perpustakaan", admin_dashboard_path, class: "brand-logo" %>
+  </div>
+  <!-- END brand -->
+
+  <!-- BEGIN menu -->
+  <div class="menu">
+    <div class="menu-search"></div>
+    <div class="menu-item dropdown"></div>
+    <div class="menu-item dropdown">
+      <a
+        href="#"
+        data-bs-toggle="dropdown"
+        data-bs-display="static"
+        class="menu-link"
+      >
+        <div class="menu-img online">
+          <img
+            src="<%= image_path('adminpage/img/user/user.jpg') %>"
+            alt=""
+            class="mw-100 mh-100 rounded-circle"
+          />
+        </div>
+        <div class="menu-text">Admin</div>
+      </a>
+      <div class="dropdown-menu dropdown-menu-end me-lg-3">
+        <%= button_to "Log out", logout_path,class: "dropdown-item d-flex
+        align-items-center", method: :delete %>
+      </div>
+    </div>
+  </div>
+  <!-- END menu -->
+</div>
+<!-- END #header -->
+
+<!-- BEGIN #sidebar -->
+<div id="sidebar" class="app-sidebar">
+  <!-- BEGIN scrollbar -->
+  <div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+    <!-- BEGIN menu -->
+    <div class="menu">
+      <div class="menu-header">Menu</div>
+      <div class="menu-item active">
+        <%= link_to ("<span class="menu-icon"><i class="fa fa-laptop"></i></span
+        ><span class="menu-text">Dashboard</span>").html_safe, admin_genre_path,
+        class: "menu-link" %>
+      </div>
+      <div class="menu-item">
+        <a href="#" class="menu-link">
+          <span class="menu-icon"><i class="fa fa-bookmark"></i></span>
+          <span class="menu-text">Kategori Buku</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#" class="menu-link">
+          <span class="menu-icon"><i class="fa fa-location-arrow"></i></span>
+          <span class="menu-text">Lokasi Buku</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#" class="menu-link">
+          <span class="menu-icon"><i class="fa fa-tags"></i></span>
+          <span class="menu-text">Tipe Buku</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#" class="menu-link">
+          <span class="menu-icon"><i class="fa fa-book"></i></span>
+          <span class="menu-text">Buku</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#" class="menu-link">
+          <span class="menu-icon"><i class="fa fa-tasks"></i></span>
+          <span class="menu-text">Peminjaman</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#" class="menu-link">
+          <span class="menu-icon"><i class="fa fa-user-circle"></i></span>
+          <span class="menu-text">Member</span>
+        </a>
+      </div>
+    </div>
+    <!-- END menu -->
+  </div>
+  <!-- END scrollbar -->
+
+  <!-- BEGIN mobile-sidebar-backdrop -->
+  <button
+    class="app-sidebar-mobile-backdrop"
+    data-dismiss="sidebar-mobile"
+  ></button>
+  <!-- END mobile-sidebar-backdrop -->
+</div>
+<!-- END #sidebar -->
+
+):
+1:    <!-- BEGIN #header -->
+2:    <div id="header" class="app-header">
+3:      <!-- BEGIN mobile-toggler -->
+4:      <div class="mobile-toggler">
+5:        <button type="button" class="menu-toggler" data-toggle="sidebar-mobile">
+6:          <span class="bar"></span>
+7:          <span class="bar"></span>
+8:        </button>
+9:      </div>
+10:      <!-- END mobile-toggler -->
+11:    
+12:      <!-- BEGIN brand -->
+13:      <div class="brand">
+14:        <div class="desktop-toggler">
+15:          <button type="button" class="menu-toggler" data-toggle="sidebar-minify">
+16:            <span class="bar"></span>
+17:            <span class="bar"></span>
+18:          </button>
+19:        </div>
+20:    
+21:        <%= link_to "Perpustakaan", admin_dashboard_path, class: "brand-logo" %>
+22:      </div>
+23:      <!-- END brand -->
+24:    
+25:      <!-- BEGIN menu -->
+26:      <div class="menu">
+27:        <div class="menu-search"></div>
+28:        <div class="menu-item dropdown"></div>
+29:        <div class="menu-item dropdown">
+30:          <a
+31:            href="#"
+32:            data-bs-toggle="dropdown"
+33:            data-bs-display="static"
+34:            class="menu-link"
+35:          >
+36:            <div class="menu-img online">
+37:              <img
+38:                src="<%= image_path('adminpage/img/user/user.jpg') %>"
+39:                alt=""
+40:                class="mw-100 mh-100 rounded-circle"
+41:              />
+42:            </div>
+43:            <div class="menu-text">Admin</div>
+44:          </a>
+45:          <div class="dropdown-menu dropdown-menu-end me-lg-3">
+46:            <%= button_to "Log out", logout_path,class: "dropdown-item d-flex
+47:            align-items-center", method: :delete %>
+48:          </div>
+49:        </div>
+50:      </div>
+51:      <!-- END menu -->
+52:    </div>
+53:    <!-- END #header -->
+54:    
+55:    <!-- BEGIN #sidebar -->
+56:    <div id="sidebar" class="app-sidebar">
+57:      <!-- BEGIN scrollbar -->
+58:      <div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+59:        <!-- BEGIN menu -->
+60:        <div class="menu">
+61:          <div class="menu-header">Menu</div>
+62:          <div class="menu-item active">
+63:            <%= link_to ("<span class="menu-icon"><i class="fa fa-laptop"></i></span
+64:            ><span class="menu-text">Dashboard</span>").html_safe, admin_genre_path,
+65:            class: "menu-link" %>
+66:          </div>
+67:          <div class="menu-item">
+68:            <a href="#" class="menu-link">
+69:              <span class="menu-icon"><i class="fa fa-bookmark"></i></span>
+70:              <span class="menu-text">Kategori Buku</span>
+71:            </a>
+72:          </div>
+73:          <div class="menu-item">
+74:            <a href="#" class="menu-link">
+75:              <span class="menu-icon"><i class="fa fa-location-arrow"></i></span>
+76:              <span class="menu-text">Lokasi Buku</span>
+77:            </a>
+78:          </div>
+79:          <div class="menu-item">
+80:            <a href="#" class="menu-link">
+81:              <span class="menu-icon"><i class="fa fa-tags"></i></span>
+82:              <span class="menu-text">Tipe Buku</span>
+83:            </a>
+84:          </div>
+85:          <div class="menu-item">
+86:            <a href="#" class="menu-link">
+87:              <span class="menu-icon"><i class="fa fa-book"></i></span>
+88:              <span class="menu-text">Buku</span>
+89:            </a>
+90:          </div>
+91:          <div class="menu-item">
+92:            <a href="#" class="menu-link">
+93:              <span class="menu-icon"><i class="fa fa-tasks"></i></span>
+94:              <span class="menu-text">Peminjaman</span>
+95:            </a>
+96:          </div>
+97:          <div class="menu-item">
+98:            <a href="#" class="menu-link">
+99:              <span class="menu-icon"><i class="fa fa-user-circle"></i></span>
+100:              <span class="menu-text">Member</span>
+101:            </a>
+102:          </div>
+103:        </div>
+104:        <!-- END menu -->
+105:      </div>
+106:      <!-- END scrollbar -->
+107:    
+108:      <!-- BEGIN mobile-sidebar-backdrop -->
+109:      <button
+110:        class="app-sidebar-mobile-backdrop"
+111:        data-dismiss="sidebar-mobile"
+112:      ></button>
+113:      <!-- END mobile-sidebar-backdrop -->
+114:    </div>
+115:    <!-- END #sidebar -->
+  
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:64: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:64: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:65: syntax error, unexpected label
+app/views/shared/_headeradminpage.html.erb:65: syntax error, unexpected ')', expecting `end'
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:64: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:64: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:65: syntax error, unexpected label
+app/views/shared/_headeradminpage.html.erb:65: syntax error, unexpected ')', expecting `end'
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:64: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:64: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:65: syntax error, unexpected label
+app/views/shared/_headeradminpage.html.erb:65: syntax error, unexpected ')', expecting `end'
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:64: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:64: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:65: syntax error, unexpected label
+app/views/shared/_headeradminpage.html.erb:65: syntax error, unexpected ')', expecting `end'
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:64: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:64: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:65: syntax error, unexpected label
+app/views/shared/_headeradminpage.html.erb:65: syntax error, unexpected ')', expecting `end'
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:64: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:64: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:65: syntax error, unexpected label
+app/views/shared/_headeradminpage.html.erb:65: syntax error, unexpected ')', expecting `end'
+app/views/layouts/admin.html.erb:22
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 14:55:03 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.7ms | Allocations: 188)
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 3.9ms | Allocations: 535)
+  Rendered shared/_headeradminpage.html.erb (Duration: 1.6ms | Allocations: 1432)
+  Rendered layout layouts/admin.html.erb (Duration: 18.6ms | Allocations: 4319)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.4ms | Allocations: 6105)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- BEGIN #header -->
+<div id="header" class="app-header">
+    <!-- BEGIN mobile-toggler -->
+    <div class="mobile-toggler">
+        <button type="button" class="menu-toggler" data-toggle="sidebar-mobile">
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+    <!-- END mobile-toggler -->
+
+    <!-- BEGIN brand -->
+    <div class="brand">
+        <div class="desktop-toggler">
+            <button type="button" class="menu-toggler" data-toggle="sidebar-minify">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+
+        <%= link_to "Perpustakaan", admin_dashboard_path, class: "brand-logo" %>
+    </div>
+    <!-- END brand -->
+
+    <!-- BEGIN menu -->
+    <div class="menu">
+        <div class="menu-search">
+        </div>
+        <div class="menu-item dropdown">
+        </div>
+        <div class="menu-item dropdown">
+            <a href="#" data-bs-toggle="dropdown" data-bs-display="static" class="menu-link">
+                <div class="menu-img online">
+                    <img src="<%= image_path('adminpage/img/user/user.jpg') %>" alt=""
+                        class="mw-100 mh-100 rounded-circle" />
+                </div>
+                <div class="menu-text">Admin</div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end me-lg-3">
+                <%= button_to "Log out", logout_path,class: "dropdown-item d-flex align-items-center", method: :delete %>
+            </div>
+        </div>
+    </div>
+    <!-- END menu -->
+</div>
+<!-- END #header -->
+
+<!-- BEGIN #sidebar -->
+<div id="sidebar" class="app-sidebar">
+    <!-- BEGIN scrollbar -->
+    <div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+        <!-- BEGIN menu -->
+        <div class="menu">
+            <div class="menu-header">Menu</div>
+            <div class="menu-item active">
+                <%= link_to  ("<span class="menu-icon"><i class="fa fa-laptop"></i></span><span class="menu-text">Dashboard</span>").html_safe, admin_genre_path, class: "menu-link" %>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-bookmark"></i></span>
+                    <span class="menu-text">Kategori Buku</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-location-arrow"></i></span>
+                    <span class="menu-text">Lokasi Buku</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-tags"></i></span>
+                    <span class="menu-text">Tipe Buku</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-book"></i></span>
+                    <span class="menu-text">Buku</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-tasks"></i></span>
+                    <span class="menu-text">Peminjaman</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-user-circle"></i></span>
+                    <span class="menu-text">Member</span>
+                </a>
+            </div>
+        </div>
+        <!-- END menu -->
+    </div>
+    <!-- END scrollbar -->
+
+    <!-- BEGIN mobile-sidebar-backdrop -->
+    <button class="app-sidebar-mobile-backdrop" data-dismiss="sidebar-mobile"></button>
+    <!-- END mobile-sidebar-backdrop -->
+</div>
+<!-- END #sidebar -->
+):
+1:    <!-- BEGIN #header -->
+2:    <div id="header" class="app-header">
+3:        <!-- BEGIN mobile-toggler -->
+4:        <div class="mobile-toggler">
+5:            <button type="button" class="menu-toggler" data-toggle="sidebar-mobile">
+6:                <span class="bar"></span>
+7:                <span class="bar"></span>
+8:            </button>
+9:        </div>
+10:        <!-- END mobile-toggler -->
+11:    
+12:        <!-- BEGIN brand -->
+13:        <div class="brand">
+14:            <div class="desktop-toggler">
+15:                <button type="button" class="menu-toggler" data-toggle="sidebar-minify">
+16:                    <span class="bar"></span>
+17:                    <span class="bar"></span>
+18:                </button>
+19:            </div>
+20:    
+21:            <%= link_to "Perpustakaan", admin_dashboard_path, class: "brand-logo" %>
+22:        </div>
+23:        <!-- END brand -->
+24:    
+25:        <!-- BEGIN menu -->
+26:        <div class="menu">
+27:            <div class="menu-search">
+28:            </div>
+29:            <div class="menu-item dropdown">
+30:            </div>
+31:            <div class="menu-item dropdown">
+32:                <a href="#" data-bs-toggle="dropdown" data-bs-display="static" class="menu-link">
+33:                    <div class="menu-img online">
+34:                        <img src="<%= image_path('adminpage/img/user/user.jpg') %>" alt=""
+35:                            class="mw-100 mh-100 rounded-circle" />
+36:                    </div>
+37:                    <div class="menu-text">Admin</div>
+38:                </a>
+39:                <div class="dropdown-menu dropdown-menu-end me-lg-3">
+40:                    <%= button_to "Log out", logout_path,class: "dropdown-item d-flex align-items-center", method: :delete %>
+41:                </div>
+42:            </div>
+43:        </div>
+44:        <!-- END menu -->
+45:    </div>
+46:    <!-- END #header -->
+47:    
+48:    <!-- BEGIN #sidebar -->
+49:    <div id="sidebar" class="app-sidebar">
+50:        <!-- BEGIN scrollbar -->
+51:        <div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+52:            <!-- BEGIN menu -->
+53:            <div class="menu">
+54:                <div class="menu-header">Menu</div>
+55:                <div class="menu-item active">
+56:                    <%= link_to  ("<span class="menu-icon"><i class="fa fa-laptop"></i></span><span class="menu-text">Dashboard</span>").html_safe, admin_genre_path, class: "menu-link" %>
+57:                </div>
+58:                <div class="menu-item">
+59:                    <a href="#" class="menu-link">
+60:                        <span class="menu-icon"><i class="fa fa-bookmark"></i></span>
+61:                        <span class="menu-text">Kategori Buku</span>
+62:                    </a>
+63:                </div>
+64:                <div class="menu-item">
+65:                    <a href="#" class="menu-link">
+66:                        <span class="menu-icon"><i class="fa fa-location-arrow"></i></span>
+67:                        <span class="menu-text">Lokasi Buku</span>
+68:                    </a>
+69:                </div>
+70:                <div class="menu-item">
+71:                    <a href="#" class="menu-link">
+72:                        <span class="menu-icon"><i class="fa fa-tags"></i></span>
+73:                        <span class="menu-text">Tipe Buku</span>
+74:                    </a>
+75:                </div>
+76:                <div class="menu-item">
+77:                    <a href="#" class="menu-link">
+78:                        <span class="menu-icon"><i class="fa fa-book"></i></span>
+79:                        <span class="menu-text">Buku</span>
+80:                    </a>
+81:                </div>
+82:                <div class="menu-item">
+83:                    <a href="#" class="menu-link">
+84:                        <span class="menu-icon"><i class="fa fa-tasks"></i></span>
+85:                        <span class="menu-text">Peminjaman</span>
+86:                    </a>
+87:                </div>
+88:                <div class="menu-item">
+89:                    <a href="#" class="menu-link">
+90:                        <span class="menu-icon"><i class="fa fa-user-circle"></i></span>
+91:                        <span class="menu-text">Member</span>
+92:                    </a>
+93:                </div>
+94:            </div>
+95:            <!-- END menu -->
+96:        </div>
+97:        <!-- END scrollbar -->
+98:    
+99:        <!-- BEGIN mobile-sidebar-backdrop -->
+100:        <button class="app-sidebar-mobile-backdrop" data-dismiss="sidebar-mobile"></button>
+101:        <!-- END mobile-sidebar-backdrop -->
+102:    </div>
+103:    <!-- END #sidebar -->
+  
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected label
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected ')', expecting `end'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected label
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected ')', expecting `end'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected label
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected ')', expecting `end'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected label
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected ')', expecting `end'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected label
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected ')', expecting `end'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected label
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected ')', expecting `end'
+app/views/layouts/admin.html.erb:22
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 14:55:27 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.8ms | Allocations: 188)
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 4.5ms | Allocations: 535)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.8ms | Allocations: 1429)
+  Rendered layout layouts/admin.html.erb (Duration: 29.6ms | Allocations: 4316)
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 0.8ms | Allocations: 6102)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- BEGIN #header -->
+<div id="header" class="app-header">
+    <!-- BEGIN mobile-toggler -->
+    <div class="mobile-toggler">
+        <button type="button" class="menu-toggler" data-toggle="sidebar-mobile">
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+    <!-- END mobile-toggler -->
+
+    <!-- BEGIN brand -->
+    <div class="brand">
+        <div class="desktop-toggler">
+            <button type="button" class="menu-toggler" data-toggle="sidebar-minify">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+
+        <%= link_to "Perpustakaan", admin_dashboard_path, class: "brand-logo" %>
+    </div>
+    <!-- END brand -->
+
+    <!-- BEGIN menu -->
+    <div class="menu">
+        <div class="menu-search">
+        </div>
+        <div class="menu-item dropdown">
+        </div>
+        <div class="menu-item dropdown">
+            <a href="#" data-bs-toggle="dropdown" data-bs-display="static" class="menu-link">
+                <div class="menu-img online">
+                    <img src="<%= image_path('adminpage/img/user/user.jpg') %>" alt=""
+                        class="mw-100 mh-100 rounded-circle" />
+                </div>
+                <div class="menu-text">Admin</div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end me-lg-3">
+                <%= button_to "Log out", logout_path,class: "dropdown-item d-flex align-items-center", method: :delete %>
+            </div>
+        </div>
+    </div>
+    <!-- END menu -->
+</div>
+<!-- END #header -->
+
+<!-- BEGIN #sidebar -->
+<div id="sidebar" class="app-sidebar">
+    <!-- BEGIN scrollbar -->
+    <div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+        <!-- BEGIN menu -->
+        <div class="menu">
+            <div class="menu-header">Menu</div>
+            <div class="menu-item active">
+                <%= link_to  ("<span class="menu-icon"><i class="fa fa-laptop"></i></span>").html_safe, admin_genre_path, class: "menu-link" %>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-bookmark"></i></span>
+                    <span class="menu-text">Kategori Buku</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-location-arrow"></i></span>
+                    <span class="menu-text">Lokasi Buku</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-tags"></i></span>
+                    <span class="menu-text">Tipe Buku</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-book"></i></span>
+                    <span class="menu-text">Buku</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-tasks"></i></span>
+                    <span class="menu-text">Peminjaman</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-user-circle"></i></span>
+                    <span class="menu-text">Member</span>
+                </a>
+            </div>
+        </div>
+        <!-- END menu -->
+    </div>
+    <!-- END scrollbar -->
+
+    <!-- BEGIN mobile-sidebar-backdrop -->
+    <button class="app-sidebar-mobile-backdrop" data-dismiss="sidebar-mobile"></button>
+    <!-- END mobile-sidebar-backdrop -->
+</div>
+<!-- END #sidebar -->
+):
+1:    <!-- BEGIN #header -->
+2:    <div id="header" class="app-header">
+3:        <!-- BEGIN mobile-toggler -->
+4:        <div class="mobile-toggler">
+5:            <button type="button" class="menu-toggler" data-toggle="sidebar-mobile">
+6:                <span class="bar"></span>
+7:                <span class="bar"></span>
+8:            </button>
+9:        </div>
+10:        <!-- END mobile-toggler -->
+11:    
+12:        <!-- BEGIN brand -->
+13:        <div class="brand">
+14:            <div class="desktop-toggler">
+15:                <button type="button" class="menu-toggler" data-toggle="sidebar-minify">
+16:                    <span class="bar"></span>
+17:                    <span class="bar"></span>
+18:                </button>
+19:            </div>
+20:    
+21:            <%= link_to "Perpustakaan", admin_dashboard_path, class: "brand-logo" %>
+22:        </div>
+23:        <!-- END brand -->
+24:    
+25:        <!-- BEGIN menu -->
+26:        <div class="menu">
+27:            <div class="menu-search">
+28:            </div>
+29:            <div class="menu-item dropdown">
+30:            </div>
+31:            <div class="menu-item dropdown">
+32:                <a href="#" data-bs-toggle="dropdown" data-bs-display="static" class="menu-link">
+33:                    <div class="menu-img online">
+34:                        <img src="<%= image_path('adminpage/img/user/user.jpg') %>" alt=""
+35:                            class="mw-100 mh-100 rounded-circle" />
+36:                    </div>
+37:                    <div class="menu-text">Admin</div>
+38:                </a>
+39:                <div class="dropdown-menu dropdown-menu-end me-lg-3">
+40:                    <%= button_to "Log out", logout_path,class: "dropdown-item d-flex align-items-center", method: :delete %>
+41:                </div>
+42:            </div>
+43:        </div>
+44:        <!-- END menu -->
+45:    </div>
+46:    <!-- END #header -->
+47:    
+48:    <!-- BEGIN #sidebar -->
+49:    <div id="sidebar" class="app-sidebar">
+50:        <!-- BEGIN scrollbar -->
+51:        <div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+52:            <!-- BEGIN menu -->
+53:            <div class="menu">
+54:                <div class="menu-header">Menu</div>
+55:                <div class="menu-item active">
+56:                    <%= link_to  ("<span class="menu-icon"><i class="fa fa-laptop"></i></span>").html_safe, admin_genre_path, class: "menu-link" %>
+57:                </div>
+58:                <div class="menu-item">
+59:                    <a href="#" class="menu-link">
+60:                        <span class="menu-icon"><i class="fa fa-bookmark"></i></span>
+61:                        <span class="menu-text">Kategori Buku</span>
+62:                    </a>
+63:                </div>
+64:                <div class="menu-item">
+65:                    <a href="#" class="menu-link">
+66:                        <span class="menu-icon"><i class="fa fa-location-arrow"></i></span>
+67:                        <span class="menu-text">Lokasi Buku</span>
+68:                    </a>
+69:                </div>
+70:                <div class="menu-item">
+71:                    <a href="#" class="menu-link">
+72:                        <span class="menu-icon"><i class="fa fa-tags"></i></span>
+73:                        <span class="menu-text">Tipe Buku</span>
+74:                    </a>
+75:                </div>
+76:                <div class="menu-item">
+77:                    <a href="#" class="menu-link">
+78:                        <span class="menu-icon"><i class="fa fa-book"></i></span>
+79:                        <span class="menu-text">Buku</span>
+80:                    </a>
+81:                </div>
+82:                <div class="menu-item">
+83:                    <a href="#" class="menu-link">
+84:                        <span class="menu-icon"><i class="fa fa-tasks"></i></span>
+85:                        <span class="menu-text">Peminjaman</span>
+86:                    </a>
+87:                </div>
+88:                <div class="menu-item">
+89:                    <a href="#" class="menu-link">
+90:                        <span class="menu-icon"><i class="fa fa-user-circle"></i></span>
+91:                        <span class="menu-text">Member</span>
+92:                    </a>
+93:                </div>
+94:            </div>
+95:            <!-- END menu -->
+96:        </div>
+97:        <!-- END scrollbar -->
+98:    
+99:        <!-- BEGIN mobile-sidebar-backdrop -->
+100:        <button class="app-sidebar-mobile-backdrop" data-dismiss="sidebar-mobile"></button>
+101:        <!-- END mobile-sidebar-backdrop -->
+102:    </div>
+103:    <!-- END #sidebar -->
+  
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected label
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected ')', expecting `end'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected label
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected ')', expecting `end'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected label
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected ')', expecting `end'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected label
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected ')', expecting `end'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected label
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected ')', expecting `end'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected local variable or method, expecting ')'
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected label
+app/views/shared/_headeradminpage.html.erb:56: syntax error, unexpected ')', expecting `end'
+app/views/layouts/admin.html.erb:22
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 14:55:46 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.8ms | Allocations: 188)
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 5.5ms | Allocations: 535)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.5ms | Allocations: 1275)
+  Rendered layout layouts/admin.html.erb (Duration: 37.6ms | Allocations: 9734)
+Completed 200 OK in 76ms (Views: 40.7ms | ActiveRecord: 0.5ms | Allocations: 11549)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 14:55:47 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 14:55:47 +0700
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 14:55:47 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 14:55:47 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 14:56:52 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 8.3ms | Allocations: 188)
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 27.2ms | Allocations: 535)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.6ms | Allocations: 1451)
+  Rendered layout layouts/admin.html.erb (Duration: 99.9ms | Allocations: 4338)
+Completed 500 Internal Server Error in 142ms (ActiveRecord: 0.9ms | Allocations: 6065)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- BEGIN #header -->
+<div id="header" class="app-header">
+  <!-- BEGIN mobile-toggler -->
+  <div class="mobile-toggler">
+    <button type="button" class="menu-toggler" data-toggle="sidebar-mobile">
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </div>
+  <!-- END mobile-toggler -->
+
+  <!-- BEGIN brand -->
+  <div class="brand">
+    <div class="desktop-toggler">
+      <button type="button" class="menu-toggler" data-toggle="sidebar-minify">
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+    <%= link_to "Perpustakaan", admin_dashboard_path, class: "brand-logo" %>
+  </div>
+  <!-- END brand -->
+
+  <!-- BEGIN menu -->
+  <div class="menu">
+    <div class="menu-search"></div>
+    <div class="menu-item dropdown"></div>
+    <div class="menu-item dropdown">
+      <a
+        href="#"
+        data-bs-toggle="dropdown"
+        data-bs-display="static"
+        class="menu-link"
+      >
+        <div class="menu-img online">
+          <img
+            src="<%= image_path('adminpage/img/user/user.jpg') %>"
+            alt=""
+            class="mw-100 mh-100 rounded-circle"
+          />
+        </div>
+        <div class="menu-text">Admin</div>
+      </a>
+      <div class="dropdown-menu dropdown-menu-end me-lg-3">
+        <%= button_to "Log out", logout_path,class: "dropdown-item d-flex
+        align-items-center", method: :delete %>
+      </div>
+    </div>
+  </div>
+  <!-- END menu -->
+</div>
+<!-- END #header -->
+
+<!-- BEGIN #sidebar -->
+<div id="sidebar" class="app-sidebar">
+  <!-- BEGIN scrollbar -->
+  <div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+    <!-- BEGIN menu -->
+    <div class="menu">
+      <div class="menu-header">Menu</div>
+      <div class="menu-item active">
+        <%= link_to , admin_genre_path, class: "menu-link" do %> This is a
+        <span class="menu-icon"><i class="fa fa-laptop"></i></span>
+        <span class="menu-text">Dashboard</span>
+        <% end %>
+      </div>
+      <div class="menu-item">
+        <a href="#" class="menu-link">
+          <span class="menu-icon"><i class="fa fa-bookmark"></i></span>
+          <span class="menu-text">Kategori Buku</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#" class="menu-link">
+          <span class="menu-icon"><i class="fa fa-location-arrow"></i></span>
+          <span class="menu-text">Lokasi Buku</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#" class="menu-link">
+          <span class="menu-icon"><i class="fa fa-tags"></i></span>
+          <span class="menu-text">Tipe Buku</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#" class="menu-link">
+          <span class="menu-icon"><i class="fa fa-book"></i></span>
+          <span class="menu-text">Buku</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#" class="menu-link">
+          <span class="menu-icon"><i class="fa fa-tasks"></i></span>
+          <span class="menu-text">Peminjaman</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#" class="menu-link">
+          <span class="menu-icon"><i class="fa fa-user-circle"></i></span>
+          <span class="menu-text">Member</span>
+        </a>
+      </div>
+    </div>
+    <!-- END menu -->
+  </div>
+  <!-- END scrollbar -->
+
+  <!-- BEGIN mobile-sidebar-backdrop -->
+  <button
+    class="app-sidebar-mobile-backdrop"
+    data-dismiss="sidebar-mobile"
+  ></button>
+  <!-- END mobile-sidebar-backdrop -->
+</div>
+<!-- END #sidebar -->
+
+):
+1:    <!-- BEGIN #header -->
+2:    <div id="header" class="app-header">
+3:      <!-- BEGIN mobile-toggler -->
+4:      <div class="mobile-toggler">
+5:        <button type="button" class="menu-toggler" data-toggle="sidebar-mobile">
+6:          <span class="bar"></span>
+7:          <span class="bar"></span>
+8:        </button>
+9:      </div>
+10:      <!-- END mobile-toggler -->
+11:    
+12:      <!-- BEGIN brand -->
+13:      <div class="brand">
+14:        <div class="desktop-toggler">
+15:          <button type="button" class="menu-toggler" data-toggle="sidebar-minify">
+16:            <span class="bar"></span>
+17:            <span class="bar"></span>
+18:          </button>
+19:        </div>
+20:    
+21:        <%= link_to "Perpustakaan", admin_dashboard_path, class: "brand-logo" %>
+22:      </div>
+23:      <!-- END brand -->
+24:    
+25:      <!-- BEGIN menu -->
+26:      <div class="menu">
+27:        <div class="menu-search"></div>
+28:        <div class="menu-item dropdown"></div>
+29:        <div class="menu-item dropdown">
+30:          <a
+31:            href="#"
+32:            data-bs-toggle="dropdown"
+33:            data-bs-display="static"
+34:            class="menu-link"
+35:          >
+36:            <div class="menu-img online">
+37:              <img
+38:                src="<%= image_path('adminpage/img/user/user.jpg') %>"
+39:                alt=""
+40:                class="mw-100 mh-100 rounded-circle"
+41:              />
+42:            </div>
+43:            <div class="menu-text">Admin</div>
+44:          </a>
+45:          <div class="dropdown-menu dropdown-menu-end me-lg-3">
+46:            <%= button_to "Log out", logout_path,class: "dropdown-item d-flex
+47:            align-items-center", method: :delete %>
+48:          </div>
+49:        </div>
+50:      </div>
+51:      <!-- END menu -->
+52:    </div>
+53:    <!-- END #header -->
+54:    
+55:    <!-- BEGIN #sidebar -->
+56:    <div id="sidebar" class="app-sidebar">
+57:      <!-- BEGIN scrollbar -->
+58:      <div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+59:        <!-- BEGIN menu -->
+60:        <div class="menu">
+61:          <div class="menu-header">Menu</div>
+62:          <div class="menu-item active">
+63:            <%= link_to , admin_genre_path, class: "menu-link" do %> This is a
+64:            <span class="menu-icon"><i class="fa fa-laptop"></i></span>
+65:            <span class="menu-text">Dashboard</span>
+66:            <% end %>
+67:          </div>
+68:          <div class="menu-item">
+69:            <a href="#" class="menu-link">
+70:              <span class="menu-icon"><i class="fa fa-bookmark"></i></span>
+71:              <span class="menu-text">Kategori Buku</span>
+72:            </a>
+73:          </div>
+74:          <div class="menu-item">
+75:            <a href="#" class="menu-link">
+76:              <span class="menu-icon"><i class="fa fa-location-arrow"></i></span>
+77:              <span class="menu-text">Lokasi Buku</span>
+78:            </a>
+79:          </div>
+80:          <div class="menu-item">
+81:            <a href="#" class="menu-link">
+82:              <span class="menu-icon"><i class="fa fa-tags"></i></span>
+83:              <span class="menu-text">Tipe Buku</span>
+84:            </a>
+85:          </div>
+86:          <div class="menu-item">
+87:            <a href="#" class="menu-link">
+88:              <span class="menu-icon"><i class="fa fa-book"></i></span>
+89:              <span class="menu-text">Buku</span>
+90:            </a>
+91:          </div>
+92:          <div class="menu-item">
+93:            <a href="#" class="menu-link">
+94:              <span class="menu-icon"><i class="fa fa-tasks"></i></span>
+95:              <span class="menu-text">Peminjaman</span>
+96:            </a>
+97:          </div>
+98:          <div class="menu-item">
+99:            <a href="#" class="menu-link">
+100:              <span class="menu-icon"><i class="fa fa-user-circle"></i></span>
+101:              <span class="menu-text">Member</span>
+102:            </a>
+103:          </div>
+104:        </div>
+105:        <!-- END menu -->
+106:      </div>
+107:      <!-- END scrollbar -->
+108:    
+109:      <!-- BEGIN mobile-sidebar-backdrop -->
+110:      <button
+111:        class="app-sidebar-mobile-backdrop"
+112:        data-dismiss="sidebar-mobile"
+113:      ></button>
+114:      <!-- END mobile-sidebar-backdrop -->
+115:    </div>
+116:    <!-- END #sidebar -->
+  
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected label
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected `do', expecting `end'
+app/views/shared/_headeradminpage.html.erb:119: syntax error, unexpected `end', expecting end-of-input
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected label
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected `do', expecting `end'
+app/views/shared/_headeradminpage.html.erb:119: syntax error, unexpected `end', expecting end-of-input
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected label
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected `do', expecting `end'
+app/views/shared/_headeradminpage.html.erb:119: syntax error, unexpected `end', expecting end-of-input
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected label
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected `do', expecting `end'
+app/views/shared/_headeradminpage.html.erb:119: syntax error, unexpected `end', expecting end-of-input
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected label
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected `do', expecting `end'
+app/views/shared/_headeradminpage.html.erb:119: syntax error, unexpected `end', expecting end-of-input
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected label
+app/views/shared/_headeradminpage.html.erb:63: syntax error, unexpected `do', expecting `end'
+app/views/shared/_headeradminpage.html.erb:119: syntax error, unexpected `end', expecting end-of-input
+app/views/layouts/admin.html.erb:22
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 14:58:38 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 1.2ms | Allocations: 188)
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 6.1ms | Allocations: 535)
+  Rendered shared/_headeradminpage.html.erb (Duration: 19.3ms | Allocations: 1251)
+  Rendered layout layouts/admin.html.erb (Duration: 82.3ms | Allocations: 9710)
+Completed 200 OK in 119ms (Views: 85.3ms | ActiveRecord: 0.9ms | Allocations: 11512)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 14:58:39 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 14:58:39 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 14:58:39 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 14:58:39 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 15:01:18 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 1.3ms | Allocations: 188)
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 6.3ms | Allocations: 535)
+  Rendered shared/_headeradminpage.html.erb (Duration: 4.9ms | Allocations: 1270)
+  Rendered layout layouts/admin.html.erb (Duration: 45.5ms | Allocations: 9729)
+Completed 200 OK in 91ms (Views: 49.0ms | ActiveRecord: 1.5ms | Allocations: 11499)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 15:01:18 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 15:01:18 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 15:01:19 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 15:01:19 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre" for ::1 at 2022-07-20 15:01:22 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering admin/genre/index.html.erb within layouts/application
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.2ms | Allocations: 45)
+  Rendered admin/genre/index.html.erb within layouts/application (Duration: 16.5ms | Allocations: 336)
+  Rendered shared/_headermainpage.html.erb (Duration: 8.8ms | Allocations: 125)
+  Rendered shared/_footermainpage.html.erb (Duration: 7.4ms | Allocations: 120)
+  Rendered layout layouts/application.html.erb (Duration: 359.2ms | Allocations: 19608)
+Completed 200 OK in 402ms (Views: 365.0ms | ActiveRecord: 1.4ms | Allocations: 21575)
+
+
+Started GET "/fonts/fontawesome-webfont.woff2?v=4.7.0" for ::1 at 2022-07-20 15:01:23 +0700
+Started GET "/fonts/ElegantIcons.woff" for ::1 at 2022-07-20 15:01:23 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/ElegantIcons.woff"):
+  
+Started GET "/fonts/fontawesome-webfont.woff?v=4.7.0" for ::1 at 2022-07-20 15:01:23 +0700
+Started GET "/fonts/ElegantIcons.ttf" for ::1 at 2022-07-20 15:01:23 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.woff"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/ElegantIcons.ttf"):
+  
+Started GET "/fonts/fontawesome-webfont.ttf?v=4.7.0" for ::1 at 2022-07-20 15:01:23 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/fontawesome-webfont.ttf"):
+  
+Started GET "/admin/genre" for ::1 at 2022-07-20 15:01:48 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 2.3ms | Allocations: 158)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.7ms | Allocations: 1002)
+  Rendered layout layouts/admin.html.erb (Duration: 24.9ms | Allocations: 8665)
+Completed 200 OK in 125ms (Views: 27.9ms | ActiveRecord: 16.8ms | Allocations: 13857)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 15:01:51 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 15:01:51 +0700
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 15:01:51 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 15:01:51 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre" for ::1 at 2022-07-20 15:04:10 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 1.1ms | Allocations: 188)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 5.5ms | Allocations: 594)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.7ms | Allocations: 1256)
+  Rendered layout layouts/admin.html.erb (Duration: 33.9ms | Allocations: 9778)
+Completed 200 OK in 89ms (Views: 36.9ms | ActiveRecord: 7.1ms | Allocations: 15231)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 15:04:12 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 15:04:12 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 15:04:13 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 15:04:13 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre/add" for ::1 at 2022-07-20 15:12:12 +0700
+Processing by Admin::GenreController#add as HTML
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/add.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 1.7ms | Allocations: 188)
+  Rendered admin/genre/add.html.erb within layouts/admin (Duration: 29.0ms | Allocations: 5690)
+  Rendered layout layouts/admin.html.erb (Duration: 30.2ms | Allocations: 5784)
+Completed 500 Internal Server Error in 147ms (ActiveRecord: 21.0ms | Allocations: 12515)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `genrestore_path' for #<ActionView::Base:0x0000000001fb30>):
+     5:     <div class="card">
+     6:       <div class="card-body">
+     7:         <%= render partial: "shared/alertmainpage" %> <%= form_with model:
+     8:         @genre, url: genrestore_path, method: :post, multipart: true do |form|
+     9:         %>
+    10:         <div class="form-group">
+    11:           <% invalid = @genre.errors.include?(:name) %>
+  
+app/views/admin/genre/add.html.erb:8
+Started GET "/admin/genre/add" for ::1 at 2022-07-20 15:14:20 +0700
+Processing by Admin::GenreController#add as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/add.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 1.2ms | Allocations: 187)
+  Rendered admin/genre/add.html.erb within layouts/admin (Duration: 34.8ms | Allocations: 5741)
+  Rendered layout layouts/admin.html.erb (Duration: 37.5ms | Allocations: 5835)
+Completed 500 Internal Server Error in 81ms (ActiveRecord: 0.5ms | Allocations: 7644)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `genrestore_path' for #<ActionView::Base:0x0000000001ff40>):
+     5:     <div class="card">
+     6:       <div class="card-body">
+     7:         <%= render partial: "shared/alertmainpage" %>
+     8:         <%= form_with model: @genre, url: genrestore_path, method: :post, multipart: true do |form| %>
+     9:         <div class="form-group">
+    10:           <% invalid = @genre.errors.include?(:name) %>
+    11:           <label for="exampleFormControlInput1" class="mb-2">
+  
+app/views/admin/genre/add.html.erb:8
+Started GET "/admin/genre/add" for ::1 at 2022-07-20 15:14:38 +0700
+Processing by Admin::GenreController#add as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/add.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.7ms | Allocations: 187)
+  Rendered admin/genre/add.html.erb within layouts/admin (Duration: 33.5ms | Allocations: 1203)
+  Rendered shared/_headeradminpage.html.erb (Duration: 10.8ms | Allocations: 1221)
+  Rendered layout layouts/admin.html.erb (Duration: 101.7ms | Allocations: 10331)
+Completed 200 OK in 147ms (Views: 107.8ms | ActiveRecord: 0.7ms | Allocations: 12179)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 15:14:39 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 15:14:39 +0700
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 15:14:39 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 15:14:39 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre/add" for ::1 at 2022-07-20 15:15:52 +0700
+Processing by Admin::GenreController#add as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/add.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.9ms | Allocations: 187)
+  Rendered admin/genre/add.html.erb within layouts/admin (Duration: 5.2ms | Allocations: 1056)
+  Rendered shared/_headeradminpage.html.erb (Duration: 4.9ms | Allocations: 1219)
+  Rendered layout layouts/admin.html.erb (Duration: 44.0ms | Allocations: 10179)
+Completed 200 OK in 88ms (Views: 47.8ms | ActiveRecord: 0.6ms | Allocations: 11963)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 15:15:52 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 15:15:52 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 15:15:52 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 15:15:53 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre/add" for ::1 at 2022-07-20 15:16:41 +0700
+Processing by Admin::GenreController#add as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/add.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.9ms | Allocations: 188)
+  Rendered admin/genre/add.html.erb within layouts/admin (Duration: 9.5ms | Allocations: 1183)
+  Rendered shared/_headeradminpage.html.erb (Duration: 6.6ms | Allocations: 1219)
+  Rendered layout layouts/admin.html.erb (Duration: 48.0ms | Allocations: 10305)
+Completed 200 OK in 88ms (Views: 52.4ms | ActiveRecord: 0.6ms | Allocations: 12092)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 15:16:42 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 15:16:42 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 15:16:42 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 15:16:42 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre/add" for ::1 at 2022-07-20 15:17:29 +0700
+Processing by Admin::GenreController#add as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/add.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.6ms | Allocations: 187)
+  Rendered admin/genre/add.html.erb within layouts/admin (Duration: 5.7ms | Allocations: 1190)
+  Rendered shared/_headeradminpage.html.erb (Duration: 5.6ms | Allocations: 1217)
+  Rendered layout layouts/admin.html.erb (Duration: 36.4ms | Allocations: 10315)
+Completed 200 OK in 73ms (Views: 40.0ms | ActiveRecord: 0.6ms | Allocations: 12096)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 15:17:30 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 15:17:30 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 15:17:30 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 15:17:30 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre" for ::1 at 2022-07-20 15:17:33 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 2.2ms | Allocations: 309)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.5ms | Allocations: 906)
+  Rendered layout layouts/admin.html.erb (Duration: 31.6ms | Allocations: 8547)
+Completed 200 OK in 68ms (Views: 32.8ms | ActiveRecord: 0.5ms | Allocations: 9893)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 15:17:33 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 15:17:33 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 15:17:33 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 15:17:34 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre/add" for ::1 at 2022-07-20 15:17:34 +0700
+Processing by Admin::GenreController#add as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/add.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered admin/genre/add.html.erb within layouts/admin (Duration: 2.6ms | Allocations: 469)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.5ms | Allocations: 906)
+  Rendered layout layouts/admin.html.erb (Duration: 31.3ms | Allocations: 8706)
+Completed 200 OK in 66ms (Views: 34.1ms | ActiveRecord: 0.6ms | Allocations: 9948)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 15:17:35 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 15:17:35 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 15:17:35 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 15:17:35 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre/add" for ::1 at 2022-07-20 15:17:48 +0700
+Processing by Admin::GenreController#add as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/add.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.9ms | Allocations: 187)
+  Rendered admin/genre/add.html.erb within layouts/admin (Duration: 6.3ms | Allocations: 1189)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.9ms | Allocations: 1217)
+  Rendered layout layouts/admin.html.erb (Duration: 37.3ms | Allocations: 10309)
+Completed 200 OK in 75ms (Views: 42.1ms | ActiveRecord: 0.6ms | Allocations: 12004)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 15:17:48 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 15:17:48 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 15:17:49 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 15:17:49 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started POST "/admin/genre/store" for ::1 at 2022-07-20 15:22:11 +0700
+  
+ActionController::RoutingError (No route matches [POST] "/admin/genre/store"):
+  
+Started POST "/admin/genre/store" for ::1 at 2022-07-20 15:22:23 +0700
+Processing by Admin::GenreController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "genre"=>{"name"=>""}, "commit"=>"Simpan"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+Completed 500 Internal Server Error in 152ms (ActiveRecord: 36.9ms | Allocations: 7973)
+
+
+  
+NameError (undefined local variable or method `user_params' for #<Admin::GenreController:0x0000000002dc30>
+
+    @user = User.new(user_params)
+                     ^^^^^^^^^^^):
+  
+app/controllers/admin/genre_controller.rb:13:in `store'
+Started POST "/admin/genre/store" for ::1 at 2022-07-20 15:23:33 +0700
+Processing by Admin::GenreController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "genre"=>{"name"=>""}, "commit"=>"Simpan"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/genre_controller.rb:14:in `store'
+  [1m[36mGenre Create (16.2ms)[0m  [1m[32mINSERT INTO `genres` (`name`, `created_at`, `updated_at`) VALUES ('', '2022-07-20 08:23:35.291349', '2022-07-20 08:23:35.291349')[0m
+  ↳ app/controllers/admin/genre_controller.rb:14:in `store'
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/admin/genre_controller.rb:14:in `store'
+Redirected to http://localhost:3000/admin/genre
+Completed 302 Found in 148ms (ActiveRecord: 32.2ms | Allocations: 9427)
+
+
+Started GET "/admin/genre" for ::1 at 2022-07-20 15:23:35 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.4ms | Allocations: 54)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 3.5ms | Allocations: 395)
+  Rendered shared/_headeradminpage.html.erb (Duration: 4.2ms | Allocations: 961)
+  Rendered layout layouts/admin.html.erb (Duration: 38.1ms | Allocations: 8860)
+Completed 200 OK in 74ms (Views: 40.4ms | ActiveRecord: 0.7ms | Allocations: 10536)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 15:23:35 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 15:23:35 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 15:23:36 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 15:23:36 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre" for ::1 at 2022-07-20 15:26:02 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 1.2ms | Allocations: 204)
+  Rendered shared/_headeradminpage.html.erb (Duration: 4.4ms | Allocations: 969)
+  Rendered layout layouts/admin.html.erb (Duration: 33.3ms | Allocations: 8678)
+Completed 200 OK in 86ms (Views: 37.8ms | ActiveRecord: 3.0ms | Allocations: 13821)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 15:26:04 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 15:26:05 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 15:26:05 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 15:26:05 +0700
+Started GET "/admin/genre/add" for ::1 at 2022-07-20 15:26:05 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Processing by Admin::GenreController#add as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/add.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.2ms | Allocations: 40)
+  Rendered admin/genre/add.html.erb within layouts/admin (Duration: 11.3ms | Allocations: 602)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.3ms | Allocations: 913)
+  Rendered layout layouts/admin.html.erb (Duration: 37.0ms | Allocations: 8944)
+Completed 200 OK in 136ms (Views: 40.0ms | ActiveRecord: 2.6ms | Allocations: 27571)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 15:26:06 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 15:26:06 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 15:26:06 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 15:26:06 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started POST "/admin/genre/store" for ::1 at 2022-07-20 15:26:07 +0700
+Processing by Admin::GenreController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "genre"=>{"name"=>""}, "commit"=>"Simpan"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/add.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered admin/genre/add.html.erb within layouts/admin (Duration: 131.8ms | Allocations: 2160)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.0ms | Allocations: 906)
+  Rendered layout layouts/admin.html.erb (Duration: 159.9ms | Allocations: 10389)
+Completed 200 OK in 201ms (Views: 161.6ms | ActiveRecord: 0.4ms | Allocations: 12386)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 15:26:07 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 15:26:07 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 15:26:08 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 15:26:08 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started POST "/admin/genre/store" for ::1 at 2022-07-20 15:26:27 +0700
+Processing by Admin::GenreController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "genre"=>{"name"=>"action"}, "commit"=>"Simpan"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/genre_controller.rb:14:in `store'
+  [1m[36mGenre Create (1.2ms)[0m  [1m[32mINSERT INTO `genres` (`name`, `created_at`, `updated_at`) VALUES ('action', '2022-07-20 08:26:27.982002', '2022-07-20 08:26:27.982002')[0m
+  ↳ app/controllers/admin/genre_controller.rb:14:in `store'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/admin/genre_controller.rb:14:in `store'
+Redirected to http://localhost:3000/admin/genre
+Completed 302 Found in 51ms (ActiveRecord: 3.9ms | Allocations: 3225)
+
+
+Started GET "/admin/genre" for ::1 at 2022-07-20 15:26:28 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 2.0ms | Allocations: 152)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.4ms | Allocations: 906)
+  Rendered layout layouts/admin.html.erb (Duration: 32.7ms | Allocations: 8390)
+Completed 200 OK in 72ms (Views: 36.5ms | ActiveRecord: 0.6ms | Allocations: 9635)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 15:26:28 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 15:26:28 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 15:26:28 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 15:26:28 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre" for ::1 at 2022-07-20 15:28:07 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT `genres`.* FROM `genres` WHERE `genres`.`id` = NULL LIMIT 1[0m
+  ↳ app/controllers/admin/genre_controller.rb:6:in `index'
+Completed 404 Not Found in 64ms (ActiveRecord: 5.0ms | Allocations: 7262)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Genre with 'id'=all):
+  
+app/controllers/admin/genre_controller.rb:6:in `index'
+Started GET "/admin/genre" for ::1 at 2022-07-20 15:55:38 +0700
+  
+ArgumentError (can't use collection outside resource(s) scope):
+  
+config/routes.rb:20:in `block (2 levels) in <main>'
+config/routes.rb:18:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/login" for ::1 at 2022-07-20 16:05:19 +0700
+Processing by LoginController#index as HTML
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+Redirected to http://localhost:3000/admin/dashboard
+Filter chain halted as :check_user_not_login rendered or redirected
+Completed 302 Found in 610ms (ActiveRecord: 12.6ms | Allocations: 4715)
+
+
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 16:05:20 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 1.9ms | Allocations: 349)
+  Rendered shared/_headeradminpage.html.erb (Duration: 9.8ms | Allocations: 2415)
+  Rendered layout layouts/admin.html.erb (Duration: 23.3ms | Allocations: 4695)
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 0.4ms | Allocations: 6500)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"admin/genre"}, missing required keys: [:id]
+Did you mean?  admin_genre_url):
+    66:         </a>
+    67:       </div>
+    68:       <div class="menu-item">
+    69:         <a href="<%= admin_genre_path %>" class="menu-link">
+    70:           <span class="menu-icon"><i class="fa fa-bookmark"></i></span>
+    71:           <span class="menu-text">Kategori Buku</span>
+    72:         </a>
+  
+app/views/shared/_headeradminpage.html.erb:69
+app/views/layouts/admin.html.erb:22
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 16:12:51 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 57)
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 1.7ms | Allocations: 167)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.2ms | Allocations: 2302)
+  Rendered layout layouts/admin.html.erb (Duration: 10.5ms | Allocations: 4401)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 6.4ms | Allocations: 9326)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"admin/genre"}, missing required keys: [:id]
+Did you mean?  admin_genre_url):
+    66:         </a>
+    67:       </div>
+    68:       <div class="menu-item">
+    69:         <a href="<%= admin_genre_path %>" class="menu-link">
+    70:           <span class="menu-icon"><i class="fa fa-bookmark"></i></span>
+    71:           <span class="menu-text">Kategori Buku</span>
+    72:         </a>
+  
+app/views/shared/_headeradminpage.html.erb:69
+app/views/layouts/admin.html.erb:22
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 16:13:26 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.6ms | Allocations: 198)
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 3.1ms | Allocations: 545)
+  Rendered shared/_headeradminpage.html.erb (Duration: 4.2ms | Allocations: 1289)
+  Rendered layout layouts/admin.html.erb (Duration: 30.5ms | Allocations: 9761)
+Completed 200 OK in 68ms (Views: 32.7ms | ActiveRecord: 9.8ms | Allocations: 15198)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 16:13:27 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 16:13:27 +0700
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 16:13:27 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 16:13:28 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre" for ::1 at 2022-07-20 16:13:31 +0700
+  
+SyntaxError (C:/Rsites/perpustakaan-ror/app/controllers/admin/genre_controller.rb:6: syntax error, unexpected ':', expecting ')'
+...   @genre = Genre.order(:name :asc).page params[:page]
+...                              ^
+):
+  
+app/controllers/admin/genre_controller.rb:6: syntax error, unexpected ':', expecting ')'
+app/controllers/admin/genre_controller.rb:6: syntax error, unexpected ':', expecting ')'
+app/controllers/admin/genre_controller.rb:6: syntax error, unexpected ':', expecting ')'
+Started GET "/admin/genre" for ::1 at 2022-07-20 16:14:07 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 3.6ms | Allocations: 9642)
+
+
+  
+NoMethodError (undefined method `paginates_per' for Genre:Class):
+  
+app/models/genre.rb:2:in `<class:Genre>'
+app/models/genre.rb:1:in `<main>'
+app/controllers/admin/genre_controller.rb:6:in `index'
+Started GET "/admin/genre" for ::1 at 2022-07-20 16:14:51 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 9.4ms | Allocations: 7453)
+
+
+  
+NameError (uninitialized constant ApplicationRecord::Base
+
+class Genre < ApplicationRecord::Base
+                               ^^^^^^
+Did you mean?  Base64):
+  
+app/models/genre.rb:1:in `<main>'
+app/controllers/admin/genre_controller.rb:6:in `index'
+Started GET "/admin/genre" for ::1 at 2022-07-20 16:16:25 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 3.2ms | Allocations: 9613)
+
+
+  
+NoMethodError (undefined method `paginates_per' for Genre:Class):
+  
+app/models/genre.rb:2:in `<class:Genre>'
+app/models/genre.rb:1:in `<main>'
+app/controllers/admin/genre_controller.rb:6:in `index'
+Started GET "/admin/genre" for ::1 at 2022-07-20 16:19:49 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 36.6ms | Allocations: 6016)
+  Rendered layout layouts/admin.html.erb (Duration: 38.2ms | Allocations: 6131)
+Completed 500 Internal Server Error in 211ms (ActiveRecord: 15.0ms | Allocations: 18770)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `admin_genreadd_path' for #<ActionView::Base:0x0000000000c0d0>
+Did you mean?  admin_genre_path
+               admin_genre_index_path):
+    4:   <div class="col-xl-12">
+    5:     <div class="card">
+    6:       <div class="card-header">
+    7:         <a href="<%= admin_genreadd_path %>" class="btn btn-primary"
+    8:           ><i class="fa fa-plus"></i> Tambah Kategori Buku</a
+    9:         >
+   10:       </div>
+  
+app/views/admin/genre/index.html.erb:7
+app/controllers/admin/genre_controller.rb:8:in `index'
+Started GET "/admin/genre" for ::1 at 2022-07-20 16:20:49 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 13.5ms | Allocations: 5276)
+  Rendered layout layouts/admin.html.erb (Duration: 14.2ms | Allocations: 5371)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 3.7ms | Allocations: 11508)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `admin_genreadd_path' for #<ActionView::Base:0x00000000010f40>
+Did you mean?  admin_genre_path
+               admin_genre_index_path):
+    4:   <div class="col-xl-12">
+    5:     <div class="card">
+    6:       <div class="card-header">
+    7:         <a href="<%= admin_genreadd_path %>" class="btn btn-primary"
+    8:           ><i class="fa fa-plus"></i> Tambah Kategori Buku</a
+    9:         >
+   10:       </div>
+  
+app/views/admin/genre/index.html.erb:7
+app/controllers/admin/genre_controller.rb:8:in `index'
+Started GET "/admin/genre" for ::1 at 2022-07-20 16:21:00 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 12.8ms | Allocations: 5281)
+  Rendered layout layouts/admin.html.erb (Duration: 15.9ms | Allocations: 5376)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 3.1ms | Allocations: 11546)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `admin_genreadd_path' for #<ActionView::Base:0x00000000015db0>
+Did you mean?  admin_genre_add_path
+               admin_genre_path
+               admin_genre_index_path
+               admin_genre_add_url):
+    4:   <div class="col-xl-12">
+    5:     <div class="card">
+    6:       <div class="card-header">
+    7:         <a href="<%= admin_genreadd_path %>" class="btn btn-primary"
+    8:           ><i class="fa fa-plus"></i> Tambah Kategori Buku</a
+    9:         >
+   10:       </div>
+  
+app/views/admin/genre/index.html.erb:7
+app/controllers/admin/genre_controller.rb:8:in `index'
+Started GET "/admin/genre" for ::1 at 2022-07-20 16:21:16 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 1.8ms | Allocations: 1496)
+  Rendered layout layouts/admin.html.erb (Duration: 4.5ms | Allocations: 1590)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.3ms | Allocations: 3457)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"add", :controller=>"admin/genre"}, missing required keys: [:genre_id]
+Did you mean?  admin_genre_add_url):
+    4:   <div class="col-xl-12">
+    5:     <div class="card">
+    6:       <div class="card-header">
+    7:         <a href="<%= admin_genre_add_path %>" class="btn btn-primary"
+    8:           ><i class="fa fa-plus"></i> Tambah Kategori Buku</a
+    9:         >
+   10:       </div>
+  
+app/views/admin/genre/index.html.erb:7
+app/controllers/admin/genre_controller.rb:8:in `index'
+Started GET "/admin/genre" for ::1 at 2022-07-20 16:22:37 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 2.4ms | Allocations: 1338)
+  Rendered layout layouts/admin.html.erb (Duration: 3.9ms | Allocations: 1432)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 4.0ms | Allocations: 7813)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"add", :controller=>"admin/genre"}, missing required keys: [:genre_id]
+Did you mean?  admin_genre_add_url):
+    4:   <div class="col-xl-12">
+    5:     <div class="card">
+    6:       <div class="card-header">
+    7:         <a href="<%= admin_genre_add_path %>" class="btn btn-primary"
+    8:           ><i class="fa fa-plus"></i> Tambah Kategori Buku</a
+    9:         >
+   10:       </div>
+  
+app/views/admin/genre/index.html.erb:7
+app/controllers/admin/genre_controller.rb:8:in `index'
+Started GET "/admin/genre" for ::1 at 2022-07-20 16:23:08 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 1.9ms | Allocations: 1398)
+  Rendered layout layouts/admin.html.erb (Duration: 2.7ms | Allocations: 1493)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.6ms | Allocations: 3376)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"add", :controller=>"admin/genre"}, missing required keys: [:genre_id]
+Did you mean?  admin_genre_add_url):
+    4:   <div class="col-xl-12">
+    5:     <div class="card">
+    6:       <div class="card-header">
+    7:         <a href="<%= admin_genre_add_path %>" class="btn btn-primary"
+    8:           ><i class="fa fa-plus"></i> Tambah Kategori Buku</a
+    9:         >
+   10:       </div>
+  
+app/views/admin/genre/index.html.erb:7
+app/controllers/admin/genre_controller.rb:8:in `index'
+Started GET "/admin/genre" for ::1 at 2022-07-20 16:23:26 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 13.9ms | Allocations: 5289)
+  Rendered layout layouts/admin.html.erb (Duration: 15.1ms | Allocations: 5384)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 4.6ms | Allocations: 11525)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `admin_genre_add_path' for #<ActionView::Base:0x00000000020170>
+Did you mean?  admin_genre_path
+               admin_genre_index_path):
+    4:   <div class="col-xl-12">
+    5:     <div class="card">
+    6:       <div class="card-header">
+    7:         <a href="<%= admin_genre_add_path %>" class="btn btn-primary"
+    8:           ><i class="fa fa-plus"></i> Tambah Kategori Buku</a
+    9:         >
+   10:       </div>
+  
+app/views/admin/genre/index.html.erb:7
+app/controllers/admin/genre_controller.rb:8:in `index'
+Started GET "/admin/genre" for ::1 at 2022-07-20 16:28:24 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 12.9ms | Allocations: 5287)
+  Rendered layout layouts/admin.html.erb (Duration: 14.0ms | Allocations: 5381)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 4.1ms | Allocations: 11509)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `admin_genre_add_path' for #<ActionView::Base:0x00000000024f68>
+Did you mean?  admin_genre_path
+               admin_genre_index_path):
+    4:   <div class="col-xl-12">
+    5:     <div class="card">
+    6:       <div class="card-header">
+    7:         <a href="<%= admin_genre_add_path %>" class="btn btn-primary"
+    8:           ><i class="fa fa-plus"></i> Tambah Kategori Buku</a
+    9:         >
+   10:       </div>
+  
+app/views/admin/genre/index.html.erb:7
+app/controllers/admin/genre_controller.rb:8:in `index'
+Started GET "/admin/genre" for ::1 at 2022-07-20 16:28:54 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.5ms | Allocations: 208)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 2.7ms | Allocations: 551)
+  Rendered shared/_headeradminpage.html.erb (Duration: 7.2ms | Allocations: 1395)
+  Rendered layout layouts/admin.html.erb (Duration: 339.9ms | Allocations: 72266)
+Completed 200 OK in 369ms (Views: 343.4ms | ActiveRecord: 0.4ms | Allocations: 74205)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 16:28:55 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 16:28:55 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 16:28:55 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 16:28:56 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre" for ::1 at 2022-07-20 16:30:53 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 18.1ms | Allocations: 6019)
+  Rendered layout layouts/admin.html.erb (Duration: 18.9ms | Allocations: 6134)
+Completed 500 Internal Server Error in 81ms (ActiveRecord: 4.9ms | Allocations: 18773)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `add_admin_genre_index' for #<ActionView::Base:0x0000000000c210>
+Did you mean?  add_admin_genre_index_url
+               add_admin_genre_index_path):
+    4:   <div class="col-xl-12">
+    5:     <div class="card">
+    6:       <div class="card-header">
+    7:         <a href="<%= add_admin_genre_index %>" class="btn btn-primary"
+    8:           ><i class="fa fa-plus"></i> Tambah Kategori Buku</a>
+    9:       </div>
+   10:       <div class="card-body">
+  
+app/views/admin/genre/index.html.erb:7
+app/controllers/admin/genre_controller.rb:8:in `index'
+Started GET "/admin/genre" for ::1 at 2022-07-20 16:31:04 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 26.8ms | Allocations: 5375)
+  Rendered layout layouts/admin.html.erb (Duration: 29.0ms | Allocations: 5470)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.5ms | Allocations: 7351)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `add_admin_genre' for #<ActionView::Base:0x0000000000c5d0>
+Did you mean?  add_admin_genre_index_url):
+    4:   <div class="col-xl-12">
+    5:     <div class="card">
+    6:       <div class="card-header">
+    7:         <a href="<%= add_admin_genre %>" class="btn btn-primary"
+    8:           ><i class="fa fa-plus"></i> Tambah Kategori Buku</a>
+    9:       </div>
+   10:       <div class="card-body">
+  
+app/views/admin/genre/index.html.erb:7
+app/controllers/admin/genre_controller.rb:8:in `index'
+Started GET "/admin/genre" for ::1 at 2022-07-20 16:31:32 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 14.7ms | Allocations: 5569)
+  Rendered layout layouts/admin.html.erb (Duration: 16.0ms | Allocations: 5664)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.3ms | Allocations: 7531)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `add_admin_genre_path' for #<ActionView::Base:0x0000000000c9b8>
+Did you mean?  edit_admin_genre_path
+               admin_genre_path):
+    4:   <div class="col-xl-12">
+    5:     <div class="card">
+    6:       <div class="card-header">
+    7:         <a href="<%= add_admin_genre_path %>" class="btn btn-primary"
+    8:           ><i class="fa fa-plus"></i> Tambah Kategori Buku</a>
+    9:       </div>
+   10:       <div class="card-body">
+  
+app/views/admin/genre/index.html.erb:7
+app/controllers/admin/genre_controller.rb:8:in `index'
+Started GET "/admin/genre" for ::1 at 2022-07-20 16:31:57 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 14.7ms | Allocations: 5315)
+  Rendered layout layouts/admin.html.erb (Duration: 15.6ms | Allocations: 5409)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 5.0ms | Allocations: 11525)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `add_admin_genre_path' for #<ActionView::Base:0x00000000011738>
+Did you mean?  edit_admin_genre_path
+               admin_genre_path):
+    4:   <div class="col-xl-12">
+    5:     <div class="card">
+    6:       <div class="card-header">
+    7:         <a href="<%= add_admin_genre_path %>" class="btn btn-primary"
+    8:           ><i class="fa fa-plus"></i> Tambah Kategori Buku</a>
+    9:       </div>
+   10:       <div class="card-body">
+  
+app/views/admin/genre/index.html.erb:7
+app/controllers/admin/genre_controller.rb:8:in `index'
+Started GET "/admin/genre" for ::1 at 2022-07-20 16:38:19 +0700
+Started GET "/login" for ::1 at 2022-07-20 16:42:24 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by LoginController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+Redirected to http://localhost:3000/admin/dashboard
+Filter chain halted as :check_user_not_login rendered or redirected
+Completed 302 Found in 83ms (ActiveRecord: 5.1ms | Allocations: 10054)
+
+
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 16:42:25 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.8ms | Allocations: 218)
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 7.1ms | Allocations: 836)
+  Rendered shared/_headeradminpage.html.erb (Duration: 7.9ms | Allocations: 1376)
+  Rendered layout layouts/admin.html.erb (Duration: 574.7ms | Allocations: 72386)
+Completed 200 OK in 629ms (Views: 583.9ms | ActiveRecord: 0.4ms | Allocations: 75635)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 16:42:26 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 16:42:26 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 16:42:26 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 16:42:26 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre" for ::1 at 2022-07-20 16:42:30 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 28.4ms | Allocations: 5689)
+  Rendered layout layouts/admin.html.erb (Duration: 29.5ms | Allocations: 5784)
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 4.1ms | Allocations: 8619)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `admin_genre_add_path' for #<ActionView::Base:0x0000000000d188>
+Did you mean?  admin_genre_path
+               admin_genre_index_path):
+    4:   <div class="col-xl-12">
+    5:     <div class="card">
+    6:       <div class="card-header">
+    7:         <a href="<%= admin_genre_add_path %>" class="btn btn-primary"
+    8:           ><i class="fa fa-plus"></i> Tambah Kategori Buku</a>
+    9:       </div>
+   10:       <div class="card-body">
+  
+app/views/admin/genre/index.html.erb:7
+app/controllers/admin/genre_controller.rb:8:in `index'
+Started GET "/admin/genre" for ::1 at 2022-07-20 16:44:51 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.7ms | Allocations: 188)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 3.5ms | Allocations: 586)
+  Rendered shared/_headeradminpage.html.erb (Duration: 4.7ms | Allocations: 1254)
+  Rendered layout layouts/admin.html.erb (Duration: 38.4ms | Allocations: 9756)
+Completed 200 OK in 87ms (Views: 44.3ms | ActiveRecord: 0.8ms | Allocations: 11672)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 16:44:51 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 16:44:51 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 16:44:52 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 16:44:52 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre" for ::1 at 2022-07-20 16:45:58 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.6ms | Allocations: 188)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 3.2ms | Allocations: 592)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.8ms | Allocations: 1256)
+  Rendered layout layouts/admin.html.erb (Duration: 38.2ms | Allocations: 9765)
+Completed 200 OK in 107ms (Views: 43.8ms | ActiveRecord: 6.0ms | Allocations: 16184)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 16:46:01 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 16:46:01 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 16:46:01 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 16:46:01 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre/add" for ::1 at 2022-07-20 16:46:03 +0700
+Processing by Admin::GenreController#index as HTML
+  Parameters: {"page"=>"add"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 0.9ms | Allocations: 145)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.0ms | Allocations: 906)
+  Rendered layout layouts/admin.html.erb (Duration: 28.4ms | Allocations: 8376)
+Completed 200 OK in 67ms (Views: 29.9ms | ActiveRecord: 0.5ms | Allocations: 9731)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 16:46:03 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 16:46:03 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 16:46:04 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 16:46:04 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre" for ::1 at 2022-07-20 16:46:31 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 0.8ms | Allocations: 145)
+  Rendered shared/_headeradminpage.html.erb (Duration: 2.8ms | Allocations: 906)
+  Rendered layout layouts/admin.html.erb (Duration: 33.1ms | Allocations: 8376)
+Completed 200 OK in 82ms (Views: 34.6ms | ActiveRecord: 0.6ms | Allocations: 9641)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 16:46:32 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 16:46:32 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 16:46:32 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 16:46:32 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre/add" for ::1 at 2022-07-20 16:46:35 +0700
+Processing by Admin::GenreController#index as HTML
+  Parameters: {"page"=>"add"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 0.9ms | Allocations: 145)
+  Rendered shared/_headeradminpage.html.erb (Duration: 5.0ms | Allocations: 906)
+  Rendered layout layouts/admin.html.erb (Duration: 28.4ms | Allocations: 8376)
+Completed 200 OK in 71ms (Views: 29.7ms | ActiveRecord: 1.0ms | Allocations: 9642)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 16:46:35 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 16:46:35 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 16:46:36 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 16:46:36 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre/add" for ::1 at 2022-07-20 16:47:23 +0700
+Processing by Admin::GenreController#index as HTML
+  Parameters: {"page"=>"add"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 1.0ms | Allocations: 206)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.2ms | Allocations: 969)
+  Rendered layout layouts/admin.html.erb (Duration: 32.1ms | Allocations: 8669)
+Completed 200 OK in 86ms (Views: 33.9ms | ActiveRecord: 6.7ms | Allocations: 14835)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 16:47:26 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 16:47:26 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 16:47:27 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 16:47:27 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre/add" for ::1 at 2022-07-20 16:47:32 +0700
+Processing by Admin::GenreController#index as HTML
+  Parameters: {"page"=>"add"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 1.5ms | Allocations: 145)
+  Rendered shared/_headeradminpage.html.erb (Duration: 5.9ms | Allocations: 906)
+  Rendered layout layouts/admin.html.erb (Duration: 33.8ms | Allocations: 8377)
+Completed 200 OK in 83ms (Views: 35.2ms | ActiveRecord: 1.1ms | Allocations: 9723)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 16:47:32 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 16:47:32 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 16:47:33 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 16:47:33 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre/add" for ::1 at 2022-07-20 16:47:34 +0700
+Processing by Admin::GenreController#index as HTML
+  Parameters: {"page"=>"add"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.2ms | Allocations: 31)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 2.9ms | Allocations: 145)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.2ms | Allocations: 906)
+  Rendered layout layouts/admin.html.erb (Duration: 45.1ms | Allocations: 8376)
+Completed 200 OK in 89ms (Views: 46.3ms | ActiveRecord: 0.6ms | Allocations: 9633)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 16:47:34 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 16:47:34 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 16:47:35 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 16:47:35 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre/add" for ::1 at 2022-07-20 16:49:29 +0700
+Processing by Admin::GenreController#index as HTML
+  Parameters: {"page"=>"add"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 0.8ms | Allocations: 206)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.9ms | Allocations: 969)
+  Rendered layout layouts/admin.html.erb (Duration: 31.4ms | Allocations: 8669)
+Completed 200 OK in 87ms (Views: 33.3ms | ActiveRecord: 4.6ms | Allocations: 14820)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 16:49:32 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 16:49:32 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 16:49:32 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 16:49:32 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre/add" for ::1 at 2022-07-20 16:49:42 +0700
+Processing by Admin::GenreController#index as HTML
+  Parameters: {"page"=>"add"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 1.0ms | Allocations: 206)
+  Rendered shared/_headeradminpage.html.erb (Duration: 2.8ms | Allocations: 969)
+  Rendered layout layouts/admin.html.erb (Duration: 30.3ms | Allocations: 8669)
+Completed 200 OK in 94ms (Views: 32.2ms | ActiveRecord: 6.2ms | Allocations: 14865)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 16:49:45 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 16:49:45 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 16:49:45 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 16:49:45 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre/add" for ::1 at 2022-07-20 16:53:26 +0700
+Processing by Admin::GenreController#index as HTML
+  Parameters: {"page"=>"add"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 1.6ms | Allocations: 188)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 7.1ms | Allocations: 592)
+  Rendered shared/_headeradminpage.html.erb (Duration: 7.8ms | Allocations: 1256)
+  Rendered layout layouts/admin.html.erb (Duration: 39.5ms | Allocations: 9764)
+Completed 200 OK in 105ms (Views: 43.6ms | ActiveRecord: 10.7ms | Allocations: 16195)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 16:53:29 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 16:53:29 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 16:53:29 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 16:53:29 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre" for ::1 at 2022-07-20 16:53:33 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 2.5ms | Allocations: 145)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.3ms | Allocations: 906)
+  Rendered layout layouts/admin.html.erb (Duration: 30.3ms | Allocations: 8376)
+Completed 200 OK in 69ms (Views: 34.2ms | ActiveRecord: 0.7ms | Allocations: 9738)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 16:53:34 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 16:53:34 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 16:53:34 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 16:53:34 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre/add" for ::1 at 2022-07-20 16:53:37 +0700
+Processing by Admin::GenreController#index as HTML
+  Parameters: {"page"=>"add"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 0.8ms | Allocations: 145)
+  Rendered shared/_headeradminpage.html.erb (Duration: 4.2ms | Allocations: 906)
+  Rendered layout layouts/admin.html.erb (Duration: 29.0ms | Allocations: 8376)
+Completed 200 OK in 65ms (Views: 30.4ms | ActiveRecord: 1.1ms | Allocations: 9645)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 16:53:37 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 16:53:37 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 16:53:38 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 16:53:38 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/logout" for ::1 at 2022-07-20 16:54:23 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/login" for ::1 at 2022-07-20 16:54:29 +0700
+Processing by LoginController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+Redirected to http://localhost:3000/admin/dashboard
+Filter chain halted as :check_user_not_login rendered or redirected
+Completed 302 Found in 42ms (ActiveRecord: 0.8ms | Allocations: 1443)
+
+
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 16:54:29 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 1.5ms | Allocations: 198)
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 4.7ms | Allocations: 548)
+  Rendered shared/_headeradminpage.html.erb (Duration: 4.3ms | Allocations: 1286)
+  Rendered layout layouts/admin.html.erb (Duration: 35.3ms | Allocations: 9761)
+Completed 200 OK in 77ms (Views: 38.1ms | ActiveRecord: 0.6ms | Allocations: 11793)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 16:54:30 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 16:54:30 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 16:54:30 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 16:54:30 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre" for ::1 at 2022-07-20 16:54:49 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 2.1ms | Allocations: 382)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.9ms | Allocations: 955)
+  Rendered layout layouts/admin.html.erb (Duration: 26.6ms | Allocations: 8829)
+Completed 200 OK in 69ms (Views: 31.6ms | ActiveRecord: 0.5ms | Allocations: 10509)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 16:54:49 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 16:54:49 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 16:54:50 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 16:54:50 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre/add" for ::1 at 2022-07-20 16:54:52 +0700
+Processing by Admin::GenreController#index as HTML
+  Parameters: {"page"=>"add"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.2ms | Allocations: 31)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 1.4ms | Allocations: 145)
+  Rendered shared/_headeradminpage.html.erb (Duration: 4.0ms | Allocations: 906)
+  Rendered layout layouts/admin.html.erb (Duration: 28.5ms | Allocations: 8376)
+Completed 200 OK in 72ms (Views: 29.9ms | ActiveRecord: 0.9ms | Allocations: 9744)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 16:54:53 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 16:54:53 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 16:54:53 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 16:54:54 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre/add" for ::1 at 2022-07-20 16:54:56 +0700
+Processing by Admin::GenreController#index as HTML
+  Parameters: {"page"=>"add"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 0.8ms | Allocations: 145)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.0ms | Allocations: 906)
+  Rendered layout layouts/admin.html.erb (Duration: 28.4ms | Allocations: 8376)
+Completed 200 OK in 67ms (Views: 29.8ms | ActiveRecord: 0.5ms | Allocations: 9642)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 16:54:57 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 16:54:57 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 16:54:57 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 16:54:57 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre" for ::1 at 2022-07-20 17:02:21 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.9ms | Allocations: 188)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 3.2ms | Allocations: 592)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.8ms | Allocations: 1256)
+  Rendered layout layouts/admin.html.erb (Duration: 35.5ms | Allocations: 9764)
+Completed 200 OK in 115ms (Views: 44.1ms | ActiveRecord: 9.5ms | Allocations: 15779)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 17:02:24 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 17:02:24 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 17:02:24 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 17:02:25 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre" for ::1 at 2022-07-20 17:03:52 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 1.5ms | Allocations: 187)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 5.2ms | Allocations: 578)
+  Rendered shared/_headeradminpage.html.erb (Duration: 7.8ms | Allocations: 1242)
+  Rendered layout layouts/admin.html.erb (Duration: 49.7ms | Allocations: 9734)
+Completed 200 OK in 100ms (Views: 54.1ms | ActiveRecord: 0.7ms | Allocations: 11582)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 17:03:53 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 17:03:53 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 17:03:53 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 17:03:53 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre" for ::1 at 2022-07-20 17:03:56 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.2ms | Allocations: 31)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 1.4ms | Allocations: 145)
+  Rendered shared/_headeradminpage.html.erb (Duration: 5.1ms | Allocations: 906)
+  Rendered layout layouts/admin.html.erb (Duration: 42.1ms | Allocations: 8376)
+Completed 200 OK in 84ms (Views: 43.8ms | ActiveRecord: 0.6ms | Allocations: 9729)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 17:03:57 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 17:03:57 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 17:03:57 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 17:03:58 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre/new" for ::1 at 2022-07-20 17:04:00 +0700
+Processing by Admin::GenreController#index as HTML
+  Parameters: {"page"=>"new"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 1.0ms | Allocations: 145)
+  Rendered shared/_headeradminpage.html.erb (Duration: 5.9ms | Allocations: 906)
+  Rendered layout layouts/admin.html.erb (Duration: 42.4ms | Allocations: 8376)
+Completed 200 OK in 91ms (Views: 43.9ms | ActiveRecord: 0.6ms | Allocations: 9639)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 17:04:00 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 17:04:01 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 17:04:01 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 17:04:01 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre/new" for ::1 at 2022-07-20 17:05:44 +0700
+Processing by Admin::GenreController#index as HTML
+  Parameters: {"page"=>"new"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 1.9ms | Allocations: 206)
+  Rendered shared/_headeradminpage.html.erb (Duration: 4.7ms | Allocations: 969)
+  Rendered layout layouts/admin.html.erb (Duration: 30.7ms | Allocations: 8669)
+Completed 200 OK in 95ms (Views: 32.8ms | ActiveRecord: 10.7ms | Allocations: 14817)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 17:05:46 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 17:05:46 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 17:05:47 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 17:05:47 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre/new" for ::1 at 2022-07-20 17:06:40 +0700
+Processing by Admin::GenreController#index as HTML
+  Parameters: {"page"=>"new"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.7ms | Allocations: 188)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 4.0ms | Allocations: 588)
+  Rendered shared/_headeradminpage.html.erb (Duration: 7.1ms | Allocations: 1256)
+  Rendered layout layouts/admin.html.erb (Duration: 40.9ms | Allocations: 9760)
+Completed 200 OK in 112ms (Views: 46.2ms | ActiveRecord: 5.7ms | Allocations: 16167)
+
+
+Started GET "/admin/genre" for ::1 at 2022-07-20 17:06:42 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 1.2ms | Allocations: 145)
+  Rendered shared/_headeradminpage.html.erb (Duration: 6.1ms | Allocations: 900)
+  Rendered layout layouts/admin.html.erb (Duration: 50.4ms | Allocations: 8529)
+Completed 200 OK in 98ms (Views: 54.1ms | ActiveRecord: 0.4ms | Allocations: 9942)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 17:06:42 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 17:06:43 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 17:06:43 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 17:06:43 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 17:06:43 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 17:06:44 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre" for ::1 at 2022-07-20 17:07:38 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.6ms | Allocations: 187)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 3.3ms | Allocations: 579)
+  Rendered shared/_headeradminpage.html.erb (Duration: 4.7ms | Allocations: 1242)
+  Rendered layout layouts/admin.html.erb (Duration: 37.9ms | Allocations: 9735)
+Completed 200 OK in 79ms (Views: 44.2ms | ActiveRecord: 0.9ms | Allocations: 11489)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 17:07:38 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 17:07:38 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 17:07:39 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 17:07:39 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre/add" for ::1 at 2022-07-20 17:07:40 +0700
+Processing by Admin::GenreController#index as HTML
+  Parameters: {"page"=>"add"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 0.8ms | Allocations: 145)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.0ms | Allocations: 907)
+  Rendered layout layouts/admin.html.erb (Duration: 39.2ms | Allocations: 8485)
+Completed 200 OK in 75ms (Views: 40.5ms | ActiveRecord: 0.5ms | Allocations: 9835)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 17:07:41 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 17:07:41 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 17:07:41 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 17:07:41 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/genre" for ::1 at 2022-07-20 17:07:44 +0700
+Processing by Admin::GenreController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/genre/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered admin/genre/index.html.erb within layouts/admin (Duration: 2.1ms | Allocations: 145)
+  Rendered shared/_headeradminpage.html.erb (Duration: 4.5ms | Allocations: 906)
+  Rendered layout layouts/admin.html.erb (Duration: 27.8ms | Allocations: 8376)
+Completed 200 OK in 65ms (Views: 29.2ms | ActiveRecord: 0.6ms | Allocations: 9629)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-20 17:07:44 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-20 17:07:44 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-20 17:07:45 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-20 17:07:45 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
