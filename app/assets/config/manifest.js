@@ -17,3 +17,11 @@
 //= link mainpage/js/jquery.slicknav.js
 //= link mainpage/js/owl.carousel.min.js
 //= link mainpage/js/main.js
+
+// = link adminpage/css/vendor.min.css
+// = link adminpage/css/app.min.css
+
+//= link adminpage/js/vendor.min.js
+//= link adminpage/js/app.min.js
+//= link adminpage/plugins/apexcharts/dist/apexcharts.min.js
+//= link adminpage/js/demo/dashboard.demo.js
