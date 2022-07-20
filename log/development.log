@@ -2789,3 +2789,951 @@ ActionView::Template::Error (Missing host to link to! Please provide the :host p
 app/views/password_mailer/reset.html.erb:7
 app/mailers/password_mailer.rb:3:in `reset'
 app/controllers/login_controller.rb:27:in `forgotpassstore'
+Started POST "/forgotpassword/store" for 127.0.0.1 at 2022-07-20 09:36:38 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by LoginController#forgotpassstore as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"admin@admin.com", "commit"=>"Forgot Password"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@admin.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:23:in `forgotpassstore'
+  Rendering layout layouts/mailer.html.erb
+  Rendering password_mailer/reset.html.erb within layouts/mailer
+  Rendered password_mailer/reset.html.erb within layouts/mailer (Duration: 2.3ms | Allocations: 588)
+  Rendered layout layouts/mailer.html.erb (Duration: 9.1ms | Allocations: 840)
+PasswordMailer#reset: processed outbound mail in 48.7ms
+Delivered mail 62d76a36d77d8_b03035d4-4fb@LAPTOP-5PNCT6LE.mail (1392.1ms)
+Date: Wed, 20 Jul 2022 09:36:38 +0700
+From: from@example.com
+To: admin@admin.com
+Message-ID: <62d76a36d77d8_b03035d4-4fb@LAPTOP-5PNCT6LE.mail>
+Subject: Reset
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    Hi, admin@admin.com,
+
+someone request a reset of your password.
+
+If this was you, click the link to reset your password. the link will expire in 15 minutes.
+
+<a href="http://localhost:3000/forgotpassword/edit?token=eyJfcmFpbHMiOnsibWVzc2FnZSI6Ik1RPT0iLCJleHAiOiIyMDIyLTA3LTIwVDAyOjUxOjM4Ljc0NVoiLCJwdXIiOiJ1c2VyL3Bhc3N3b3JkX3Jlc2V0In19--cc9d4872876342394358c4dbc3a2c21e2fab7584129c000893767ff517acb894">Reset Password</a>
+  </body>
+</html>
+
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 1542ms (ActiveRecord: 3.7ms | Allocations: 24861)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-20 09:36:40 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 180)
+  Rendered shared/_headermainpage.html.erb (Duration: 0.7ms | Allocations: 131)
+  Rendered shared/_footermainpage.html.erb (Duration: 0.8ms | Allocations: 120)
+  Rendered layout layouts/application.html.erb (Duration: 167.6ms | Allocations: 53523)
+Completed 200 OK in 177ms (Views: 173.2ms | ActiveRecord: 0.0ms | Allocations: 54586)
+
+
+Started GET "/fonts/ElegantIcons.woff" for 127.0.0.1 at 2022-07-20 09:36:40 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/ElegantIcons.woff"):
+  
+Started GET "/fonts/ElegantIcons.ttf" for 127.0.0.1 at 2022-07-20 09:36:40 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/ElegantIcons.ttf"):
+  
+Started GET "/forgotpassword/edit?token=[FILTERED]" for ::1 at 2022-07-20 09:36:53 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/forgotpassword/edit"):
+  
+Started GET "/forgotpassword/edit?token=[FILTERED]" for ::1 at 2022-07-20 09:38:15 +0700
+Processing by LoginController#forgotpassedit as HTML
+  Parameters: {"token"=>"[FILTERED]"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:37:in `forgotpassedit'
+Completed 406 Not Acceptable in 18ms (ActiveRecord: 5.5ms | Allocations: 4847)
+
+
+  
+ActionController::MissingExactTemplate (LoginController#forgotpassedit is missing a template for request formats: text/html):
+  
+actionpack (7.0.3.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (7.0.3.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (7.0.3.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.3.1) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/rendering.rb:53:in `process_action'
+actionpack (7.0.3.1) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.3.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.3.1) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.3.1) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.3.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.3.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.3.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.3.1) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.3.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.3.1) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/forgotpassword/edit?token=[FILTERED]" for ::1 at 2022-07-20 09:38:42 +0700
+Processing by LoginController#forgotpassedit as HTML
+  Parameters: {"token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:37:in `forgotpassedit'
+  Rendering layout layouts/login.html.erb
+  Rendering login/forgotpassedit.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.7ms | Allocations: 315)
+  Rendered login/forgotpassedit.html.erb within layouts/login (Duration: 10.6ms | Allocations: 1942)
+  Rendered layout layouts/login.html.erb (Duration: 12.8ms | Allocations: 2228)
+Completed 200 OK in 21ms (Views: 15.1ms | ActiveRecord: 0.4ms | Allocations: 3684)
+
+
+Started GET "/forgotpassword/edit?token=[FILTERED]" for ::1 at 2022-07-20 09:42:14 +0700
+  
+NoMethodError (undefined method `pluck' for #<ActionDispatch::Routing::Mapper:0x000001f6f3b0b260 @set=#<ActionDispatch::Routing::RouteSet:0x000001f6f0826a98>, @draw_paths=[#<Pathname:C:/Rsites/perpustakaan-ror/config/routes>], @scope=#<ActionDispatch::Routing::Mapper::Scope:0x000001f6f3b0b210 @hash={:path_names=>{:new=>"new", :edit=>"edit"}}, @parent=#<ActionDispatch::Routing::Mapper::Scope:0x000001f6f12685d8 @hash=nil, @parent=nil, @scope_level=nil>, @scope_level=nil>, @concerns={}>
+
+  pluck "forgotpassword/update", to: "login#forgotpassupdate", as: "forgotpassupdate"
+  ^^^^^):
+  
+config/routes.rb:11:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/forgotpassword/edit?token=[FILTERED]" for ::1 at 2022-07-20 09:44:10 +0700
+Processing by LoginController#forgotpassedit as HTML
+  Parameters: {"token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:37:in `forgotpassedit'
+  Rendering layout layouts/login.html.erb
+  Rendering login/forgotpassedit.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 1.2ms | Allocations: 420)
+  Rendered login/forgotpassedit.html.erb within layouts/login (Duration: 17.7ms | Allocations: 5475)
+  Rendered layout layouts/login.html.erb (Duration: 19.0ms | Allocations: 5570)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 3.5ms | Allocations: 10412)
+
+
+  
+ActionView::Template::Error (undefined method `forgotpassupdate_path' for #<ActionView::Base:0x00000000010900>
+Did you mean?  forgotpassedit_path
+               forgotpassword_path
+               forgotpasswordstore_path):
+     6:         <h3 class="text-center">Forgot Password</h3>
+     7:         <%= render partial: "shared/alertmainpage" %>
+     8:         <hr />
+     9:         <%= form_with model: @user, url: forgotpassupdate_path(token:
+    10:         params[:token]) do |form| %>
+    11:         <div class="mb-3">
+    12:           <label class="form-label">Password</label>
+  
+app/views/login/forgotpassedit.html.erb:9
+Started GET "/forgotpassword/edit?token=[FILTERED]" for ::1 at 2022-07-20 09:47:37 +0700
+  
+NoMethodError (undefined method `pluck' for #<ActionDispatch::Routing::Mapper:0x000001f6f133cdb0 @set=#<ActionDispatch::Routing::RouteSet:0x000001f6f0826a98>, @draw_paths=[#<Pathname:C:/Rsites/perpustakaan-ror/config/routes>], @scope=#<ActionDispatch::Routing::Mapper::Scope:0x000001f6f133cd60 @hash={:path_names=>{:new=>"new", :edit=>"edit"}}, @parent=#<ActionDispatch::Routing::Mapper::Scope:0x000001f6f12685d8 @hash=nil, @parent=nil, @scope_level=nil>, @scope_level=nil>, @concerns={}>
+
+  pluck "forgotpassword/update", to: "login#forgotpassupdate", as: "forgotpassupdate"
+  ^^^^^):
+  
+config/routes.rb:11:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/forgotpassword/edit?token=[FILTERED]" for ::1 at 2022-07-20 09:48:36 +0700
+Processing by LoginController#forgotpassedit as HTML
+  Parameters: {"token"=>"[FILTERED]"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 8)
+Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 668)
+
+
+Started GET "/forgotpassword/edit?token=[FILTERED]" for ::1 at 2022-07-20 09:48:57 +0700
+Processing by LoginController#forgotpassedit as HTML
+  Parameters: {"token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:37:in `forgotpassedit'
+  Rendering layout layouts/login.html.erb
+  Rendering login/forgotpassedit.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.7ms | Allocations: 280)
+  Rendered login/forgotpassedit.html.erb within layouts/login (Duration: 19.5ms | Allocations: 1194)
+  Rendered layout layouts/login.html.erb (Duration: 22.5ms | Allocations: 1488)
+Completed 200 OK in 38ms (Views: 24.3ms | ActiveRecord: 2.1ms | Allocations: 6163)
+
+
+Started GET "/forgotpassword/edit?token=[FILTERED]" for ::1 at 2022-07-20 09:49:02 +0700
+Processing by LoginController#forgotpassedit as HTML
+  Parameters: {"token"=>"[FILTERED]"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:37:in `forgotpassedit'
+  Rendering layout layouts/login.html.erb
+  Rendering login/forgotpassedit.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.4ms | Allocations: 258)
+  Rendered login/forgotpassedit.html.erb within layouts/login (Duration: 1.9ms | Allocations: 859)
+  Rendered layout layouts/login.html.erb (Duration: 2.8ms | Allocations: 969)
+Completed 200 OK in 9ms (Views: 4.1ms | ActiveRecord: 1.0ms | Allocations: 1984)
+
+
+Started GET "/forgotpassword/edit?token=[FILTERED]" for ::1 at 2022-07-20 09:49:03 +0700
+Processing by LoginController#forgotpassedit as HTML
+  Parameters: {"token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:37:in `forgotpassedit'
+  Rendering layout layouts/login.html.erb
+  Rendering login/forgotpassedit.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.7ms | Allocations: 222)
+  Rendered login/forgotpassedit.html.erb within layouts/login (Duration: 2.7ms | Allocations: 803)
+  Rendered layout layouts/login.html.erb (Duration: 3.7ms | Allocations: 912)
+Completed 200 OK in 11ms (Views: 5.7ms | ActiveRecord: 0.8ms | Allocations: 1811)
+
+
+Started GET "/forgotpassword/edit?token=[FILTERED]" for ::1 at 2022-07-20 09:49:04 +0700
+Processing by LoginController#forgotpassedit as HTML
+  Parameters: {"token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:37:in `forgotpassedit'
+  Rendering layout layouts/login.html.erb
+  Rendering login/forgotpassedit.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.9ms | Allocations: 207)
+  Rendered login/forgotpassedit.html.erb within layouts/login (Duration: 3.4ms | Allocations: 788)
+  Rendered layout layouts/login.html.erb (Duration: 5.3ms | Allocations: 897)
+Completed 200 OK in 17ms (Views: 6.4ms | ActiveRecord: 0.5ms | Allocations: 1805)
+
+
+Started GET "/forgotpassword/edit?token=[FILTERED]" for ::1 at 2022-07-20 09:58:09 +0700
+Processing by LoginController#forgotpassedit as HTML
+  Parameters: {"token"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 22ms (Allocations: 4131)
+
+
+  
+NameError (uninitialized constant LoginController::ActiveSuppor
+
+  rescue ActiveSuppor::MessageVerifier::InvalidSignature
+         ^^^^^^^^^^^^
+Did you mean?  ActiveSupport):
+  
+app/controllers/login_controller.rb:38:in `rescue in forgotpassedit'
+app/controllers/login_controller.rb:36:in `forgotpassedit'
+Started GET "/forgotpassword/edit?token=[FILTERED]" for ::1 at 2022-07-20 09:58:40 +0700
+Processing by LoginController#forgotpassedit as HTML
+  Parameters: {"token"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 8ms (Allocations: 3133)
+
+
+  
+NameError (uninitialized constant LoginController::ActiveSuppor
+
+  rescue ActiveSuppor::MessageVerifier::InvalidSignature
+         ^^^^^^^^^^^^
+Did you mean?  ActiveSupport):
+  
+app/controllers/login_controller.rb:38:in `rescue in forgotpassedit'
+app/controllers/login_controller.rb:36:in `forgotpassedit'
+Started GET "/forgotpassword/edit?token=[FILTERED]" for ::1 at 2022-07-20 09:59:02 +0700
+Processing by LoginController#forgotpassedit as HTML
+  Parameters: {"token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (Allocations: 1820)
+
+
+Started GET "/" for ::1 at 2022-07-20 09:59:04 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 172)
+  Rendered shared/_headermainpage.html.erb (Duration: 0.8ms | Allocations: 127)
+  Rendered shared/_footermainpage.html.erb (Duration: 0.9ms | Allocations: 119)
+  Rendered layout layouts/application.html.erb (Duration: 69.0ms | Allocations: 19089)
+Completed 200 OK in 78ms (Views: 74.7ms | Allocations: 19920)
+
+
+Started GET "/fonts/ElegantIcons.woff" for ::1 at 2022-07-20 09:59:05 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/ElegantIcons.woff"):
+  
+Started GET "/fonts/ElegantIcons.ttf" for ::1 at 2022-07-20 09:59:05 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/ElegantIcons.ttf"):
+  
+Started GET "/login" for ::1 at 2022-07-20 09:59:14 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.9ms | Allocations: 312)
+  Rendered login/index.html.erb within layouts/login (Duration: 6.1ms | Allocations: 2240)
+  Rendered layout layouts/login.html.erb (Duration: 8.2ms | Allocations: 2359)
+Completed 200 OK in 13ms (Views: 10.2ms | Allocations: 2968)
+
+
+Started GET "/forgotpassword" for ::1 at 2022-07-20 10:00:28 +0700
+Processing by LoginController#forgotpass as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/forgotpass.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.3ms | Allocations: 280)
+  Rendered login/forgotpass.html.erb within layouts/login (Duration: 2.6ms | Allocations: 1592)
+  Rendered layout layouts/login.html.erb (Duration: 3.5ms | Allocations: 1711)
+Completed 200 OK in 10ms (Views: 6.1ms | Allocations: 2421)
+
+
+Started POST "/forgotpassword/store" for ::1 at 2022-07-20 10:00:35 +0700
+Processing by LoginController#forgotpassstore as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"admin@admin.com", "commit"=>"Forgot Password"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@admin.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:23:in `forgotpassstore'
+  Rendering layout layouts/mailer.html.erb
+  Rendering password_mailer/reset.html.erb within layouts/mailer
+  Rendered password_mailer/reset.html.erb within layouts/mailer (Duration: 1.9ms | Allocations: 290)
+  Rendered layout layouts/mailer.html.erb (Duration: 4.9ms | Allocations: 516)
+PasswordMailer#reset: processed outbound mail in 17.0ms
+Delivered mail 62d76fd386b38_b0305ce4-3c9@LAPTOP-5PNCT6LE.mail (1479.7ms)
+Date: Wed, 20 Jul 2022 10:00:35 +0700
+From: from@example.com
+To: admin@admin.com
+Message-ID: <62d76fd386b38_b0305ce4-3c9@LAPTOP-5PNCT6LE.mail>
+Subject: Reset
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    Hi, admin@admin.com,
+
+someone request a reset of your password.
+
+If this was you, click the link to reset your password. the link will expire in 15 minutes.
+
+<a href="http://localhost:3000/forgotpassword/edit?token=eyJfcmFpbHMiOnsibWVzc2FnZSI6Ik1RPT0iLCJleHAiOiIyMDIyLTA3LTIwVDAzOjE1OjM1LjUxMFoiLCJwdXIiOiJ1c2VyL3Jlc2V0cGFzcyJ9fQ%3D%3D--1c8bb016402ee17ad9fd3f2c983a098b88db4d66d0de2b5469174817c32ead8c">Reset Password</a>
+  </body>
+</html>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1562ms (ActiveRecord: 4.7ms | Allocations: 9705)
+
+
+Started GET "/" for ::1 at 2022-07-20 10:00:37 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+  Rendered shared/_headermainpage.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered shared/_footermainpage.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 35.7ms | Allocations: 18143)
+Completed 200 OK in 40ms (Views: 37.3ms | ActiveRecord: 0.0ms | Allocations: 18792)
+
+
+Started GET "/fonts/ElegantIcons.woff" for ::1 at 2022-07-20 10:00:37 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/ElegantIcons.woff"):
+  
+Started GET "/fonts/ElegantIcons.ttf" for ::1 at 2022-07-20 10:00:37 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/ElegantIcons.ttf"):
+  
+Started GET "/login" for ::1 at 2022-07-20 10:00:59 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.4ms | Allocations: 334)
+  Rendered login/index.html.erb within layouts/login (Duration: 4.5ms | Allocations: 1916)
+  Rendered layout layouts/login.html.erb (Duration: 5.7ms | Allocations: 2035)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 2661)
+
+
+Started GET "/forgotpassword" for ::1 at 2022-07-20 10:01:05 +0700
+Processing by LoginController#forgotpass as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/forgotpass.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.3ms | Allocations: 219)
+  Rendered login/forgotpass.html.erb within layouts/login (Duration: 1.8ms | Allocations: 1164)
+  Rendered layout layouts/login.html.erb (Duration: 2.5ms | Allocations: 1273)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 1567)
+
+
+Started POST "/forgotpassword/store" for ::1 at 2022-07-20 10:01:25 +0700
+Processing by LoginController#forgotpassstore as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"admin@admin.com", "commit"=>"Forgot Password"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@admin.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:23:in `forgotpassstore'
+  Rendering layout layouts/mailer.html.erb
+  Rendering password_mailer/reset.html.erb within layouts/mailer
+  Rendered password_mailer/reset.html.erb within layouts/mailer (Duration: 0.7ms | Allocations: 147)
+  Rendered layout layouts/mailer.html.erb (Duration: 2.2ms | Allocations: 263)
+PasswordMailer#reset: processed outbound mail in 5.1ms
+Delivered mail 62d77005b8cf3_b0307ee0-258@LAPTOP-5PNCT6LE.mail (1892.0ms)
+Date: Wed, 20 Jul 2022 10:01:25 +0700
+From: from@example.com
+To: admin@admin.com
+Message-ID: <62d77005b8cf3_b0307ee0-258@LAPTOP-5PNCT6LE.mail>
+Subject: Reset
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    Hi, admin@admin.com,
+
+someone request a reset of your password.
+
+If this was you, click the link to reset your password. the link will expire in 15 minutes.
+
+<a href="http://localhost:3000/forgotpassword/edit?token=eyJfcmFpbHMiOnsibWVzc2FnZSI6Ik1RPT0iLCJleHAiOiIyMDIyLTA3LTIwVDAzOjE2OjI1Ljc0NVoiLCJwdXIiOiJ1c2VyL3Jlc2V0cGFzcyJ9fQ%3D%3D--9274f31063b69017f63416cc94e5d93acd3fabe9b66170a7f06881a9c75d1b4d">Reset Password</a>
+  </body>
+</html>
+
+Redirected to http://localhost:3000/forgotpassword
+Completed 302 Found in 1927ms (ActiveRecord: 5.0ms | Allocations: 9405)
+
+
+Started GET "/forgotpassword" for ::1 at 2022-07-20 10:01:27 +0700
+Processing by LoginController#forgotpass as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/forgotpass.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.5ms | Allocations: 288)
+  Rendered login/forgotpass.html.erb within layouts/login (Duration: 2.2ms | Allocations: 1258)
+  Rendered layout layouts/login.html.erb (Duration: 3.2ms | Allocations: 1367)
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 1670)
+
+
+Started GET "/forgotpassword/edit?token=[FILTERED]" for ::1 at 2022-07-20 10:01:39 +0700
+Processing by LoginController#forgotpassedit as HTML
+  Parameters: {"token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:37:in `forgotpassedit'
+  Rendering layout layouts/login.html.erb
+  Rendering login/forgotpassedit.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.3ms | Allocations: 213)
+  Rendered login/forgotpassedit.html.erb within layouts/login (Duration: 2.3ms | Allocations: 824)
+  Rendered layout layouts/login.html.erb (Duration: 3.1ms | Allocations: 933)
+Completed 200 OK in 10ms (Views: 4.3ms | ActiveRecord: 0.5ms | Allocations: 2526)
+
+
+Started PATCH "/forgotpassword/update?token=[FILTERED]" for ::1 at 2022-07-20 10:01:51 +0700
+Processing by LoginController#forgotpassupdate as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Forgot Password", "token"=>"[FILTERED]"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 451)
+
+
+Started PATCH "/forgotpassword/update?token=[FILTERED]" for ::1 at 2022-07-20 10:04:06 +0700
+Processing by LoginController#forgotpassupdate as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Forgot Password", "token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:43:in `forgotpassupdate'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/login_controller.rb:44:in `forgotpassupdate'
+  [1m[36mUser Update (13.6ms)[0m  [1m[33mUPDATE `users` SET `users`.`password_digest` = '$2a$12$JuT.j.c2A/ZYu7d5kcclZ.knrR2uURMjCZlloWQUI1yI1lHQwerAm', `users`.`updated_at` = '2022-07-20 03:04:08.134977' WHERE `users`.`id` = 1[0m
+  ↳ app/controllers/login_controller.rb:44:in `forgotpassupdate'
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/login_controller.rb:44:in `forgotpassupdate'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 341ms (ActiveRecord: 22.1ms | Allocations: 7952)
+
+
+Started GET "/login" for ::1 at 2022-07-20 10:04:08 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.6ms | Allocations: 310)
+  Rendered login/index.html.erb within layouts/login (Duration: 2.9ms | Allocations: 1910)
+  Rendered layout layouts/login.html.erb (Duration: 4.1ms | Allocations: 2029)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 2606)
+
+
+Started POST "/login/store" for ::1 at 2022-07-20 10:51:11 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"admin@admin.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@admin.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:8:in `store'
+Completed 500 Internal Server Error in 409ms (ActiveRecord: 7.1ms | Allocations: 12503)
+
+
+  
+NameError (undefined local variable or method `admindashboard_path' for #<LoginController:0x0000000000ae10>
+
+      redirect_to admindashboard_path, flash: { :message => "Logged in", :type => "success" }
+                  ^^^^^^^^^^^^^^^^^^^
+Did you mean?  admin_admindashboard_path):
+  
+app/controllers/login_controller.rb:11:in `store'
+Started POST "/login/store" for ::1 at 2022-07-20 10:53:21 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"admin@admin.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@admin.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:8:in `store'
+Completed 500 Internal Server Error in 381ms (ActiveRecord: 4.5ms | Allocations: 7500)
+
+
+  
+NameError (undefined local variable or method `admindashboard_path' for #<LoginController:0x0000000000ef60>
+
+      redirect_to admindashboard_path, flash: { :message => "Logged in", :type => "success" }
+                  ^^^^^^^^^^^^^^^^^^^
+Did you mean?  admin_admindashboard_path):
+  
+app/controllers/login_controller.rb:11:in `store'
+Started POST "/login/store" for ::1 at 2022-07-20 10:53:35 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"admin@admin.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@admin.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:8:in `store'
+Completed 500 Internal Server Error in 379ms (ActiveRecord: 4.4ms | Allocations: 7525)
+
+
+  
+NameError (undefined local variable or method `admindashboard_path' for #<LoginController:0x00000000013038>
+
+      redirect_to admindashboard_path, flash: { :message => "Logged in", :type => "success" }
+                  ^^^^^^^^^^^^^^^^^^^
+Did you mean?  admin_admindashboard_path):
+  
+app/controllers/login_controller.rb:11:in `store'
+Started POST "/login/store" for ::1 at 2022-07-20 10:54:35 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"admin@admin.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@admin.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:8:in `store'
+Redirected to http://localhost:3000/admin/dashboard
+Completed 302 Found in 358ms (ActiveRecord: 5.5ms | Allocations: 4295)
+
+
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 10:54:37 +0700
+Processing by Admin::DashboardController#index as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2709)
+
+
+  
+NameError (uninitialized constant ApplicationController::Current
+
+      Current.user = User.find_by(id: session[:user_id])
+      ^^^^^^^):
+  
+app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT GET_LOCK('2023920071367314085', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateCurrents (20220720035708)
+  [1m[35m (68.6ms)[0m  [1m[35mCREATE TABLE `currents` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220720035708')[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT RELEASE_LOCK('2023920071367314085')[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 10:59:33 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 3.0ms | Allocations: 313)
+  Rendered layout layouts/admin.html.erb (Duration: 14.9ms | Allocations: 2191)
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 3.1ms | Allocations: 13476)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <%= csrf_meta_tags %> <%= csp_meta_tag %>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <%= stylesheet_link_tag "mainpage/css/bootstrap.min", "data-turbo-track":
+    "reload" %> <%= stylesheet_link_tag "mainpage/css/font-awesome.min",
+    "data-turbo-track": "reload" %> <%= stylesheet_link_tag
+    "mainpage/css/elegant-icons", "data-turbo-track": "reload" %> <%=
+    stylesheet_link_tag "mainpage/css/plyr", "data-turbo-track": "reload" %> <%=
+    stylesheet_link_tag "mainpage/css/owl.carousel.min", "data-turbo-track":
+    "reload" %> <%= stylesheet_link_tag "mainpage/css/slicknav.min",
+    "data-turbo-track": "reload" %> <%= stylesheet_link_tag
+    "mainpage/css/style", "data-turbo-track": "reload" %> <%=
+    stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <%= render partial: "shared/headermainpage" %>
+    <section class="product spad">
+      <div class="container"><%= yield %></div>
+    </section>
+    <%= render partial: "shared/footermainpage" %>
+
+    <script src="<%= javascript_path 'mainpage/js/jquery-3.3.1.min'%>"></script>
+    <script src="<%= javascript_path 'mainpage/js/bootstrap.min'%>"></script>
+    <script src="<%= javascript_path 'mainpage/js/player'%>"></script>
+    <script src="<%= javascript_path 'mainpage/js/jquery.nice-select.min'%>"></script>
+    <script src="<%= javascript_path 'mainpage/js/mixitup.min'%>"></script>
+    <script src="<%= javascript_path 'mainpage/js/jquery.slicknav'%>"></script>
+    <script src="<%= javascript_path 'mainpage/js/owl.carousel.min'%>"></script>
+    <script src="<%= javascript_path 'mainpage/js/main'%>"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title><%= yield(:title) %></title>
+5:        <meta name="viewport" content="width=device-width,initial-scale=1" />
+6:        <%= csrf_meta_tags %> <%= csp_meta_tag %>
+7:    
+8:        <!-- Google Font -->
+9:        <link
+10:          href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+11:          rel="stylesheet"
+12:        />
+13:        <link
+14:          href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+15:          rel="stylesheet"
+16:        />
+17:    
+18:        <%= stylesheet_link_tag "mainpage/css/bootstrap.min", "data-turbo-track":
+19:        "reload" %> <%= stylesheet_link_tag "mainpage/css/font-awesome.min",
+20:        "data-turbo-track": "reload" %> <%= stylesheet_link_tag
+21:        "mainpage/css/elegant-icons", "data-turbo-track": "reload" %> <%=
+22:        stylesheet_link_tag "mainpage/css/plyr", "data-turbo-track": "reload" %> <%=
+23:        stylesheet_link_tag "mainpage/css/owl.carousel.min", "data-turbo-track":
+24:        "reload" %> <%= stylesheet_link_tag "mainpage/css/slicknav.min",
+25:        "data-turbo-track": "reload" %> <%= stylesheet_link_tag
+26:        "mainpage/css/style", "data-turbo-track": "reload" %> <%=
+27:        stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+28:    
+29:        <link
+30:          href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+31:          rel="stylesheet"
+32:        />
+33:      </head>
+34:    
+35:      <body>
+36:        <%= render partial: "shared/headermainpage" %>
+37:        <section class="product spad">
+38:          <div class="container"><%= yield %></div>
+39:        </section>
+40:        <%= render partial: "shared/footermainpage" %>
+41:    
+42:        <script src="<%= javascript_path 'mainpage/js/jquery-3.3.1.min'%>"></script>
+43:        <script src="<%= javascript_path 'mainpage/js/bootstrap.min'%>"></script>
+44:        <script src="<%= javascript_path 'mainpage/js/player'%>"></script>
+45:        <script src="<%= javascript_path 'mainpage/js/jquery.nice-select.min'%>"></script>
+46:        <script src="<%= javascript_path 'mainpage/js/mixitup.min'%>"></script>
+47:        <script src="<%= javascript_path 'mainpage/js/jquery.slicknav'%>"></script>
+48:        <script src="<%= javascript_path 'mainpage/js/owl.carousel.min'%>"></script>
+49:        <script src="<%= javascript_path 'mainpage/js/main'%>"></script>
+50:        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+51:      </body>
+52:    </html>
+  
+app/views/layouts/admin.html.erb:21: syntax error, unexpected ',', expecting ')'
+app/views/layouts/admin.html.erb:26: syntax error, unexpected ',', expecting ')'
+app/views/layouts/admin.html.erb:21: syntax error, unexpected ',', expecting ')'
+app/views/layouts/admin.html.erb:26: syntax error, unexpected ',', expecting ')'
+app/views/layouts/admin.html.erb:21: syntax error, unexpected ',', expecting ')'
+app/views/layouts/admin.html.erb:26: syntax error, unexpected ',', expecting ')'
+app/views/layouts/admin.html.erb:21: syntax error, unexpected ',', expecting ')'
+app/views/layouts/admin.html.erb:26: syntax error, unexpected ',', expecting ')'
+app/views/layouts/admin.html.erb:21: syntax error, unexpected ',', expecting ')'
+app/views/layouts/admin.html.erb:26: syntax error, unexpected ',', expecting ')'
+app/views/layouts/admin.html.erb:21: syntax error, unexpected ',', expecting ')'
+app/views/layouts/admin.html.erb:26: syntax error, unexpected ',', expecting ')'
+Started GET "/login" for ::1 at 2022-07-20 11:00:19 +0700
+Processing by LoginController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 1.7ms | Allocations: 217)
+  Rendered login/index.html.erb within layouts/login (Duration: 20.6ms | Allocations: 2815)
+  Rendered layout layouts/login.html.erb (Duration: 25.3ms | Allocations: 3102)
+Completed 200 OK in 41ms (Views: 29.1ms | ActiveRecord: 1.1ms | Allocations: 4774)
+
+
+Started GET "/login" for ::1 at 2022-07-20 11:12:02 +0700
+Processing by LoginController#index as HTML
+  [1m[36mUser Load (8.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.2ms | Allocations: 49)
+  Rendered login/index.html.erb within layouts/login (Duration: 5.0ms | Allocations: 1594)
+  Rendered layout layouts/login.html.erb (Duration: 9.2ms | Allocations: 1714)
+Completed 200 OK in 276ms (Views: 189.1ms | ActiveRecord: 11.0ms | Allocations: 6453)
+
+
+Started GET "/login" for ::1 at 2022-07-20 11:12:44 +0700
+Processing by LoginController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 9)
+Filter chain halted as :check_user_not_login rendered or redirected
+Completed 200 OK in 40ms (Views: 4.7ms | ActiveRecord: 11.4ms | Allocations: 4981)
+
+
+Started GET "/login" for ::1 at 2022-07-20 11:13:06 +0700
+Processing by LoginController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 4.2ms | Allocations: 9360)
+
+
+  
+NoMethodError (undefined method `nil' for #<User id: 1, email: "admin@admin.com", name: "admin", password_digest: [FILTERED], created_at: "2022-07-19 07:32:35.757176000 +0000", updated_at: "2022-07-20 03:04:08.134977000 +0000">
+Did you mean?  nil?):
+  
+app/controllers/application_controller.rb:17:in `check_user_not_login'
+Started GET "/login" for ::1 at 2022-07-20 11:13:12 +0700
+Processing by LoginController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 6)
+Redirected to 
+Completed 500 Internal Server Error in 23ms (Views: 2.2ms | ActiveRecord: 3.8ms | Allocations: 5382)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/application_controller.rb:19:in `check_user_not_login'
+Started GET "/login" for ::1 at 2022-07-20 11:13:45 +0700
+Processing by LoginController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+Redirected to http://localhost:3000/admin/dashboard
+Filter chain halted as :check_user_not_login rendered or redirected
+Completed 302 Found in 24ms (ActiveRecord: 3.8ms | Allocations: 4694)
+
+
+Started GET "/admin/dashboard" for ::1 at 2022-07-20 11:13:47 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 0.2ms | Allocations: 28)
+  Rendered layout layouts/admin.html.erb (Duration: 4.2ms | Allocations: 1619)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.5ms | Allocations: 3152)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <%= csrf_meta_tags %> <%= csp_meta_tag %>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <%= stylesheet_link_tag "mainpage/css/bootstrap.min", "data-turbo-track":
+    "reload" %> <%= stylesheet_link_tag "mainpage/css/font-awesome.min",
+    "data-turbo-track": "reload" %> <%= stylesheet_link_tag
+    "mainpage/css/elegant-icons", "data-turbo-track": "reload" %> <%=
+    stylesheet_link_tag "mainpage/css/plyr", "data-turbo-track": "reload" %> <%=
+    stylesheet_link_tag "mainpage/css/owl.carousel.min", "data-turbo-track":
+    "reload" %> <%= stylesheet_link_tag "mainpage/css/slicknav.min",
+    "data-turbo-track": "reload" %> <%= stylesheet_link_tag
+    "mainpage/css/style", "data-turbo-track": "reload" %> <%=
+    stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <%= render partial: "shared/headermainpage" %>
+    <section class="product spad">
+      <div class="container"><%= yield %></div>
+    </section>
+    <%= render partial: "shared/footermainpage" %>
+
+    <script src="<%= javascript_path 'mainpage/js/jquery-3.3.1.min'%>"></script>
+    <script src="<%= javascript_path 'mainpage/js/bootstrap.min'%>"></script>
+    <script src="<%= javascript_path 'mainpage/js/player'%>"></script>
+    <script src="<%= javascript_path 'mainpage/js/jquery.nice-select.min'%>"></script>
+    <script src="<%= javascript_path 'mainpage/js/mixitup.min'%>"></script>
+    <script src="<%= javascript_path 'mainpage/js/jquery.slicknav'%>"></script>
+    <script src="<%= javascript_path 'mainpage/js/owl.carousel.min'%>"></script>
+    <script src="<%= javascript_path 'mainpage/js/main'%>"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title><%= yield(:title) %></title>
+5:        <meta name="viewport" content="width=device-width,initial-scale=1" />
+6:        <%= csrf_meta_tags %> <%= csp_meta_tag %>
+7:    
+8:        <!-- Google Font -->
+9:        <link
+10:          href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+11:          rel="stylesheet"
+12:        />
+13:        <link
+14:          href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+15:          rel="stylesheet"
+16:        />
+17:    
+18:        <%= stylesheet_link_tag "mainpage/css/bootstrap.min", "data-turbo-track":
+19:        "reload" %> <%= stylesheet_link_tag "mainpage/css/font-awesome.min",
+20:        "data-turbo-track": "reload" %> <%= stylesheet_link_tag
+21:        "mainpage/css/elegant-icons", "data-turbo-track": "reload" %> <%=
+22:        stylesheet_link_tag "mainpage/css/plyr", "data-turbo-track": "reload" %> <%=
+23:        stylesheet_link_tag "mainpage/css/owl.carousel.min", "data-turbo-track":
+24:        "reload" %> <%= stylesheet_link_tag "mainpage/css/slicknav.min",
+25:        "data-turbo-track": "reload" %> <%= stylesheet_link_tag
+26:        "mainpage/css/style", "data-turbo-track": "reload" %> <%=
+27:        stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+28:    
+29:        <link
+30:          href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+31:          rel="stylesheet"
+32:        />
+33:      </head>
+34:    
+35:      <body>
+36:        <%= render partial: "shared/headermainpage" %>
+37:        <section class="product spad">
+38:          <div class="container"><%= yield %></div>
+39:        </section>
+40:        <%= render partial: "shared/footermainpage" %>
+41:    
+42:        <script src="<%= javascript_path 'mainpage/js/jquery-3.3.1.min'%>"></script>
+43:        <script src="<%= javascript_path 'mainpage/js/bootstrap.min'%>"></script>
+44:        <script src="<%= javascript_path 'mainpage/js/player'%>"></script>
+45:        <script src="<%= javascript_path 'mainpage/js/jquery.nice-select.min'%>"></script>
+46:        <script src="<%= javascript_path 'mainpage/js/mixitup.min'%>"></script>
+47:        <script src="<%= javascript_path 'mainpage/js/jquery.slicknav'%>"></script>
+48:        <script src="<%= javascript_path 'mainpage/js/owl.carousel.min'%>"></script>
+49:        <script src="<%= javascript_path 'mainpage/js/main'%>"></script>
+50:        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+51:      </body>
+52:    </html>
+  
+app/views/layouts/admin.html.erb:21: syntax error, unexpected ',', expecting ')'
+app/views/layouts/admin.html.erb:26: syntax error, unexpected ',', expecting ')'
+app/views/layouts/admin.html.erb:21: syntax error, unexpected ',', expecting ')'
+app/views/layouts/admin.html.erb:26: syntax error, unexpected ',', expecting ')'
+app/views/layouts/admin.html.erb:21: syntax error, unexpected ',', expecting ')'
+app/views/layouts/admin.html.erb:26: syntax error, unexpected ',', expecting ')'
+app/views/layouts/admin.html.erb:21: syntax error, unexpected ',', expecting ')'
+app/views/layouts/admin.html.erb:26: syntax error, unexpected ',', expecting ')'
+app/views/layouts/admin.html.erb:21: syntax error, unexpected ',', expecting ')'
+app/views/layouts/admin.html.erb:26: syntax error, unexpected ',', expecting ')'
+app/views/layouts/admin.html.erb:21: syntax error, unexpected ',', expecting ')'
+app/views/layouts/admin.html.erb:26: syntax error, unexpected ',', expecting ')'

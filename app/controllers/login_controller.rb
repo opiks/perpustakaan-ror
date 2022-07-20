@@ -1,4 +1,5 @@
 class LoginController < ApplicationController
+  before_action :check_user_not_login
   layout "login"
 
   def index
@@ -8,7 +9,7 @@ class LoginController < ApplicationController
     user = User.find_by(email: params[:email])
     if user.present? && user.authenticate(params[:password])
       session[:user_id] = user.id
-      redirect_to home_path, flash: { :message => "Logged in", :type => "success" }
+      redirect_to admin_dashboard_path, flash: { :message => "Logged in", :type => "success" }
     else
       flash[:message] = "Invalid email or password"
       flash[:type] = "danger"

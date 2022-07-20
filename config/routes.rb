@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "mainpages#index", as: "home"
+
+  # harusnya only guest
   get "login", to: "login#index", as: "login"
   post "login/store", to: "login#store", as: "loginstore"
   get "forgotpassword", to: "login#forgotpass", as: "forgotpassword"
@@ -10,4 +12,8 @@ Rails.application.routes.draw do
   get "forgotpassword/edit", to: "login#forgotpassedit", as: "forgotpassedit"
   patch "forgotpassword/update", to: "login#forgotpassupdate", as: "forgotpassupdate"
 
+  # harusnya only admin
+  namespace :admin do
+    get "dashboard", to: "dashboard#index", as: "dashboard"
+  end
 end
