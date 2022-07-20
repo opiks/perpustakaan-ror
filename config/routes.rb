@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   post "login/store", to: "login#store", as: "loginstore"
   get "forgotpassword", to: "login#forgotpass", as: "forgotpassword"
   post "forgotpassword/store", to: "login#forgotpassstore", as: "forgotpasswordstore"
+  post "forgotpassword/edit", to: "login#forgotpassedit", as: "forgotpassedit"
 
 end

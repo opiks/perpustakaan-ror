@@ -20,8 +20,6 @@ class LoginController < ApplicationController
   end
 
   def forgotpassstore
-    render plain: params
-
     @user = User.find_by(email: params[:email])
 
     if @user.present?
@@ -31,7 +29,13 @@ class LoginController < ApplicationController
     else
       flash[:message] = "Email is invalid"
       flash[:type] = "danger"
-      render :index
+      render :forgotpass
     end
+  end
+
+  def forgotpassedit
+    @user = User.find_signed!(params[:token], purpose: "password_reset")
+  rescue ActiveSuppor::MessageVerifier::InvalidSignature
+    redirect_to home_path, flash: { :message => "Your token has expired", :type => "danger" }
   end
 end

@@ -2565,3 +2565,181 @@ Processing by LoginController#forgotpass as HTML
 Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 1593)
 
 
+Started GET "/" for 127.0.0.1 at 2022-07-20 09:11:07 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 19.2ms | Allocations: 380)
+  Rendered shared/_headermainpage.html.erb (Duration: 7.3ms | Allocations: 133)
+  Rendered shared/_footermainpage.html.erb (Duration: 5.0ms | Allocations: 120)
+  Rendered layout layouts/application.html.erb (Duration: 788.1ms | Allocations: 53827)
+Completed 200 OK in 929ms (Views: 828.2ms | ActiveRecord: 0.0ms | Allocations: 57084)
+
+
+Started GET "/fonts/ElegantIcons.woff" for 127.0.0.1 at 2022-07-20 09:11:09 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/ElegantIcons.woff"):
+  
+Started GET "/fonts/ElegantIcons.ttf" for 127.0.0.1 at 2022-07-20 09:11:09 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/ElegantIcons.ttf"):
+  
+Started GET "/login" for 127.0.0.1 at 2022-07-20 09:11:12 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 8.0ms | Allocations: 413)
+  Rendered login/index.html.erb within layouts/login (Duration: 53.0ms | Allocations: 2782)
+  Rendered layout layouts/login.html.erb (Duration: 60.4ms | Allocations: 3068)
+Completed 200 OK in 67ms (Views: 62.6ms | ActiveRecord: 0.0ms | Allocations: 3849)
+
+
+Started GET "/forgotpassword" for 127.0.0.1 at 2022-07-20 09:16:51 +0700
+Processing by LoginController#forgotpass as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/forgotpass.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.4ms | Allocations: 249)
+  Rendered login/forgotpass.html.erb within layouts/login (Duration: 36.9ms | Allocations: 1446)
+  Rendered layout layouts/login.html.erb (Duration: 38.2ms | Allocations: 1557)
+Completed 200 OK in 43ms (Views: 40.3ms | ActiveRecord: 0.0ms | Allocations: 1956)
+
+
+Started POST "/forgotpassword/store" for 127.0.0.1 at 2022-07-20 09:17:14 +0700
+Processing by LoginController#forgotpassstore as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "commit"=>"Forgot Password"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 8)
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'taufikmuhammad550@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:25:in `forgotpassstore'
+Completed 500 Internal Server Error in 77ms (Views: 12.8ms | ActiveRecord: 15.7ms | Allocations: 5014)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/login_controller.rb:34:in `forgotpassstore'
+Started POST "/forgotpassword/store" for 127.0.0.1 at 2022-07-20 09:17:30 +0700
+Processing by LoginController#forgotpassstore as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "commit"=>"Forgot Password"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'taufikmuhammad550@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:23:in `forgotpassstore'
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered login/index.html.erb within layouts/login (Duration: 2.2ms | Allocations: 1624)
+  Rendered layout layouts/login.html.erb (Duration: 3.3ms | Allocations: 1744)
+Completed 200 OK in 13ms (Views: 4.9ms | ActiveRecord: 0.8ms | Allocations: 4883)
+
+
+Started GET "/forgotpassword" for 127.0.0.1 at 2022-07-20 09:18:11 +0700
+Processing by LoginController#forgotpass as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/forgotpass.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.4ms | Allocations: 278)
+  Rendered login/forgotpass.html.erb within layouts/login (Duration: 1.7ms | Allocations: 1223)
+  Rendered layout layouts/login.html.erb (Duration: 2.5ms | Allocations: 1332)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 1631)
+
+
+Started POST "/forgotpassword/store" for 127.0.0.1 at 2022-07-20 09:18:34 +0700
+Processing by LoginController#forgotpassstore as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "commit"=>"Forgot Password"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'taufikmuhammad550@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:23:in `forgotpassstore'
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.8ms | Allocations: 4317)
+
+
+  
+ActionView::MissingTemplate (Missing template login/forgotpassword, application/forgotpassword with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "C:/Rsites/perpustakaan-ror/app/views"
+  * "C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actiontext-7.0.3.1/app/views"
+  * "C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actionmailbox-7.0.3.1/app/views"
+
+Did you mean?  login/forgotpass
+               layouts/login
+               layouts/rails/conductor
+               rails/conductor/action_mailbox/inbound_emails/show
+               login/index
+               layouts/application):
+  
+app/controllers/login_controller.rb:32:in `forgotpassstore'
+Started POST "/forgotpassword/store" for 127.0.0.1 at 2022-07-20 09:18:47 +0700
+Processing by LoginController#forgotpassstore as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"taufikmuhammad550@gmail.com", "commit"=>"Forgot Password"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'taufikmuhammad550@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:23:in `forgotpassstore'
+  Rendering layout layouts/login.html.erb
+  Rendering login/forgotpass.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered login/forgotpass.html.erb within layouts/login (Duration: 1.3ms | Allocations: 1095)
+  Rendered layout layouts/login.html.erb (Duration: 2.4ms | Allocations: 1214)
+Completed 200 OK in 13ms (Views: 4.7ms | ActiveRecord: 0.9ms | Allocations: 4330)
+
+
+Started POST "/forgotpassword/store" for 127.0.0.1 at 2022-07-20 09:18:54 +0700
+Processing by LoginController#forgotpassstore as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"admin@admin.com", "commit"=>"Forgot Password"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@admin.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:23:in `forgotpassstore'
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 2.6ms | Allocations: 7288)
+
+
+  
+NameError (uninitialized constant LoginController::PasswordMailer
+
+      PasswordMailer.with(user: @user, token: @token).reset.deliver_now
+      ^^^^^^^^^^^^^^):
+  
+app/controllers/login_controller.rb:27:in `forgotpassstore'
+Started POST "/forgotpassword/store" for 127.0.0.1 at 2022-07-20 09:26:36 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by LoginController#forgotpassstore as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"admin@admin.com", "commit"=>"Forgot Password"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@admin.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:23:in `forgotpassstore'
+  Rendering layout layouts/mailer.html.erb
+  Rendering password_mailer/reset.html.erb within layouts/mailer
+  Rendered password_mailer/reset.html.erb within layouts/mailer (Duration: 15.2ms | Allocations: 5506)
+  Rendered layout layouts/mailer.html.erb (Duration: 17.2ms | Allocations: 5621)
+PasswordMailer#reset: processed outbound mail in 94.2ms
+Completed 500 Internal Server Error in 354ms (ActiveRecord: 4.1ms | Allocations: 30980)
+
+
+  
+ActionView::Template::Error (undefined method `forgopasswordedit_url' for #<ActionView::Base:0x0000000000ac30>
+Did you mean?  forgotpassword_url
+               forgotpasswordstore_url):
+    4: 
+    5: If this was you, click the link to reset your password. the link will expire in 15 minutes.
+    6: 
+    7: <%= link_to "Reset Password", forgopasswordedit_url(token: params[:token]) %>
+  
+app/views/password_mailer/reset.html.erb:7
+app/mailers/password_mailer.rb:3:in `reset'
+app/controllers/login_controller.rb:27:in `forgotpassstore'
+Started POST "/forgotpassword/store" for 127.0.0.1 at 2022-07-20 09:30:11 +0700
+Processing by LoginController#forgotpassstore as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"admin@admin.com", "commit"=>"Forgot Password"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@admin.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:23:in `forgotpassstore'
+  Rendering layout layouts/mailer.html.erb
+  Rendering password_mailer/reset.html.erb within layouts/mailer
+  Rendered password_mailer/reset.html.erb within layouts/mailer (Duration: 2.0ms | Allocations: 1275)
+  Rendered layout layouts/mailer.html.erb (Duration: 3.6ms | Allocations: 1370)
+PasswordMailer#reset: processed outbound mail in 9.2ms
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 3.0ms | Allocations: 8894)
+
+
+  
+ActionView::Template::Error (Missing host to link to! Please provide the :host parameter, set default_url_options[:host], or set :only_path to true):
+    4: 
+    5: If this was you, click the link to reset your password. the link will expire in 15 minutes.
+    6: 
+    7: <%= link_to "Reset Password", forgotpassedit_url(token: params[:token]) %>
+  
+app/views/password_mailer/reset.html.erb:7
+app/mailers/password_mailer.rb:3:in `reset'
+app/controllers/login_controller.rb:27:in `forgotpassstore'
