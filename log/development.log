@@ -2743,3 +2743,49 @@ ActionView::Template::Error (Missing host to link to! Please provide the :host p
 app/views/password_mailer/reset.html.erb:7
 app/mailers/password_mailer.rb:3:in `reset'
 app/controllers/login_controller.rb:27:in `forgotpassstore'
+Started POST "/forgotpassword/store" for 127.0.0.1 at 2022-07-20 09:34:50 +0700
+Processing by LoginController#forgotpassstore as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"admin@admin.com", "commit"=>"Forgot Password"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@admin.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:23:in `forgotpassstore'
+  Rendering layout layouts/mailer.html.erb
+  Rendering password_mailer/reset.html.erb within layouts/mailer
+  Rendered password_mailer/reset.html.erb within layouts/mailer (Duration: 2.3ms | Allocations: 1047)
+  Rendered layout layouts/mailer.html.erb (Duration: 3.3ms | Allocations: 1136)
+PasswordMailer#reset: processed outbound mail in 5.6ms
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms | Allocations: 3792)
+
+
+  
+ActionView::Template::Error (Missing host to link to! Please provide the :host parameter, set default_url_options[:host], or set :only_path to true):
+    4: 
+    5: If this was you, click the link to reset your password. the link will expire in 15 minutes.
+    6: 
+    7: <%= link_to "Reset Password", forgotpassedit_url(token: params[:token]) %>
+  
+app/views/password_mailer/reset.html.erb:7
+app/mailers/password_mailer.rb:3:in `reset'
+app/controllers/login_controller.rb:27:in `forgotpassstore'
+Started POST "/forgotpassword/store" for 127.0.0.1 at 2022-07-20 09:35:17 +0700
+Processing by LoginController#forgotpassstore as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"admin@admin.com", "commit"=>"Forgot Password"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@admin.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:23:in `forgotpassstore'
+  Rendering layout layouts/mailer.html.erb
+  Rendering password_mailer/reset.html.erb within layouts/mailer
+  Rendered password_mailer/reset.html.erb within layouts/mailer (Duration: 1.5ms | Allocations: 1047)
+  Rendered layout layouts/mailer.html.erb (Duration: 2.1ms | Allocations: 1136)
+PasswordMailer#reset: processed outbound mail in 3.5ms
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.0ms | Allocations: 3560)
+
+
+  
+ActionView::Template::Error (Missing host to link to! Please provide the :host parameter, set default_url_options[:host], or set :only_path to true):
+    4: 
+    5: If this was you, click the link to reset your password. the link will expire in 15 minutes.
+    6: 
+    7: <%= link_to "Reset Password", forgotpassedit_url(token: params[:token]) %>
+  
+app/views/password_mailer/reset.html.erb:7
+app/mailers/password_mailer.rb:3:in `reset'
+app/controllers/login_controller.rb:27:in `forgotpassstore'
