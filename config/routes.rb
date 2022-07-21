@@ -33,5 +33,13 @@ Rails.application.routes.draw do
     get "location/destroy/:id", to: "lokasi#destroy", as: "location_delete"
     get "location/edit/:id", to: "lokasi#edit", as: "location_edit"
     patch "location/update/:id", to: "lokasi#update", as: "location_update"
+
+    #crud tipe
+    get "type", to: "tipe#index", as: "type_index"
+    get "type/add", to: "tipe#add", as: "type_add"
+    post "type/store", to: "tipe#store", as: "type_store"
+    get "type/destroy/:id", to: "tipe#destroy", as: "type_delete"
+    get "type/edit/:id", to: "tipe#edit", as: "type_edit"
+    patch "type/update/:id", to: "tipe#update", as: "type_update"
   end
 end

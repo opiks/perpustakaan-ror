@@ -1,0 +1,107 @@
+<% content_for :title, "Tipe Buku" %>
+<h1 class="page-header mb-3">List Tipe Buku</h1>
+<div class="row">
+  <div class="col-xl-12">
+    <div class="card">
+      <div class="card-header row">
+        <div class="col-md-8">
+          <a href="<%= admin_type_add_path %>" class="btn btn-primary"
+            ><i class="fa fa-plus"></i> Tambah Tipe Buku</a
+          >
+        </div>
+        <div class="col-md-4">
+          <div class="text-end">
+            <form action="" method="get">
+              <div class="input-group">
+                <input
+                  type="search"
+                  class="form-control"
+                  name="search"
+                  value="<%= params[:search] %>"
+                  placeholder="Cari...."
+                />
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-primary">
+                    <i class="fa fa-search"></i> Cari
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <%= render partial: "shared/alertmainpage" %>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nama Tipe Buku</th>
+                <th scope="col">Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @types.each do |type| %>
+              <tr>
+                <td><%= @no+=1 %></td>
+                <td><%= type.name %></td>
+                <td>
+                  <a
+                    href="<%= admin_type_edit_path(type.id) %>"
+                    class="btn btn-sm btn-primary"
+                    ><i class="fa fa-edit"></i> Edit</a
+                  >
+                  <button
+                    data-delete="<%= admin_type_delete_path(type.id) %>"
+                    class="btn btn-sm btn-danger btndelete"
+                  >
+                    <i class="fa fa-trash"></i> Hapus
+                  </button>
+                </td>
+              </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+        <div style="display: flex; justify-content: center">
+          <%= paginate @types, inner_window: 3 %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END row -->
+
+<% content_for :javascript do %>
+<script>
+  $(".btndelete").click(function () {
+    var linkdelete = $(this).data("delete");
+    const swalWithBootstrapButtons = Swal.mixin({
+      customClass: {
+        confirmButton: "btn btn-danger",
+        cancelButton: "btn btn-success mr-1",
+      },
+      buttonsStyling: {
+        cancelButton: "margin-right: 1rem;",
+      },
+    });
+
+    swalWithBootstrapButtons
+      .fire({
+        title: "Apakah Yakin Ingin ?",
+        text: "Ingin Menghapus Data Tersebut",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Hapus",
+        cancelButtonText: "Batal",
+        reverseButtons: true,
+      })
+      .then((result) => {
+        if (result.isConfirmed) {
+          window.location.href = linkdelete;
+        }
+      });
+  });
+</script>
+<% end %>

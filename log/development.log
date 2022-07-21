@@ -14479,3 +14479,724 @@ Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-21 14:42:17 +0700
   
 ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
   
+Started GET "/admin/location" for ::1 at 2022-07-21 14:52:27 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20220721074638_create_types.rb
+
+
+):
+  
+activerecord (7.0.3.1) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.3.1) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.3.1) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.3.1) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT GET_LOCK('2023920071367314085', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateTypes (20220721074638)
+  [1m[35m (72.6ms)[0m  [1m[35mCREATE TABLE `types` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `deleted_at` timestamp NULL, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220721074638')[0m
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('2023920071367314085')[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/admin/location" for ::1 at 2022-07-21 14:52:56 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Admin::LokasiController#index as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/lokasi/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.8ms | Allocations: 214)
+  [1m[36mLocation Load (0.9ms)[0m  [1m[34mSELECT `locations`.* FROM `locations` WHERE `locations`.`deleted_at` IS NULL AND (name like '%%') ORDER BY `locations`.`name` ASC LIMIT 10 OFFSET 0[0m
+  ↳ app/views/admin/lokasi/index.html.erb:45
+  Rendered admin/lokasi/index.html.erb within layouts/admin (Duration: 15.5ms | Allocations: 4004)
+  Rendered shared/_headeradminpage.html.erb (Duration: 8.9ms | Allocations: 1408)
+  Rendered layout layouts/admin.html.erb (Duration: 584.3ms | Allocations: 75596)
+Completed 200 OK in 679ms (Views: 592.0ms | ActiveRecord: 11.3ms | Allocations: 89236)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-21 14:52:58 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-21 14:52:58 +0700
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-21 14:52:58 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-21 14:52:58 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/type" for ::1 at 2022-07-21 14:53:01 +0700
+Processing by Admin::TipeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/tipe/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.2ms | Allocations: 44)
+  Rendered admin/tipe/index.html.erb within layouts/admin (Duration: 7.9ms | Allocations: 2898)
+  Rendered layout layouts/admin.html.erb (Duration: 9.3ms | Allocations: 2993)
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 2.5ms | Allocations: 6454)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    42:               </tr>
+    43:             </thead>
+    44:             <tbody>
+    45:               <% @locations.each do |location| %>
+    46:               <tr>
+    47:                 <td><%= @no+=1 %></td>
+    48:                 <td><%= location.name %></td>
+  
+app/views/admin/tipe/index.html.erb:45
+Started GET "/admin/type" for ::1 at 2022-07-21 14:53:38 +0700
+Processing by Admin::TipeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/tipe/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.6ms | Allocations: 186)
+  [1m[36mType Load (6.7ms)[0m  [1m[34mSELECT `types`.* FROM `types` WHERE `types`.`deleted_at` IS NULL AND (name like '%%') ORDER BY `types`.`name` ASC LIMIT 10 OFFSET 0[0m
+  ↳ app/views/admin/tipe/index.html.erb:45
+  Rendered admin/tipe/index.html.erb within layouts/admin (Duration: 16.1ms | Allocations: 2089)
+  Rendered shared/_headeradminpage.html.erb (Duration: 5.9ms | Allocations: 1304)
+  Rendered layout layouts/admin.html.erb (Duration: 49.0ms | Allocations: 11324)
+Completed 200 OK in 92ms (Views: 45.9ms | ActiveRecord: 7.4ms | Allocations: 13326)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-21 14:53:38 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-21 14:53:38 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-21 14:53:38 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-21 14:53:39 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/type" for ::1 at 2022-07-21 14:53:57 +0700
+Processing by Admin::TipeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/tipe/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.7ms | Allocations: 186)
+  [1m[36mType Load (0.6ms)[0m  [1m[34mSELECT `types`.* FROM `types` WHERE `types`.`deleted_at` IS NULL AND (name like '%%') ORDER BY `types`.`name` ASC LIMIT 10 OFFSET 0[0m
+  ↳ app/views/admin/tipe/index.html.erb:45
+  Rendered admin/tipe/index.html.erb within layouts/admin (Duration: 10.1ms | Allocations: 2063)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.7ms | Allocations: 1292)
+  Rendered layout layouts/admin.html.erb (Duration: 39.8ms | Allocations: 11285)
+Completed 200 OK in 78ms (Views: 43.1ms | ActiveRecord: 1.2ms | Allocations: 13199)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-21 14:53:58 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-21 14:53:58 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-21 14:53:58 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-21 14:53:58 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/type" for ::1 at 2022-07-21 14:56:49 +0700
+Processing by Admin::TipeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/tipe/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.7ms | Allocations: 187)
+  [1m[36mType Load (0.7ms)[0m  [1m[34mSELECT `types`.* FROM `types` WHERE `types`.`deleted_at` IS NULL AND (name like '%%') ORDER BY `types`.`name` ASC LIMIT 10 OFFSET 0[0m
+  ↳ app/views/admin/tipe/index.html.erb:45
+  Rendered admin/tipe/index.html.erb within layouts/admin (Duration: 12.7ms | Allocations: 2105)
+  Rendered shared/_headeradminpage.html.erb (Duration: 6.4ms | Allocations: 1308)
+  Rendered layout layouts/admin.html.erb (Duration: 42.0ms | Allocations: 11344)
+Completed 200 OK in 108ms (Views: 44.4ms | ActiveRecord: 6.2ms | Allocations: 18409)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-21 14:56:52 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-21 14:56:52 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-21 14:56:52 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-21 14:56:52 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/type/add" for ::1 at 2022-07-21 14:56:53 +0700
+Processing by Admin::TipeController#add as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/tipe/add.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.2ms | Allocations: 31)
+  Rendered admin/tipe/add.html.erb within layouts/admin (Duration: 7.3ms | Allocations: 2758)
+  Rendered layout layouts/admin.html.erb (Duration: 8.5ms | Allocations: 2846)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.5ms | Allocations: 4116)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+     8:         @type, url: admin_type_store_path, method: :post, multipart: true do
+     9:         |form| %>
+    10:         <div class="form-group">
+    11:           <% invalid = @type.errors.include?(:name) %>
+    12:           <label for="exampleFormControlInput1" class="mb-2">
+    13:             Nama Tipe Buku
+    14:           </label>
+  
+app/views/admin/tipe/add.html.erb:11
+app/views/admin/tipe/add.html.erb:7
+Started GET "/admin/type/add" for ::1 at 2022-07-21 14:58:32 +0700
+Processing by Admin::TipeController#add as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/tipe/add.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered admin/tipe/add.html.erb within layouts/admin (Duration: 5.0ms | Allocations: 743)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.1ms | Allocations: 957)
+  Rendered layout layouts/admin.html.erb (Duration: 37.8ms | Allocations: 9189)
+Completed 200 OK in 126ms (Views: 39.9ms | ActiveRecord: 7.2ms | Allocations: 16884)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-21 14:58:34 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-21 14:58:35 +0700
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-21 14:58:35 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-21 14:58:35 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/type/add" for ::1 at 2022-07-21 14:59:01 +0700
+Processing by Admin::TipeController#add as HTML
+  [1m[36mUser Load (9.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/tipe/add.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.8ms | Allocations: 187)
+  Rendered admin/tipe/add.html.erb within layouts/admin (Duration: 6.2ms | Allocations: 1191)
+  Rendered shared/_headeradminpage.html.erb (Duration: 4.1ms | Allocations: 1267)
+  Rendered layout layouts/admin.html.erb (Duration: 34.3ms | Allocations: 10386)
+Completed 200 OK in 84ms (Views: 37.2ms | ActiveRecord: 9.2ms | Allocations: 12266)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-21 14:59:02 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-21 14:59:02 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-21 14:59:02 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-21 14:59:02 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started POST "/admin/type/store" for ::1 at 2022-07-21 14:59:06 +0700
+Processing by Admin::TipeController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "type"=>{"name"=>"komik"}, "commit"=>"Simpan"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/tipe_controller.rb:23:in `store'
+  [1m[36mType Create (2.0ms)[0m  [1m[32mINSERT INTO `types` (`name`, `deleted_at`, `created_at`, `updated_at`) VALUES ('komik', NULL, '2022-07-21 07:59:07.007056', '2022-07-21 07:59:07.007056')[0m
+  ↳ app/controllers/admin/tipe_controller.rb:23:in `store'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/admin/tipe_controller.rb:23:in `store'
+Redirected to http://localhost:3000/admin/type
+Completed 302 Found in 53ms (ActiveRecord: 4.7ms | Allocations: 4561)
+
+
+Started GET "/admin/type" for ::1 at 2022-07-21 14:59:07 +0700
+Processing by Admin::TipeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/tipe/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 43)
+  [1m[36mType Load (6.0ms)[0m  [1m[34mSELECT `types`.* FROM `types` WHERE `types`.`deleted_at` IS NULL AND (name like '%%') ORDER BY `types`.`name` ASC LIMIT 10 OFFSET 0[0m
+  ↳ app/views/admin/tipe/index.html.erb:45
+  Rendered admin/tipe/index.html.erb within layouts/admin (Duration: 12.9ms | Allocations: 1878)
+  Rendered shared/_headeradminpage.html.erb (Duration: 2.7ms | Allocations: 939)
+  Rendered layout layouts/admin.html.erb (Duration: 38.5ms | Allocations: 10249)
+Completed 200 OK in 73ms (Views: 33.9ms | ActiveRecord: 6.5ms | Allocations: 11849)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-21 14:59:07 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-21 14:59:07 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-21 14:59:07 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-21 14:59:07 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/type/add" for ::1 at 2022-07-21 14:59:25 +0700
+Processing by Admin::TipeController#add as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/tipe/add.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered admin/tipe/add.html.erb within layouts/admin (Duration: 2.6ms | Allocations: 650)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.6ms | Allocations: 957)
+  Rendered layout layouts/admin.html.erb (Duration: 37.1ms | Allocations: 9096)
+Completed 200 OK in 99ms (Views: 39.0ms | ActiveRecord: 7.0ms | Allocations: 16747)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-21 14:59:28 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-21 14:59:28 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-21 14:59:28 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-21 14:59:28 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started POST "/admin/type/store" for ::1 at 2022-07-21 14:59:35 +0700
+Processing by Admin::TipeController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "type"=>{"name"=>"test delte"}, "commit"=>"Simpan"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/tipe_controller.rb:23:in `store'
+  [1m[36mType Create (2.1ms)[0m  [1m[32mINSERT INTO `types` (`name`, `deleted_at`, `created_at`, `updated_at`) VALUES ('test delte', NULL, '2022-07-21 07:59:35.469618', '2022-07-21 07:59:35.469618')[0m
+  ↳ app/controllers/admin/tipe_controller.rb:23:in `store'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/admin/tipe_controller.rb:23:in `store'
+Redirected to http://localhost:3000/admin/type
+Completed 302 Found in 57ms (ActiveRecord: 4.5ms | Allocations: 3481)
+
+
+Started GET "/admin/type" for ::1 at 2022-07-21 14:59:35 +0700
+Processing by Admin::TipeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/tipe/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.2ms | Allocations: 39)
+  [1m[36mType Load (0.8ms)[0m  [1m[34mSELECT `types`.* FROM `types` WHERE `types`.`deleted_at` IS NULL AND (name like '%%') ORDER BY `types`.`name` ASC LIMIT 10 OFFSET 0[0m
+  ↳ app/views/admin/tipe/index.html.erb:45
+  Rendered admin/tipe/index.html.erb within layouts/admin (Duration: 7.8ms | Allocations: 1161)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.5ms | Allocations: 926)
+  Rendered layout layouts/admin.html.erb (Duration: 45.2ms | Allocations: 9417)
+Completed 200 OK in 85ms (Views: 46.0ms | ActiveRecord: 1.3ms | Allocations: 10895)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-21 14:59:35 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-21 14:59:35 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-21 14:59:36 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-21 14:59:36 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/type/add" for ::1 at 2022-07-21 14:59:37 +0700
+Processing by Admin::TipeController#add as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/tipe/add.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered admin/tipe/add.html.erb within layouts/admin (Duration: 2.1ms | Allocations: 470)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.2ms | Allocations: 926)
+  Rendered layout layouts/admin.html.erb (Duration: 31.1ms | Allocations: 8732)
+Completed 200 OK in 78ms (Views: 32.3ms | ActiveRecord: 0.8ms | Allocations: 10021)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-21 14:59:37 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-21 14:59:37 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-21 14:59:38 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-21 14:59:38 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started POST "/admin/type/store" for ::1 at 2022-07-21 14:59:41 +0700
+Processing by Admin::TipeController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "type"=>{"name"=>"test update"}, "commit"=>"Simpan"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/tipe_controller.rb:23:in `store'
+  [1m[36mType Create (7.3ms)[0m  [1m[32mINSERT INTO `types` (`name`, `deleted_at`, `created_at`, `updated_at`) VALUES ('test update', NULL, '2022-07-21 07:59:41.354324', '2022-07-21 07:59:41.354324')[0m
+  ↳ app/controllers/admin/tipe_controller.rb:23:in `store'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/admin/tipe_controller.rb:23:in `store'
+Redirected to http://localhost:3000/admin/type
+Completed 302 Found in 59ms (ActiveRecord: 9.8ms | Allocations: 3128)
+
+
+Started GET "/admin/type" for ::1 at 2022-07-21 14:59:41 +0700
+Processing by Admin::TipeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/tipe/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.2ms | Allocations: 39)
+  [1m[36mType Load (0.9ms)[0m  [1m[34mSELECT `types`.* FROM `types` WHERE `types`.`deleted_at` IS NULL AND (name like '%%') ORDER BY `types`.`name` ASC LIMIT 10 OFFSET 0[0m
+  ↳ app/views/admin/tipe/index.html.erb:45
+  Rendered admin/tipe/index.html.erb within layouts/admin (Duration: 14.0ms | Allocations: 1106)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.1ms | Allocations: 926)
+  Rendered layout layouts/admin.html.erb (Duration: 41.0ms | Allocations: 9361)
+Completed 200 OK in 77ms (Views: 41.5ms | ActiveRecord: 1.4ms | Allocations: 10725)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-21 14:59:41 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-21 14:59:41 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-21 14:59:42 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-21 14:59:42 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/type/destroy/2" for ::1 at 2022-07-21 14:59:49 +0700
+Processing by Admin::TipeController#destroy as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mType Load (1.1ms)[0m  [1m[34mSELECT `types`.* FROM `types` WHERE `types`.`deleted_at` IS NULL AND `types`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/admin/tipe_controller.rb:51:in `destroy'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/tipe_controller.rb:53:in `destroy'
+  [1m[36mType Update (9.8ms)[0m  [1m[33mUPDATE `types` SET `types`.`deleted_at` = '2022-07-21 07:59:49', `types`.`updated_at` = '2022-07-21 07:59:49.550163' WHERE `types`.`id` = 2[0m
+  ↳ app/controllers/admin/tipe_controller.rb:53:in `destroy'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/admin/tipe_controller.rb:53:in `destroy'
+Redirected to http://localhost:3000/admin/type
+Completed 302 Found in 76ms (ActiveRecord: 13.5ms | Allocations: 3735)
+
+
+Started GET "/admin/type" for ::1 at 2022-07-21 14:59:49 +0700
+Processing by Admin::TipeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/tipe/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.3ms | Allocations: 39)
+  [1m[36mType Load (0.7ms)[0m  [1m[34mSELECT `types`.* FROM `types` WHERE `types`.`deleted_at` IS NULL AND (name like '%%') ORDER BY `types`.`name` ASC LIMIT 10 OFFSET 0[0m
+  ↳ app/views/admin/tipe/index.html.erb:45
+  Rendered admin/tipe/index.html.erb within layouts/admin (Duration: 6.2ms | Allocations: 1044)
+  Rendered shared/_headeradminpage.html.erb (Duration: 2.9ms | Allocations: 926)
+  Rendered layout layouts/admin.html.erb (Duration: 31.3ms | Allocations: 9299)
+Completed 200 OK in 68ms (Views: 32.0ms | ActiveRecord: 1.3ms | Allocations: 10690)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-21 14:59:49 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-21 14:59:50 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-21 14:59:50 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-21 14:59:50 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/type" for ::1 at 2022-07-21 15:00:36 +0700
+Processing by Admin::TipeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/tipe/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.9ms | Allocations: 186)
+  [1m[36mType Load (0.8ms)[0m  [1m[34mSELECT `types`.* FROM `types` WHERE `types`.`deleted_at` IS NULL AND (name like '%%') ORDER BY `types`.`name` ASC LIMIT 10 OFFSET 0[0m
+  ↳ app/views/admin/tipe/index.html.erb:45
+  Rendered admin/tipe/index.html.erb within layouts/admin (Duration: 11.3ms | Allocations: 2203)
+  Rendered shared/_headeradminpage.html.erb (Duration: 5.3ms | Allocations: 1292)
+  Rendered layout layouts/admin.html.erb (Duration: 38.3ms | Allocations: 11425)
+Completed 200 OK in 75ms (Views: 41.6ms | ActiveRecord: 1.2ms | Allocations: 13245)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-21 15:00:36 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-21 15:00:36 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-21 15:00:37 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-21 15:00:37 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/type/edit/3" for ::1 at 2022-07-21 15:00:38 +0700
+Processing by Admin::TipeController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mType Load (0.8ms)[0m  [1m[34mSELECT `types`.* FROM `types` WHERE `types`.`deleted_at` IS NULL AND `types`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/admin/tipe_controller.rb:31:in `edit'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/tipe/edit.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.2ms | Allocations: 31)
+  Rendered admin/tipe/edit.html.erb within layouts/admin (Duration: 6.4ms | Allocations: 949)
+  Rendered shared/_headeradminpage.html.erb (Duration: 6.6ms | Allocations: 926)
+  Rendered layout layouts/admin.html.erb (Duration: 39.8ms | Allocations: 9203)
+Completed 200 OK in 99ms (Views: 41.1ms | ActiveRecord: 1.5ms | Allocations: 11249)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-21 15:00:39 +0700
+Started GET "/admin/www.google-analytics.com/analytics.js" for ::1 at 2022-07-21 15:00:39 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/admin/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-21 15:00:39 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-21 15:00:40 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started POST "/admin/type/update/3" for ::1 at 2022-07-21 15:00:46 +0700
+  
+ActionController::RoutingError (No route matches [POST] "/admin/type/update/3"):
+  
+Started GET "/admin/type/edit/3" for ::1 at 2022-07-21 15:00:56 +0700
+Processing by Admin::TipeController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mType Load (0.5ms)[0m  [1m[34mSELECT `types`.* FROM `types` WHERE `types`.`deleted_at` IS NULL AND `types`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/admin/tipe_controller.rb:31:in `edit'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/tipe/edit.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.7ms | Allocations: 187)
+  Rendered admin/tipe/edit.html.erb within layouts/admin (Duration: 5.9ms | Allocations: 1284)
+  Rendered shared/_headeradminpage.html.erb (Duration: 7.2ms | Allocations: 1265)
+  Rendered layout layouts/admin.html.erb (Duration: 41.5ms | Allocations: 10468)
+Completed 200 OK in 86ms (Views: 44.3ms | ActiveRecord: 1.0ms | Allocations: 12889)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-21 15:00:56 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/admin/www.google-analytics.com/analytics.js" for ::1 at 2022-07-21 15:00:56 +0700
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-21 15:00:57 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/admin/www.google-analytics.com/analytics.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-21 15:00:57 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started PATCH "/admin/type/update/3" for ::1 at 2022-07-21 15:00:58 +0700
+Processing by Admin::TipeController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "type"=>{"name"=>""}, "commit"=>"Simpan", "id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mType Load (0.8ms)[0m  [1m[34mSELECT `types`.* FROM `types` WHERE `types`.`deleted_at` IS NULL AND `types`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/admin/tipe_controller.rb:38:in `update'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/tipe/edit.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered admin/tipe/edit.html.erb within layouts/admin (Duration: 26.6ms | Allocations: 2310)
+  Rendered shared/_headeradminpage.html.erb (Duration: 2.6ms | Allocations: 926)
+  Rendered layout layouts/admin.html.erb (Duration: 52.9ms | Allocations: 10564)
+Completed 200 OK in 96ms (Views: 54.3ms | ActiveRecord: 1.3ms | Allocations: 13584)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-21 15:00:59 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/admin/www.google-analytics.com/analytics.js" for ::1 at 2022-07-21 15:00:59 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/admin/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-21 15:00:59 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-21 15:00:59 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started PATCH "/admin/type/update/3" for ::1 at 2022-07-21 15:01:01 +0700
+Processing by Admin::TipeController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "type"=>{"name"=>"novel"}, "commit"=>"Simpan", "id"=>"3"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mType Load (0.5ms)[0m  [1m[34mSELECT `types`.* FROM `types` WHERE `types`.`deleted_at` IS NULL AND `types`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/admin/tipe_controller.rb:38:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/tipe_controller.rb:43:in `update'
+  [1m[36mType Update (0.7ms)[0m  [1m[33mUPDATE `types` SET `types`.`name` = 'novel', `types`.`updated_at` = '2022-07-21 08:01:01.630702' WHERE `types`.`id` = 3[0m
+  ↳ app/controllers/admin/tipe_controller.rb:43:in `update'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/admin/tipe_controller.rb:43:in `update'
+Redirected to http://localhost:3000/admin/type
+Completed 302 Found in 51ms (ActiveRecord: 4.5ms | Allocations: 3997)
+
+
+Started GET "/admin/type" for ::1 at 2022-07-21 15:01:01 +0700
+Processing by Admin::TipeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/tipe/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.2ms | Allocations: 39)
+  [1m[36mType Load (0.7ms)[0m  [1m[34mSELECT `types`.* FROM `types` WHERE `types`.`deleted_at` IS NULL AND (name like '%%') ORDER BY `types`.`name` ASC LIMIT 10 OFFSET 0[0m
+  ↳ app/views/admin/tipe/index.html.erb:45
+  Rendered admin/tipe/index.html.erb within layouts/admin (Duration: 8.5ms | Allocations: 1814)
+  Rendered shared/_headeradminpage.html.erb (Duration: 2.7ms | Allocations: 926)
+  Rendered layout layouts/admin.html.erb (Duration: 31.0ms | Allocations: 10069)
+Completed 200 OK in 66ms (Views: 31.6ms | ActiveRecord: 1.1ms | Allocations: 11508)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-07-21 15:01:02 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-07-21 15:01:02 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-07-21 15:01:02 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-07-21 15:01:02 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  

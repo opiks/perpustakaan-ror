@@ -1,0 +1,36 @@
+<% content_for :title, "Tipe Buku Add" %>
+<h1 class="page-header mb-3">Tambah Tipe Buku</h1>
+<div class="row">
+  <div class="col-xl-12">
+    <div class="card">
+      <div class="card-body">
+        <%= render partial: "shared/alertmainpage" %> <%= form_with model:
+        @type, url: admin_type_store_path, method: :post, multipart: true do
+        |form| %>
+        <div class="form-group">
+          <% invalid = @type.errors.include?(:name) %>
+          <label for="exampleFormControlInput1" class="mb-2">
+            Nama Tipe Buku
+          </label>
+          <%= form.text_field :name, class:"form-control #{if invalid then
+          "is-invalid" else "" end }", placeholder:"komik" %> <% if invalid %>
+          <div class="invalid-feedback d-block">
+            <% @type.errors.full_messages_for(:name).each do |error_message| %>
+            <%= error_message %>. <br />
+            <% end %>
+          </div>
+          <% end %>
+        </div>
+        <hr />
+        <div class="text-end">
+          <a href="<%= admin_type_index_path %>" class="btn btn-danger">
+            Batal
+          </a>
+          <%= form.submit "Simpan", class:"btn btn-primary" %>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END row -->
