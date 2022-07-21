@@ -6,8 +6,8 @@ class Admin::GenreController < ApplicationController
     @genres = Genre.order(:name).page params[:page]
 
     if params.has_key?(:page)
-      perpage = 10;
-      page = Integer(params[:page]) 
+      perpage = 10
+      page = Integer(params[:page])
       @no = (page * perpage) - perpage
     else
       @no = 0
@@ -25,6 +25,13 @@ class Admin::GenreController < ApplicationController
     else
       render :add
     end
+  end
+
+  def destroy
+    @genre = Genre.find(params[:id])
+    @genre.destroy
+
+    redirect_to admin_genre_index_path, flash: { :message => "Menghapus Genre Berhasil", :type => "success" }
   end
 
   private
