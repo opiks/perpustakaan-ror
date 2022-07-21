@@ -3,9 +3,15 @@ class Admin::GenreController < ApplicationController
   layout "admin"
 
   def index
-    @genre = Genre.order(:name).page params[:page]
+    @genres = Genre.order(:name).page params[:page]
 
-    render plains: @genre
+    if params.has_key?(:page)
+      perpage = 10;
+      page = Integer(params[:page]) 
+      @no = (page * perpage) - perpage
+    else
+      @no = 0
+    end
   end
 
   def add
@@ -15,7 +21,7 @@ class Admin::GenreController < ApplicationController
   def store
     @genre = Genre.new(genre_params)
     if @genre.save
-      redirect_to admin_genre_path, flash: { :message => "Menambah Genre Berhasil", :type => "success" }
+      redirect_to admin_genre_index_path, flash: { :message => "Menambah Genre Berhasil", :type => "success" }
     else
       render :add
     end

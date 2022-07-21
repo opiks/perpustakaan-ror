@@ -17,9 +17,7 @@ Rails.application.routes.draw do
   # harusnya only admin
   namespace :admin do
     get "dashboard", to: "dashboard#index", as: "dashboard"
-    resources :genre do
-      get ":page", action: :index, as: "index", on: :collection
-    end
+    get "genre", to: "genre#index", as: "genre_index"
     get "genre/add", to: "genre#add", as: "genre_add"
     post "genre/store", to: "genre#store", as: "genre_store"
   end

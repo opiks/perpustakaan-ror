@@ -1,4 +1,4 @@
 class Genre < ApplicationRecord
-  paginates_per 25
+  paginates_per 10
   validates :name, presence: true
 end
