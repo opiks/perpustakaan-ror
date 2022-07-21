@@ -1,0 +1,36 @@
+<% content_for :title, "Lokasi Buku Edit" %>
+<h1 class="page-header mb-3">Edit Lokasi Buku</h1>
+<div class="row">
+  <div class="col-xl-12">
+    <div class="card">
+      <div class="card-body">
+        <%= render partial: "shared/alertmainpage" %> <%= form_with model:
+        @location, url: admin_location_update_path, method: :patch, multipart:
+        true do |form| %>
+        <div class="form-group">
+          <% invalid = @location.errors.include?(:name) %>
+          <label for="exampleFormControlInput1" class="mb-2">
+            Nama Lokasi Buku
+          </label>
+          <%= form.text_field :name, class:"form-control #{if invalid then
+          "is-invalid" else "" end }", placeholder:"Gedung A Lantai 3 Bracket 15" %> <% if invalid %>
+          <div class="invalid-feedback d-block">
+            <% @location.errors.full_messages_for(:name).each do |error_message|
+            %> <%= error_message %>. <br />
+            <% end %>
+          </div>
+          <% end %>
+        </div>
+        <hr />
+        <div class="text-end">
+          <a href="<%= admin_location_index_path %>" class="btn btn-danger">
+            Batal
+          </a>
+          <%= form.submit "Simpan", class:"btn btn-primary" %>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END row -->

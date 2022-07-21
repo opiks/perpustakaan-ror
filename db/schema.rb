@@ -10,13 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_20_073906) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_21_065858) do
   create_table "currents", charset: "latin1", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "genres", charset: "latin1", force: :cascade do |t|
+    t.string "name"
+    t.timestamp "deleted_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "locations", charset: "latin1", force: :cascade do |t|
     t.string "name"
     t.timestamp "deleted_at"
     t.datetime "created_at", null: false

@@ -17,11 +17,21 @@ Rails.application.routes.draw do
   # harusnya only admin
   namespace :admin do
     get "dashboard", to: "dashboard#index", as: "dashboard"
+
+    #crud genre
     get "genre", to: "genre#index", as: "genre_index"
     get "genre/add", to: "genre#add", as: "genre_add"
     post "genre/store", to: "genre#store", as: "genre_store"
     get "genre/destroy/:id", to: "genre#destroy", as: "genre_delete"
     get "genre/edit/:id", to: "genre#edit", as: "genre_edit"
     patch "genre/edit/:id", to: "genre#update", as: "genre_update"
+
+    #crud lokasi
+    get "location", to: "lokasi#index", as: "location_index"
+    get "location/add", to: "lokasi#add", as: "location_add"
+    post "location/store", to: "lokasi#store", as: "location_store"
+    get "location/destroy/:id", to: "lokasi#destroy", as: "location_delete"
+    get "location/edit/:id", to: "lokasi#edit", as: "location_edit"
+    patch "location/update/:id", to: "lokasi#update", as: "location_update"
   end
 end
