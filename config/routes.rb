@@ -22,5 +22,6 @@ Rails.application.routes.draw do
     post "genre/store", to: "genre#store", as: "genre_store"
     get "genre/destroy/:id", to: "genre#destroy", as: "genre_delete"
     get "genre/edit/:id", to: "genre#edit", as: "genre_edit"
+    patch "genre/edit/:id", to: "genre#update", as: "genre_update"
   end
 end

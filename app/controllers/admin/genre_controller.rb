@@ -27,11 +27,34 @@ class Admin::GenreController < ApplicationController
     end
   end
 
-  def destroy
-    @genre = Genre.find(params[:id])
-    @genre.destroy
+  def edit
+    @genre = Genre.find(params[:id]) rescue nil
+    if @genre.nil?
+      redirect_to admin_genre_index_path, flash: { :message => "Data Tidak ditemukan", :type => "warning" }
+    end
+  end
 
-    redirect_to admin_genre_index_path, flash: { :message => "Menghapus Genre Berhasil", :type => "success" }
+  def update
+    @genre = Genre.find(params[:id]) rescue nil
+    if @genre.nil?
+      redirect_to admin_genre_index_path, flash: { :message => "Data Tidak ditemukan", :type => "warning" }
+    end
+
+    if @genre.update(genre_params)
+      redirect_to admin_genre_index_path, flash: { :message => "Mengubah Genre Berhasil", :type => "success" }
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @genre = Genre.find(params[:id]) rescue nil
+    if !@genre.nil?
+      @genre.destroy
+      redirect_to admin_genre_index_path, flash: { :message => "Menghapus Genre Berhasil", :type => "success" }
+    else
+      redirect_to admin_genre_index_path, flash: { :message => "Data Tidak ditemukan", :type => "warning" }
+    end
   end
 
   private

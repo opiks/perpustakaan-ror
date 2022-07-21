@@ -1,0 +1,36 @@
+<% content_for :title, "Genre Buku Edit" %>
+<h1 class="page-header mb-3">Edit Genre Buku</h1>
+<div class="row">
+  <div class="col-xl-12">
+    <div class="card">
+      <div class="card-body">
+        <%= render partial: "shared/alertmainpage" %> <%= form_with model:
+        @genre, url: admin_genre_update_path, method: :patch, multipart: true do
+        |form| %>
+        <div class="form-group">
+          <% invalid = @genre.errors.include?(:name) %>
+          <label for="exampleFormControlInput1" class="mb-2">
+            Nama Genre Buku
+          </label>
+          <%= form.text_field :name, class:"form-control #{if invalid then
+          "is-invalid" else "" end }", placeholder:"Comedy" %> <% if invalid %>
+          <div class="invalid-feedback d-block">
+            <% @genre.errors.full_messages_for(:name).each do |error_message| %>
+            <%= error_message %>. <br />
+            <% end %>
+          </div>
+          <% end %>
+        </div>
+        <hr />
+        <div class="text-end">
+          <a href="<%= admin_genre_index_path %>" class="btn btn-danger">
+            Batal
+          </a>
+          <%= form.submit "Simpan", class:"btn btn-primary" %>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END row -->

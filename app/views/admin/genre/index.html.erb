@@ -47,7 +47,9 @@
                 <td><%= @no+=1 %></td>
                 <td><%= genre.name %></td>
                 <td>
-                  <a href="" class="btn btn-sm btn-primary"
+                  <a
+                    href="<%= admin_genre_edit_path(genre.id) %>"
+                    class="btn btn-sm btn-primary"
                     ><i class="fa fa-edit"></i> Edit</a
                   >
                   <button
