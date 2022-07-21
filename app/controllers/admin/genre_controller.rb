@@ -3,7 +3,7 @@ class Admin::GenreController < ApplicationController
   layout "admin"
 
   def index
-    @genres = Genre.order(:name).page params[:page]
+    @genres = Genre.where("name like ?", "%#{params[:search]}%").order(:name).page params[:page]
 
     if params.has_key?(:page)
       perpage = 10
