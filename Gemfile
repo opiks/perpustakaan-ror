@@ -71,5 +71,11 @@ group :test do
   gem "webdrivers"
 end
 
+# file local css
 gem 'sass-rails'
+
+# pagination
 gem 'kaminari'
+
+# softdelete
+gem "paranoia"

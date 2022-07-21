@@ -18,6 +18,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_20_073906) do
 
   create_table "genres", charset: "latin1", force: :cascade do |t|
     t.string "name"
+    t.timestamp "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
