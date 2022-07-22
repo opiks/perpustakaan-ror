@@ -1,0 +1,189 @@
+<% content_for :title, "Member Edit" %>
+<h1 class="page-header mb-3">Edit Member</h1>
+<div class="row">
+  <div class="col-xl-12">
+    <div class="card">
+      <div class="card-body">
+        <%= render partial: "shared/alertmainpage" %>
+        <br />
+        <%= form_with model:@member, url: admin_member_update_path, method:
+        :patch, multipart:true do |form| %>
+        <div class="form-row row">
+          <div class="form-group col-md-6">
+            <% invalid = @member.errors.include?(:nik) %>
+            <label for="inputPassword4">NIK</label>
+            <%= form.text_field :nik, class:"form-control #{if invalid then
+            "is-invalid" else "" end }", placeholder:"1928369" %> <% if invalid
+            %>
+            <div class="invalid-feedback d-block">
+              <% @member.errors.full_messages_for(:nik).each do |error_message|
+              %> <%= error_message %>. <br />
+              <% end %>
+            </div>
+            <% end %>
+          </div>
+          <div class="form-group col-md-6">
+            <% invalid = @member.errors.include?(:name) %>
+            <label for="inputEmail4">Nama</label>
+            <%= form.text_field :name, class:"form-control #{if invalid then
+            "is-invalid" else "" end }", placeholder:"Asep" %> <% if invalid %>
+            <div class="invalid-feedback d-block">
+              <% @member.errors.full_messages_for(:name).each do |error_message|
+              %> <%= error_message %>. <br />
+              <% end %>
+            </div>
+            <% end %>
+          </div>
+        </div>
+        <div class="form-row row mt-3">
+          <div class="form-group col-md-6">
+            <% invalid = @member.errors.include?(:email) %>
+            <label for="inputPassword4">E-mail</label>
+            <%= form.text_field :email, class:"form-control #{if invalid then
+            "is-invalid" else "" end }", placeholder:"1928369" %> <% if invalid
+            %>
+            <div class="invalid-feedback d-block">
+              <% @member.errors.full_messages_for(:email).each do
+              |error_message| %> <%= error_message %>. <br />
+              <% end %>
+            </div>
+            <% end %>
+          </div>
+          <div class="form-group col-md-6">
+            <% invalid = @member.errors.include?(:phone) %>
+            <label for="inputEmail4">No Telepon</label>
+            <%= form.text_field :phone, class:"form-control #{if invalid then
+            "is-invalid" else "" end }", placeholder:"0892456152347" %> <% if
+            invalid %>
+            <div class="invalid-feedback d-block">
+              <% @member.errors.full_messages_for(:phone).each do
+              |error_message| %> <%= error_message %>. <br />
+              <% end %>
+            </div>
+            <% end %>
+          </div>
+        </div>
+        <div class="form-row row mt-3">
+          <div class="form-group col-md-6">
+            <% invalid = @member.errors.include?(:place_birth) %>
+            <label for="inputPassword4">Tempat Lahir</label>
+            <%= form.text_field :place_birth, class:"form-control #{if invalid
+            then "is-invalid" else "" end }", placeholder:"Jakarta" %> <% if
+            invalid %>
+            <div class="invalid-feedback d-block">
+              <% @member.errors.full_messages_for(:place_birth).each do
+              |error_message| %> <%= error_message %>. <br />
+              <% end %>
+            </div>
+            <% end %>
+          </div>
+          <div class="form-group col-md-6">
+            <% invalid = @member.errors.include?(:date_birth) %>
+            <label for="inputEmail4">Tanggal Lahir</label>
+            <%= form.date_field :date_birth, class:"form-control #{if invalid
+            then "is-invalid" else "" end }", placeholder:"2017/03/01" %> <% if
+            invalid %>
+            <div class="invalid-feedback d-block">
+              <% @member.errors.full_messages_for(:date_birth).each do
+              |error_message| %> <%= error_message %>. <br />
+              <% end %>
+            </div>
+            <% end %>
+          </div>
+        </div>
+        <div class="form-row row mt-3">
+          <div class="form-group col-md-6">
+            <% invalid = @member.errors.include?(:blood_type) %>
+            <label for="inputPassword4">Golongan Darah</label>
+            <%= form.text_field :blood_type, class:"form-control #{if invalid
+            then "is-invalid" else "" end }", placeholder:"A" %> <% if invalid
+            %>
+            <div class="invalid-feedback d-block">
+              <% @member.errors.full_messages_for(:blood_type).each do
+              |error_message| %> <%= error_message %>. <br />
+              <% end %>
+            </div>
+            <% end %>
+          </div>
+          <div class="form-group col-md-6">
+            <% invalid = @member.errors.include?(:gender) %>
+            <label for="inputEmail4">Jenis Kelamin</label>
+            <%= form.select :gender, ["Laki -laki", "Perempuan"],{},
+            class:"form-control #{if invalid then "is-invalid" else "" end }",
+            placeholder:"Pilih Jenis Kelamin" %> <% if invalid %>
+            <div class="invalid-feedback d-block">
+              <% @member.errors.full_messages_for(:gender).each do
+              |error_message| %> <%= error_message %>. <br />
+              <% end %>
+            </div>
+            <% end %>
+          </div>
+        </div>
+        <div class="form-row row mt-3">
+          <div class="form-group col-md-6">
+            <% invalid = @member.errors.include?(:religion) %>
+            <label for="inputPassword4">Agama</label>
+            <%= form.text_field :religion, class:"form-control #{if invalid then
+            "is-invalid" else "" end }", placeholder:"Islam" %> <% if invalid %>
+            <div class="invalid-feedback d-block">
+              <% @member.errors.full_messages_for(:religion).each do
+              |error_message| %> <%= error_message %>. <br />
+              <% end %>
+            </div>
+            <% end %>
+          </div>
+          <div class="form-group col-md-6">
+            <% invalid = @member.errors.include?(:photo) %>
+            <label for="inputEmail4">Foto Member</label>
+            <%= form.file_field :photo, class:"form-control #{if invalid then
+            "is-invalid" else "" end }", placeholder:"Islam" %>
+            <%= form.hidden_field :photo_cache %>
+            <% if invalid %>
+            <div class="invalid-feedback d-block">
+              <% @member.errors.full_messages_for(:photo).each do
+              |error_message| %> <%= error_message %>. <br />
+              <% end %>
+            </div>
+            <% end %>
+          </div>
+        </div>
+        <div class="form-group col-md-12 mt-3">
+          <% invalid = @member.errors.include?(:address) %>
+          <label for="inputPassword4">Alamat</label>
+          <%= form.text_area :address, class:"form-control #{if invalid then
+          "is-invalid" else "" end }", placeholder:"Jln kota bandung" %> <% if
+          invalid %>
+          <div class="invalid-feedback d-block">
+            <% @member.errors.full_messages_for(:address).each do
+            |error_message| %> <%= error_message %>. <br />
+            <% end %>
+          </div>
+          <% end %>
+        </div>
+        <hr />
+        <div class="text-end">
+          <a href="<%= admin_member_index_path %>" class="btn btn-danger">
+            Batal
+          </a>
+          <%= form.submit "Simpan", class:"btn btn-primary" %>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END row -->
+
+<% content_for :javascript do %>
+<script>
+  CKEDITOR.replace("member_address");
+</script>
+<script>
+  $(document).ready(function () {
+    $("#member_gender").select2({
+      placeholder: "Pilih Jenis Kelamin",
+      allowClear: true,
+    });
+  });
+</script>
+<% end %>

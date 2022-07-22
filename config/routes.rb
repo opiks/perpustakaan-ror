@@ -41,5 +41,13 @@ Rails.application.routes.draw do
     get "type/destroy/:id", to: "tipe#destroy", as: "type_delete"
     get "type/edit/:id", to: "tipe#edit", as: "type_edit"
     patch "type/update/:id", to: "tipe#update", as: "type_update"
+
+    #crud member
+    get "member", to: "member#index", as: "member_index"
+    get "member/add", to: "member#add", as: "member_add"
+    post "member/store", to: "member#store", as: "member_store"
+    get "member/destroy/:id", to: "member#destroy", as: "member_delete"
+    get "member/edit/:id", to: "member#edit", as: "member_edit"
+    patch "member/update/:id", to: "member#update", as: "member_update"
   end
 end

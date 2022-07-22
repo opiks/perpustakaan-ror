@@ -79,3 +79,6 @@ gem 'kaminari'
 
 # softdelete
 gem "paranoia"
+
+# upload file
+gem 'carrierwave', '~> 2.0'

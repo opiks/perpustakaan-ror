@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_21_074638) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_22_022613) do
   create_table "currents", charset: "latin1", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -28,6 +28,25 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_21_074638) do
     t.timestamp "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "members", charset: "latin1", force: :cascade do |t|
+    t.string "nik", null: false
+    t.text "name", null: false
+    t.string "email", null: false
+    t.string "phone"
+    t.text "place_birth"
+    t.date "date_birth"
+    t.string "blood_type"
+    t.string "gender"
+    t.string "religion"
+    t.text "photo"
+    t.text "photo_path"
+    t.text "address"
+    t.timestamp "deleted_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "unique_emails", unique: true
   end
 
   create_table "types", charset: "latin1", force: :cascade do |t|

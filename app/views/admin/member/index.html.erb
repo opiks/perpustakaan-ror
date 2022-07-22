@@ -1,0 +1,119 @@
+<% content_for :title, "Member" %>
+<h1 class="page-header mb-3">List Member</h1>
+<div class="row">
+  <div class="col-xl-12">
+    <div class="card">
+      <div class="card-header row">
+        <div class="col-md-8">
+          <a href="<%= admin_member_add_path %>" class="btn btn-primary"
+            ><i class="fa fa-plus"></i> Tambah Member</a
+          >
+        </div>
+        <div class="col-md-4">
+          <div class="text-end">
+            <form action="" method="get">
+              <div class="input-group">
+                <input
+                  type="search"
+                  class="form-control"
+                  name="search"
+                  value="<%= params[:search] %>"
+                  placeholder="Cari...."
+                />
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-primary">
+                    <i class="fa fa-search"></i> Cari
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <%= render partial: "shared/alertmainpage" %>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">NIK</th>
+                <th scope="col">Nama</th>
+                <th scope="col">Tempat Lahir</th>
+                <th scope="col">Tanggal Lahir</th>
+                <th scope="col">Jenis Kelamin</th>
+                <th scope="col">Tanggal Dibuat</th>
+                <th scope="col">photo</th>
+                <th scope="col">Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @members.each do |member| %>
+              <tr>
+                <td><%= @no+=1 %></td>
+                <td><%= member.nik %></td>
+                <td><%= member.name %></td>
+                <td><%= member.place_birth %></td>
+                <td><%= member.date_birth %></td>
+                <td><%= member.gender %></td>
+                <td><%= member.created_at.strftime('%d %b %Y - %H:%M') %></td>
+                <td><img src="<%= member.photo %>" width="100"></td>
+                <td>
+                  <a
+                    href="<%= admin_member_edit_path(member.id) %>"
+                    class="btn btn-sm btn-primary"
+                    ><i class="fa fa-edit"></i> Edit</a
+                  >
+                  <button
+                    data-delete="<%= admin_member_delete_path(member.id) %>"
+                    class="btn btn-sm btn-danger btndelete"
+                  >
+                    <i class="fa fa-trash"></i> Hapus
+                  </button>
+                </td>
+              </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+        <div style="display: flex; justify-content: center">
+          <%= paginate @members, inner_window: 3 %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END row -->
+
+<% content_for :javascript do %>
+<script>
+  $(".btndelete").click(function () {
+    var linkdelete = $(this).data("delete");
+    const swalWithBootstrapButtons = Swal.mixin({
+      customClass: {
+        confirmButton: "btn btn-danger",
+        cancelButton: "btn btn-success mr-1",
+      },
+      buttonsStyling: {
+        cancelButton: "margin-right: 1rem;",
+      },
+    });
+
+    swalWithBootstrapButtons
+      .fire({
+        title: "Apakah Yakin Ingin ?",
+        text: "Ingin Menghapus Data Tersebut",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Hapus",
+        cancelButtonText: "Batal",
+        reverseButtons: true,
+      })
+      .then((result) => {
+        if (result.isConfirmed) {
+          window.location.href = linkdelete;
+        }
+      });
+  });
+</script>
+<% end %>
