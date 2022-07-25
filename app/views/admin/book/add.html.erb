@@ -1,0 +1,228 @@
+<% content_for :title, "Buku Add" %>
+<h1 class="page-header mb-3">Tambah Buku</h1>
+<div class="row">
+  <div class="col-xl-12">
+    <div class="card">
+      <div class="card-body">
+        <%= render partial: "shared/alertmainpage" %> <%= form_with model:
+        @book, url: admin_book_store_path, method: :post, multipart: true do
+        |form| %>
+        <div class="form-row row">
+          <div class="form-group col-md-6">
+            <% invalid = @book.errors.include?(:name) %>
+            <label for="inputPassword4">Judul Buku</label>
+            <%= form.text_field :name, class:"form-control #{if invalid then
+            "is-invalid" else "" end }", placeholder:"harry potter" %> <% if
+            invalid %>
+            <div class="invalid-feedback d-block">
+              <% @book.errors.full_messages_for(:name).each do |error_message|
+              %> <%= error_message %>. <br />
+              <% end %>
+            </div>
+            <% end %>
+          </div>
+          <div class="form-group col-md-6">
+            <% invalid = @book.errors.include?(:publisher) %>
+            <label for="inputEmail4">Penerbit</label>
+            <%= form.text_field :publisher, class:"form-control #{if invalid
+            then "is-invalid" else "" end }", placeholder:"Publisher 1" %> <% if
+            invalid %>
+            <div class="invalid-feedback d-block">
+              <% @book.errors.full_messages_for(:publisher).each do
+              |error_message| %> <%= error_message %>. <br />
+              <% end %>
+            </div>
+            <% end %>
+          </div>
+        </div>
+        <div class="form-row mt-3 row">
+          <div class="form-group col-md-6">
+            <% invalid = @book.errors.include?(:writer) %>
+            <label for="inputPassword4">Penulis</label>
+            <%= form.text_field :writer, class:"form-control #{if invalid then
+            "is-invalid" else "" end }", placeholder:"anwar" %> <% if invalid %>
+            <div class="invalid-feedback d-block">
+              <% @book.errors.full_messages_for(:writer).each do |error_message|
+              %> <%= error_message %>. <br />
+              <% end %>
+            </div>
+            <% end %>
+          </div>
+          <div class="form-group col-md-6">
+            <% invalid = @book.errors.include?(:release_date) %>
+            <label for="inputEmail4">Tanggal Rilis</label>
+            <%= form.date_field :release_date, class:"form-control #{if invalid
+            then "is-invalid" else "" end }", placeholder:"" %> <% if invalid %>
+            <div class="invalid-feedback d-block">
+              <% @book.errors.full_messages_for(:release_date).each do
+              |error_message| %> <%= error_message %>. <br />
+              <% end %>
+            </div>
+            <% end %>
+          </div>
+        </div>
+        <div class="form-row mt-3 row">
+          <div class="form-group col-md-6">
+            <% invalid = @book.errors.include?(:page_total) %>
+            <label for="inputPassword4">Total Halaman</label>
+            <%= form.number_field :page_total, class:"form-control #{if invalid
+            then "is-invalid" else "" end }", placeholder:"300" %> <% if invalid
+            %>
+            <div class="invalid-feedback d-block">
+              <% @book.errors.full_messages_for(:page_total).each do
+              |error_message| %> <%= error_message %>. <br />
+              <% end %>
+            </div>
+            <% end %>
+          </div>
+          <div class="form-group col-md-6">
+            <% invalid = @book.errors.include?(:book_total) %>
+            <label for="inputEmail4">Total Buku</label>
+            <%= form.number_field :book_total, class:"form-control #{if invalid
+            then "is-invalid" else "" end }", placeholder:"10" %> <% if invalid
+            %>
+            <div class="invalid-feedback d-block">
+              <% @book.errors.full_messages_for(:book_total).each do
+              |error_message| %> <%= error_message %>. <br />
+              <% end %>
+            </div>
+            <% end %>
+          </div>
+        </div>
+        <div class="form-row mt-3 row">
+          <div class="form-group col-md-6">
+            <% invalid = @book.errors.include?(:page_total) %>
+            <label for="inputPassword4">Tipe Buku</label>
+            <%= form.number_field :page_total, class:"form-control #{if invalid
+            then "is-invalid" else "" end }", placeholder:"300" %> <% if invalid
+            %>
+            <div class="invalid-feedback d-block">
+              <% @book.errors.full_messages_for(:page_total).each do
+              |error_message| %> <%= error_message %>. <br />
+              <% end %>
+            </div>
+            <% end %>
+          </div>
+          <div class="form-group col-md-6">
+            <% invalid = @book.errors.include?(:book_total) %>
+            <label for="inputEmail4">Total Buku</label>
+            <%= form.number_field :book_total, class:"form-control #{if invalid
+            then "is-invalid" else "" end }", placeholder:"10" %> <% if invalid
+            %>
+            <div class="invalid-feedback d-block">
+              <% @book.errors.full_messages_for(:book_total).each do
+              |error_message| %> <%= error_message %>. <br />
+              <% end %>
+            </div>
+            <% end %>
+          </div>
+        </div>
+        <div class="form-row mt-3 row">
+          <div class="form-group col-md-6">
+            <% invalid = @book.errors.include?(:type_id) %>
+            <label for="inputPassword4">Tipe Buku</label>
+            <%= form.select :type_id,options_for_select(@type. insert(0, ["Pilih
+            Tipe Buku",""])),{}, class:"form-control #{if invalid then
+            "is-invalid" else "" end }", placeholder:"Pilih Jenis Kelamin" %> <%
+            if invalid %>
+            <div class="invalid-feedback d-block">
+              <% @book.errors.full_messages_for(:type_id).each do
+              |error_message| %> <%= error_message %>. <br />
+              <% end %>
+            </div>
+            <% end %>
+          </div>
+          <div class="form-group col-md-6">
+            <% invalid = @book.errors.include?(:location_id) %>
+            <label for="inputEmail4">Lokasi Buku</label>
+            <%= form.select :location_id,options_for_select(@location. insert(0,
+            ["Pilih Lokasi Buku",""])),{}, class:"form-control #{if invalid then
+            "is-invalid" else "" end }", placeholder:"Pilih Jenis Kelamin" %> <%
+            if invalid %>
+            <div class="invalid-feedback d-block">
+              <% @book.errors.full_messages_for(:location_id).each do
+              |error_message| %> <%= error_message %>. <br />
+              <% end %>
+            </div>
+            <% end %>
+          </div>
+        </div>
+        <div class="form-row mt-3 row">
+          <div class="form-group col-md-6">
+            <% invalid = @book.errors.include?(:book_photo) %>
+            <label for="inputPassword4">Foto Buku</label>
+            <%= form.file_field :book_photo, class:"form-control #{if invalid
+            then "is-invalid" else "" end }", placeholder:"Islam" %> <% if
+            invalid %>
+            <div class="invalid-feedback d-block">
+              <% @book.errors.full_messages_for(:book_photo).each do
+              |error_message| %> <%= error_message %>. <br />
+              <% end %>
+            </div>
+            <% end %>
+          </div>
+          <div class="form-group col-md-6">
+            <% invalid = @book.errors.include?(:genre) %>
+            <label for="inputEmail4">Genre Buku</label>
+            <%= form.select :genre, options_for_select(@genre. insert(0, ["Pilih
+            Genre Buku",""])),{},:multiple => true, class:"form-control #{if
+            invalid then "is-invalid" else "" end }", placeholder:"Pilih Jenis
+            Kelamin" %> <% if invalid %>
+            <div class="invalid-feedback d-block">
+              <% @book.errors.full_messages_for(:genre).each do |error_message|
+              %> <%= error_message %>. <br />
+              <% end %>
+            </div>
+            <% end %>
+          </div>
+        </div>
+        <div class="form-group col-md-12 mt-3">
+          <% invalid = @book.errors.include?(:description) %>
+          <label for="inputPassword4">Alamat</label>
+          <%= form.text_area :description, class:"form-control #{if invalid then
+          "is-invalid" else "" end }", placeholder:"Jln kota bandung" %> <% if
+          invalid %>
+          <div class="invalid-feedback d-block">
+            <% @book.errors.full_messages_for(:description).each do
+            |error_message| %> <%= error_message %>. <br />
+            <% end %>
+          </div>
+          <% end %>
+        </div>
+        <hr />
+        <div class="text-end">
+          <a href="<%= admin_book_index_path %>" class="btn btn-danger">
+            Batal
+          </a>
+          <%= form.submit "Simpan", class:"btn btn-primary" %>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END row -->
+
+<% content_for :javascript do %>
+<script>
+  CKEDITOR.replace("book_description");
+</script>
+<script>
+  $(document).ready(function () {
+    $("#book_genre").select2({
+      placeholder: "Pilih Genre Buku",
+      allowClear: true,
+    });
+
+    $("#book_type_id").select2({
+      placeholder: "Pilih Tipe Buku",
+      allowClear: true,
+    });
+
+    $("#book_location_id").select2({
+      placeholder: "Pilih Lokasi Buku",
+      allowClear: true,
+    });
+  });
+</script>
+<% end %>

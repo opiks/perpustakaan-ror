@@ -49,5 +49,10 @@ Rails.application.routes.draw do
     get "member/destroy/:id", to: "member#destroy", as: "member_delete"
     get "member/edit/:id", to: "member#edit", as: "member_edit"
     patch "member/update/:id", to: "member#update", as: "member_update"
+
+    #crud buku
+    get "book", to: "book#index", as: "book_index"
+    get "book/add", to: "book#add", as: "book_add"
+    post "book/store", to: "book#store", as: "book_store"
   end
 end

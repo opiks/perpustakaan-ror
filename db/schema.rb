@@ -10,7 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_22_022613) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_25_023638) do
+  create_table "books", charset: "latin1", force: :cascade do |t|
+    t.integer "location_id", null: false
+    t.integer "type_id", null: false
+    t.text "name", null: false
+    t.text "description", null: false
+    t.date "release_date", null: false
+    t.integer "page_total", null: false
+    t.text "publisher", null: false
+    t.text "writer", null: false
+    t.text "book_photo", null: false
+    t.integer "book_total", null: false
+    t.integer "book_total_remaining", null: false
+    t.timestamp "deleted_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "currents", charset: "latin1", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

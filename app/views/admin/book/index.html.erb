@@ -1,0 +1,89 @@
+<% content_for :title, "Buku" %>
+<h1 class="page-header mb-3">List Buku</h1>
+<div class="row">
+  <div class="col-xl-12">
+    <div class="card">
+      <div class="card-header row">
+        <div class="col-md-8">
+          <a href="<%= admin_book_add_path %>" class="btn btn-primary"
+            ><i class="fa fa-plus"></i> Tambah Buku</a
+          >
+        </div>
+        <div class="col-md-4">
+          <div class="text-end">
+            <form action="" method="get">
+              <div class="input-group">
+                <input
+                  type="search"
+                  class="form-control"
+                  name="search"
+                  value="<%= params[:search] %>"
+                  placeholder="Cari...."
+                />
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-primary">
+                    <i class="fa fa-search"></i> Cari
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <%= render partial: "shared/alertmainpage" %>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nama Buku</th>
+                <th scope="col">Penerbit</th>
+                <th scope="col">Kategori Buku</th>
+                <th scope="col">Total Buku Serupa</th>
+                <th scope="col">Sisa Buku Serupa</th>
+                <th scope="col">Aksi</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div style="display: flex; justify-content: center"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END row -->
+
+<% content_for :javascript do %>
+<script>
+  $(".btndelete").click(function () {
+    var linkdelete = $(this).data("delete");
+    const swalWithBootstrapButtons = Swal.mixin({
+      customClass: {
+        confirmButton: "btn btn-danger",
+        cancelButton: "btn btn-success mr-1",
+      },
+      buttonsStyling: {
+        cancelButton: "margin-right: 1rem;",
+      },
+    });
+
+    swalWithBootstrapButtons
+      .fire({
+        title: "Apakah Yakin Ingin ?",
+        text: "Ingin Menghapus Data Tersebut",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Hapus",
+        cancelButtonText: "Batal",
+        reverseButtons: true,
+      })
+      .then((result) => {
+        if (result.isConfirmed) {
+          window.location.href = linkdelete;
+        }
+      });
+  });
+</script>
+<% end %>
