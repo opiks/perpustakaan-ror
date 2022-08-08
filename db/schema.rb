@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_08_05_075553) do
+ActiveRecord::Schema[7.0].define(version: 2022_08_08_075621) do
   create_table "book_categories", charset: "latin1", force: :cascade do |t|
     t.integer "book_id", null: false
     t.integer "genre_id", null: false
@@ -31,6 +31,14 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_05_075553) do
     t.text "bookphoto"
     t.integer "book_total", null: false
     t.integer "book_total_remaining", null: false
+    t.timestamp "deleted_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "borrowers", charset: "latin1", force: :cascade do |t|
+    t.integer "book_id", null: false
+    t.integer "member_id", null: false
     t.timestamp "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -57,5 +57,10 @@ Rails.application.routes.draw do
     get "book/destroy/:id", to: "book#destroy", as: "book_delete"
     get "book/edit/:id", to: "book#edit", as: "book_edit"
     patch "book/update/:id", to: "book#update", as: "book_update"
+
+    #crud buku
+    get "borrower", to: "borrower#index", as: "borrower_index"
+    get "borrower/add", to: "borrower#add", as: "borrower_add"
+    post "borrower/store", to: "borrower#store", as: "borrower_store"
   end
 end

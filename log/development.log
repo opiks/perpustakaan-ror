@@ -32452,3 +32452,782 @@ Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-08-08 14:32:37 +0700
   
 ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
   
+Started GET "/admin/book/edit/1" for ::1 at 2022-08-08 14:36:53 +0700
+Processing by Admin::BookController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (32.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mBook Load (3.2ms)[0m  [1m[34mSELECT `books`.* FROM `books` WHERE `books`.`deleted_at` IS NULL AND `books`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/admin/book_controller.rb:46:in `edit'
+DEPRECATION WARNING: #extension_whitelist is deprecated, use #extension_allowlist instead. (called from edit at C:/Rsites/perpustakaan-ror/app/controllers/admin/book_controller.rb:50)
+  [1m[36mType Load (0.8ms)[0m  [1m[34mSELECT `types`.* FROM `types` WHERE `types`.`deleted_at` IS NULL[0m
+  ↳ app/controllers/admin/book_controller.rb:51:in `map'
+  [1m[36mLocation Load (0.5ms)[0m  [1m[34mSELECT `locations`.* FROM `locations` WHERE `locations`.`deleted_at` IS NULL[0m
+  ↳ app/controllers/admin/book_controller.rb:52:in `map'
+  [1m[36mGenre Load (2.8ms)[0m  [1m[34mSELECT `genres`.* FROM `genres` WHERE `genres`.`deleted_at` IS NULL[0m
+  ↳ app/controllers/admin/book_controller.rb:53:in `map'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/book/edit.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.7ms | Allocations: 40)
+  [1m[36mBookCategory Load (1.5ms)[0m  [1m[34mSELECT `book_categories`.* FROM `book_categories` WHERE `book_categories`.`deleted_at` IS NULL AND `book_categories`.`book_id` = 1[0m
+  ↳ app/views/admin/book/edit.html.erb:180
+  Rendered admin/book/edit.html.erb within layouts/admin (Duration: 51.7ms | Allocations: 3150)
+  Rendered shared/_headeradminpage.html.erb (Duration: 7.8ms | Allocations: 950)
+  Rendered layout layouts/admin.html.erb (Duration: 108.4ms | Allocations: 11522)
+Completed 200 OK in 527ms (Views: 115.2ms | ActiveRecord: 56.4ms | Allocations: 28386)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-08-08 14:36:54 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/admin/www.google-analytics.com/analytics.js" for ::1 at 2022-08-08 14:36:54 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/admin/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-08-08 14:36:55 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-08-08 14:36:55 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/member" for ::1 at 2022-08-08 14:37:02 +0700
+Processing by Admin::MemberController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/member/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 44)
+  [1m[36mMember Load (1.2ms)[0m  [1m[34mSELECT `members`.* FROM `members` WHERE `members`.`deleted_at` IS NULL AND (name like '%%') ORDER BY `members`.`name` ASC LIMIT 10 OFFSET 0[0m
+  ↳ app/views/admin/member/index.html.erb:51
+  Rendered admin/member/index.html.erb within layouts/admin (Duration: 17.5ms | Allocations: 4774)
+  Rendered shared/_headeradminpage.html.erb (Duration: 2.2ms | Allocations: 1015)
+  Rendered layout layouts/admin.html.erb (Duration: 35.6ms | Allocations: 13278)
+Completed 200 OK in 70ms (Views: 35.6ms | ActiveRecord: 3.2ms | Allocations: 17902)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-08-08 14:37:02 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-08-08 14:37:02 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-08-08 14:37:02 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-08-08 14:37:02 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/book" for ::1 at 2022-08-08 14:37:06 +0700
+Processing by Admin::BookController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/book/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 31)
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT `books`.* FROM `books` WHERE `books`.`deleted_at` IS NULL AND (name like '%%') ORDER BY `books`.`name` ASC LIMIT 10 OFFSET 0[0m
+  ↳ app/views/admin/book/index.html.erb:49
+  [1m[36mBookCategory Load (0.4ms)[0m  [1m[34mSELECT `book_categories`.* FROM `book_categories` WHERE `book_categories`.`deleted_at` IS NULL AND `book_categories`.`book_id` = 1[0m
+  ↳ app/views/admin/book/index.html.erb:56
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT `genres`.* FROM `genres` WHERE `genres`.`deleted_at` IS NULL AND `genres`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/admin/book/index.html.erb:57
+  Rendered admin/book/index.html.erb within layouts/admin (Duration: 11.0ms | Allocations: 2733)
+  Rendered shared/_headeradminpage.html.erb (Duration: 2.0ms | Allocations: 946)
+  Rendered layout layouts/admin.html.erb (Duration: 28.5ms | Allocations: 11008)
+Completed 200 OK in 51ms (Views: 28.4ms | ActiveRecord: 1.7ms | Allocations: 12433)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-08-08 14:37:06 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-08-08 14:37:06 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-08-08 14:37:06 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-08-08 14:37:06 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT GET_LOCK('2023920071367314085', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateBorrowers (20220808075621)
+  [1m[35m (49.4ms)[0m  [1m[35mCREATE TABLE `borrowers` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `book_id` int NOT NULL, `member_id` int NOT NULL, `deleted_at` timestamp NULL, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220808075621')[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('2023920071367314085')[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/admin/book" for ::1 at 2022-08-08 15:02:48 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Admin::BookController#index as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/book/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 5.7ms | Allocations: 214)
+  [1m[36mBook Load (1.5ms)[0m  [1m[34mSELECT `books`.* FROM `books` WHERE `books`.`deleted_at` IS NULL AND (name like '%%') ORDER BY `books`.`name` ASC LIMIT 10 OFFSET 0[0m
+  ↳ app/views/admin/book/index.html.erb:49
+  [1m[36mBookCategory Load (0.7ms)[0m  [1m[34mSELECT `book_categories`.* FROM `book_categories` WHERE `book_categories`.`deleted_at` IS NULL AND `book_categories`.`book_id` = 1[0m
+  ↳ app/views/admin/book/index.html.erb:56
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT `genres`.* FROM `genres` WHERE `genres`.`deleted_at` IS NULL AND `genres`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/admin/book/index.html.erb:57
+  Rendered admin/book/index.html.erb within layouts/admin (Duration: 155.5ms | Allocations: 19568)
+  Rendered shared/_headeradminpage.html.erb (Duration: 19.6ms | Allocations: 1463)
+  Rendered layout layouts/admin.html.erb (Duration: 2277.0ms | Allocations: 91271)
+Completed 200 OK in 2510ms (Views: 2308.8ms | ActiveRecord: 12.8ms | Allocations: 107231)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-08-08 15:02:52 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-08-08 15:02:52 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:40:in `call_app'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `block in call'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `block in tagged'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:38:in `tagged'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `tagged'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `call'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/engine.rb:530:in `call'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/puma-5.6.4/lib/puma/configuration.rb:252:in `call'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/puma-5.6.4/lib/puma/request.rb:77:in `block in handle_request'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/puma-5.6.4/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/puma-5.6.4/lib/puma/request.rb:76:in `handle_request'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/puma-5.6.4/lib/puma/server.rb:441:in `process_client'
+	from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/puma-5.6.4/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-08-08 15:02:52 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-08-08 15:02:52 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/book" for ::1 at 2022-08-08 15:07:49 +0700
+Processing by Admin::BookController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/book/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.6ms | Allocations: 187)
+  [1m[36mBook Load (1.5ms)[0m  [1m[34mSELECT `books`.* FROM `books` WHERE `books`.`deleted_at` IS NULL AND (name like '%%') ORDER BY `books`.`name` ASC LIMIT 10 OFFSET 0[0m
+  ↳ app/views/admin/book/index.html.erb:49
+  [1m[36mBookCategory Load (0.4ms)[0m  [1m[34mSELECT `book_categories`.* FROM `book_categories` WHERE `book_categories`.`deleted_at` IS NULL AND `book_categories`.`book_id` = 1[0m
+  ↳ app/views/admin/book/index.html.erb:56
+  [1m[36mGenre Load (1.0ms)[0m  [1m[34mSELECT `genres`.* FROM `genres` WHERE `genres`.`deleted_at` IS NULL AND `genres`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/admin/book/index.html.erb:57
+  Rendered admin/book/index.html.erb within layouts/admin (Duration: 60.8ms | Allocations: 14233)
+  Rendered shared/_headeradminpage.html.erb (Duration: 8.6ms | Allocations: 1361)
+  Rendered layout layouts/admin.html.erb (Duration: 96.9ms | Allocations: 23532)
+Completed 200 OK in 173ms (Views: 93.9ms | ActiveRecord: 14.3ms | Allocations: 32278)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-08-08 15:07:51 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-08-08 15:07:52 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-08-08 15:07:52 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-08-08 15:07:52 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/book" for ::1 at 2022-08-08 15:08:21 +0700
+Processing by Admin::BookController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/book/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.5ms | Allocations: 186)
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT `books`.* FROM `books` WHERE `books`.`deleted_at` IS NULL AND (name like '%%') ORDER BY `books`.`name` ASC LIMIT 10 OFFSET 0[0m
+  ↳ app/views/admin/book/index.html.erb:49
+  [1m[36mBookCategory Load (0.4ms)[0m  [1m[34mSELECT `book_categories`.* FROM `book_categories` WHERE `book_categories`.`deleted_at` IS NULL AND `book_categories`.`book_id` = 1[0m
+  ↳ app/views/admin/book/index.html.erb:56
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT `genres`.* FROM `genres` WHERE `genres`.`deleted_at` IS NULL AND `genres`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/admin/book/index.html.erb:57
+  Rendered admin/book/index.html.erb within layouts/admin (Duration: 15.0ms | Allocations: 4035)
+  Rendered shared/_headeradminpage.html.erb (Duration: 2.5ms | Allocations: 1370)
+  Rendered layout layouts/admin.html.erb (Duration: 33.7ms | Allocations: 13335)
+Completed 200 OK in 58ms (Views: 34.4ms | ActiveRecord: 2.3ms | Allocations: 15230)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-08-08 15:08:21 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-08-08 15:08:22 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-08-08 15:08:22 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-08-08 15:08:22 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/borrower" for ::1 at 2022-08-08 15:08:26 +0700
+Processing by Admin::BorrowerController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/borrower/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered admin/borrower/index.html.erb within layouts/admin (Duration: 3.0ms | Allocations: 527)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.2ms | Allocations: 1027)
+  Rendered layout layouts/admin.html.erb (Duration: 27.8ms | Allocations: 9045)
+Completed 200 OK in 59ms (Views: 29.6ms | ActiveRecord: 2.2ms | Allocations: 12491)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-08-08 15:08:26 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-08-08 15:08:26 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-08-08 15:08:26 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-08-08 15:08:26 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/borrower" for ::1 at 2022-08-08 15:17:37 +0700
+Processing by Admin::BorrowerController#index as HTML
+  [1m[36mUser Load (35.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/borrower/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.7ms | Allocations: 187)
+  Rendered admin/borrower/index.html.erb within layouts/admin (Duration: 8.5ms | Allocations: 726)
+  Rendered shared/_headeradminpage.html.erb (Duration: 13.6ms | Allocations: 1386)
+  Rendered layout layouts/admin.html.erb (Duration: 65.2ms | Allocations: 10045)
+Completed 200 OK in 299ms (Views: 72.5ms | ActiveRecord: 66.8ms | Allocations: 16597)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-08-08 15:17:41 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-08-08 15:17:41 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-08-08 15:17:42 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-08-08 15:17:42 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/borrower/add" for ::1 at 2022-08-08 15:17:43 +0700
+Processing by Admin::BorrowerController#add as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mBook Load (6.3ms)[0m  [1m[34mSELECT `books`.* FROM `books` WHERE `books`.`deleted_at` IS NULL[0m
+  ↳ app/controllers/admin/borrower_controller.rb:19:in `map'
+  [1m[36mMember Load (1.2ms)[0m  [1m[34mSELECT `members`.* FROM `members` WHERE `members`.`deleted_at` IS NULL[0m
+  ↳ app/controllers/admin/borrower_controller.rb:20:in `map'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/borrower/add.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered admin/borrower/add.html.erb within layouts/admin (Duration: 29.8ms | Allocations: 1355)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.5ms | Allocations: 961)
+  Rendered layout layouts/admin.html.erb (Duration: 57.6ms | Allocations: 9779)
+Completed 200 OK in 225ms (Views: 59.2ms | ActiveRecord: 37.6ms | Allocations: 27549)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-08-08 15:17:43 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-08-08 15:17:44 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-08-08 15:17:44 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-08-08 15:17:44 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/borrower/add" for ::1 at 2022-08-08 15:19:06 +0700
+Processing by Admin::BorrowerController#add as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT `books`.* FROM `books` WHERE `books`.`deleted_at` IS NULL[0m
+  ↳ app/controllers/admin/borrower_controller.rb:19:in `map'
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT `members`.* FROM `members` WHERE `members`.`deleted_at` IS NULL[0m
+  ↳ app/controllers/admin/borrower_controller.rb:20:in `map'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/borrower/add.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.9ms | Allocations: 187)
+  Rendered admin/borrower/add.html.erb within layouts/admin (Duration: 6.4ms | Allocations: 1348)
+  Rendered shared/_headeradminpage.html.erb (Duration: 7.2ms | Allocations: 1339)
+  Rendered layout layouts/admin.html.erb (Duration: 41.9ms | Allocations: 10613)
+Completed 200 OK in 91ms (Views: 48.0ms | ActiveRecord: 2.2ms | Allocations: 13823)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-08-08 15:19:06 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-08-08 15:19:06 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-08-08 15:19:07 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-08-08 15:19:07 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/borrower/add" for ::1 at 2022-08-08 15:19:36 +0700
+Processing by Admin::BorrowerController#add as HTML
+  [1m[36mUser Load (7.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mBook Load (1.3ms)[0m  [1m[34mSELECT `books`.* FROM `books` WHERE `books`.`deleted_at` IS NULL[0m
+  ↳ app/controllers/admin/borrower_controller.rb:19:in `map'
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT `members`.* FROM `members` WHERE `members`.`deleted_at` IS NULL[0m
+  ↳ app/controllers/admin/borrower_controller.rb:20:in `map'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/borrower/add.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.8ms | Allocations: 187)
+  Rendered admin/borrower/add.html.erb within layouts/admin (Duration: 6.3ms | Allocations: 1348)
+  Rendered shared/_headeradminpage.html.erb (Duration: 6.8ms | Allocations: 1339)
+  Rendered layout layouts/admin.html.erb (Duration: 39.9ms | Allocations: 10613)
+Completed 200 OK in 102ms (Views: 43.7ms | ActiveRecord: 9.2ms | Allocations: 13800)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-08-08 15:19:37 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-08-08 15:19:37 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-08-08 15:19:37 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-08-08 15:19:38 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/borrower/add" for ::1 at 2022-08-08 15:19:44 +0700
+Processing by Admin::BorrowerController#add as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT `books`.* FROM `books` WHERE `books`.`deleted_at` IS NULL[0m
+  ↳ app/controllers/admin/borrower_controller.rb:19:in `map'
+  [1m[36mMember Load (1.1ms)[0m  [1m[34mSELECT `members`.* FROM `members` WHERE `members`.`deleted_at` IS NULL[0m
+  ↳ app/controllers/admin/borrower_controller.rb:20:in `map'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/borrower/add.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.3ms | Allocations: 31)
+  Rendered admin/borrower/add.html.erb within layouts/admin (Duration: 2.9ms | Allocations: 547)
+  Rendered shared/_headeradminpage.html.erb (Duration: 4.6ms | Allocations: 956)
+  Rendered layout layouts/admin.html.erb (Duration: 34.7ms | Allocations: 8839)
+Completed 200 OK in 90ms (Views: 38.5ms | ActiveRecord: 2.8ms | Allocations: 11540)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-08-08 15:19:44 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-08-08 15:19:44 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-08-08 15:19:45 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-08-08 15:19:45 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/borrower" for ::1 at 2022-08-08 15:19:52 +0700
+Processing by Admin::BorrowerController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/borrower/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.2ms | Allocations: 31)
+  Rendered admin/borrower/index.html.erb within layouts/admin (Duration: 2.9ms | Allocations: 427)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.0ms | Allocations: 956)
+  Rendered layout layouts/admin.html.erb (Duration: 29.3ms | Allocations: 8712)
+Completed 200 OK in 78ms (Views: 30.7ms | ActiveRecord: 0.6ms | Allocations: 10069)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-08-08 15:19:52 +0700
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-08-08 15:19:52 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-08-08 15:19:52 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-08-08 15:19:53 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/borrower/add" for ::1 at 2022-08-08 15:19:53 +0700
+Processing by Admin::BorrowerController#add as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT `books`.* FROM `books` WHERE `books`.`deleted_at` IS NULL[0m
+  ↳ app/controllers/admin/borrower_controller.rb:19:in `map'
+  [1m[36mMember Load (1.0ms)[0m  [1m[34mSELECT `members`.* FROM `members` WHERE `members`.`deleted_at` IS NULL[0m
+  ↳ app/controllers/admin/borrower_controller.rb:20:in `map'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/borrower/add.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered admin/borrower/add.html.erb within layouts/admin (Duration: 2.3ms | Allocations: 547)
+  Rendered shared/_headeradminpage.html.erb (Duration: 3.7ms | Allocations: 956)
+  Rendered layout layouts/admin.html.erb (Duration: 30.2ms | Allocations: 8839)
+Completed 200 OK in 74ms (Views: 31.6ms | ActiveRecord: 2.6ms | Allocations: 11399)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-08-08 15:19:54 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-08-08 15:19:54 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-08-08 15:19:54 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-08-08 15:19:54 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/borrower/add" for ::1 at 2022-08-08 15:26:12 +0700
+Processing by Admin::BorrowerController#add as HTML
+  [1m[36mUser Load (48.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mBook Load (5.3ms)[0m  [1m[34mSELECT `books`.* FROM `books` WHERE `books`.`deleted_at` IS NULL[0m
+  ↳ app/controllers/admin/borrower_controller.rb:19:in `map'
+  [1m[36mMember Load (4.5ms)[0m  [1m[34mSELECT `members`.* FROM `members` WHERE `members`.`deleted_at` IS NULL[0m
+  ↳ app/controllers/admin/borrower_controller.rb:20:in `map'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/borrower/add.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 3.1ms | Allocations: 187)
+  Rendered admin/borrower/add.html.erb within layouts/admin (Duration: 59.1ms | Allocations: 1652)
+  Rendered shared/_headeradminpage.html.erb (Duration: 15.1ms | Allocations: 1339)
+  Rendered layout layouts/admin.html.erb (Duration: 178.4ms | Allocations: 10917)
+Completed 200 OK in 586ms (Views: 217.1ms | ActiveRecord: 100.5ms | Allocations: 14112)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-08-08 15:26:14 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-08-08 15:26:14 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-08-08 15:26:14 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-08-08 15:26:15 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started GET "/admin/borrower/add" for ::1 at 2022-08-08 15:27:19 +0700
+Processing by Admin::BorrowerController#add as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT `books`.* FROM `books` WHERE `books`.`deleted_at` IS NULL[0m
+  ↳ app/controllers/admin/borrower_controller.rb:19:in `map'
+  [1m[36mMember Load (1.0ms)[0m  [1m[34mSELECT `members`.* FROM `members` WHERE `members`.`deleted_at` IS NULL[0m
+  ↳ app/controllers/admin/borrower_controller.rb:20:in `map'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/borrower/add.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered admin/borrower/add.html.erb within layouts/admin (Duration: 4.7ms | Allocations: 702)
+  Rendered shared/_headeradminpage.html.erb (Duration: 4.2ms | Allocations: 956)
+  Rendered layout layouts/admin.html.erb (Duration: 38.2ms | Allocations: 8994)
+Completed 200 OK in 89ms (Views: 40.3ms | ActiveRecord: 2.7ms | Allocations: 11724)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-08-08 15:27:19 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-08-08 15:27:20 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-08-08 15:27:20 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-08-08 15:27:20 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started POST "/admin/borrower/store" for ::1 at 2022-08-08 15:59:32 +0700
+Processing by Admin::BorrowerController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "borrower"=>{"book_id"=>"1", "member_id"=>"1"}, "commit"=>"Simpan"}
+  [1m[36mUser Load (32.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering text template
+  Rendered text template (Duration: 0.4ms | Allocations: 8)
+Completed 200 OK in 379ms (Views: 35.6ms | ActiveRecord: 69.0ms | Allocations: 5182)
+
+
+Started POST "/admin/borrower/store" for ::1 at 2022-08-08 16:20:38 +0700
+Processing by Admin::BorrowerController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "borrower"=>{"book_id"=>"1", "member_id"=>"1"}, "commit"=>"Simpan"}
+  [1m[36mUser Load (37.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering text template
+  Rendered text template (Duration: 0.3ms | Allocations: 6)
+Completed 200 OK in 226ms (Views: 6.6ms | ActiveRecord: 60.5ms | Allocations: 4955)
+
+
+Started POST "/admin/borrower/store" for ::1 at 2022-08-08 16:22:56 +0700
+Processing by Admin::BorrowerController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "borrower"=>{"book_id"=>"1", "member_id"=>"1"}, "commit"=>"Simpan"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 111ms (Views: 4.8ms | ActiveRecord: 10.1ms | Allocations: 8315)
+
+
+Started POST "/admin/borrower/store" for ::1 at 2022-08-08 16:23:33 +0700
+  
+SyntaxError (C:/Rsites/perpustakaan-ror/app/controllers/admin/borrower_controller.rb:25: syntax error, unexpected ->, expecting `end'
+    render plain: @Book->book_total_remaining
+                       ^~
+C:/Rsites/perpustakaan-ror/app/controllers/admin/borrower_controller.rb:39: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/admin/borrower_controller.rb:25: syntax error, unexpected ->, expecting `end'
+app/controllers/admin/borrower_controller.rb:39: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/admin/borrower_controller.rb:25: syntax error, unexpected ->, expecting `end'
+app/controllers/admin/borrower_controller.rb:39: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/admin/borrower_controller.rb:25: syntax error, unexpected ->, expecting `end'
+app/controllers/admin/borrower_controller.rb:39: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/admin/borrower/store" for ::1 at 2022-08-08 16:23:55 +0700
+Processing by Admin::BorrowerController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "borrower"=>{"book_id"=>"1", "member_id"=>"1"}, "commit"=>"Simpan"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT `books`.* FROM `books` WHERE `books`.`deleted_at` IS NULL AND `books`.`id` = 1[0m
+  ↳ app/controllers/admin/borrower_controller.rb:25:in `store'
+Completed 500 Internal Server Error in 84ms (ActiveRecord: 6.5ms | Allocations: 11650)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/admin/borrower_controller.rb:25:in `store'
+Started POST "/admin/borrower/store" for ::1 at 2022-08-08 16:24:01 +0700
+Processing by Admin::BorrowerController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "borrower"=>{"book_id"=>"1", "member_id"=>"1"}, "commit"=>"Simpan"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+Completed 500 Internal Server Error in 84ms (ActiveRecord: 4.7ms | Allocations: 11678)
+
+
+  
+NameError (undefined local variable or method `book_total_remaining' for #<Admin::BorrowerController:0x0000000004ca68>
+
+    render plain: @Book[book_total_remaining]
+                        ^^^^^^^^^^^^^^^^^^^^):
+  
+app/controllers/admin/borrower_controller.rb:25:in `store'
+Started POST "/admin/borrower/store" for ::1 at 2022-08-08 16:24:11 +0700
+Processing by Admin::BorrowerController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "borrower"=>{"book_id"=>"1", "member_id"=>"1"}, "commit"=>"Simpan"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT `books`.* FROM `books` WHERE `books`.`deleted_at` IS NULL AND `books`.`id` = 1[0m
+  ↳ app/controllers/admin/borrower_controller.rb:25:in `store'
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 5.9ms | Allocations: 11598)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/admin/borrower_controller.rb:25:in `store'
+Started POST "/admin/borrower/store" for ::1 at 2022-08-08 16:24:25 +0700
+Processing by Admin::BorrowerController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "borrower"=>{"book_id"=>"1", "member_id"=>"1"}, "commit"=>"Simpan"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT `books`.* FROM `books` WHERE `books`.`deleted_at` IS NULL AND `books`.`id` = 1 /* loading for inspect */ LIMIT 11[0m
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 4.6ms | Allocations: 14887)
+
+
+  [1m[36mCACHE Book Load (0.0ms)[0m  [1m[34mSELECT `books`.* FROM `books` WHERE `books`.`deleted_at` IS NULL AND `books`.`id` = 1 /* loading for inspect */ LIMIT 11[0m
+  
+NoMethodError (undefined method `get' for #<ActiveRecord::Relation [#<Book id: 1, location_id: 1, type_id: 1, name: "test", description: "<p>test namain yah</p>", release_date: "2022-08-08", page_total: 300, publisher: "test", writer: "test penulis", bookphoto: "_MG_8028.JPG", book_total: 100, book_total_remaining: 100, deleted_at: nil, created_at: "2022-08-08 06:34:05.933046000 +0000", updated_at: "2022-08-08 07:32:36.960276000 +0000">]>
+Did you mean?  gem):
+  
+app/controllers/admin/borrower_controller.rb:24:in `store'
+Started POST "/admin/borrower/store" for ::1 at 2022-08-08 16:24:33 +0700
+Processing by Admin::BorrowerController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "borrower"=>{"book_id"=>"1", "member_id"=>"1"}, "commit"=>"Simpan"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT `books`.* FROM `books` WHERE `books`.`deleted_at` IS NULL AND `books`.`id` = 1 ORDER BY `books`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/admin/borrower_controller.rb:24:in `store'
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 70ms (Views: 4.2ms | ActiveRecord: 5.7ms | Allocations: 11843)
+
+
+Started POST "/admin/borrower/store" for ::1 at 2022-08-08 16:30:24 +0700
+Processing by Admin::BorrowerController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "borrower"=>{"book_id"=>"1", "member_id"=>"1"}, "commit"=>"Simpan"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mBook Load (3.0ms)[0m  [1m[34mSELECT `books`.* FROM `books` WHERE `books`.`deleted_at` IS NULL AND `books`.`id` = 1 ORDER BY `books`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/admin/borrower_controller.rb:24:in `store'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/borrower_controller.rb:27:in `store'
+  [1m[36mBorrower Create (17.8ms)[0m  [1m[32mINSERT INTO `borrowers` (`book_id`, `member_id`, `deleted_at`, `created_at`, `updated_at`) VALUES (1, 1, NULL, '2022-08-08 09:30:27.385683', '2022-08-08 09:30:27.385683')[0m
+  ↳ app/controllers/admin/borrower_controller.rb:27:in `store'
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/admin/borrower_controller.rb:27:in `store'
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT `books`.* FROM `books` WHERE `books`.`deleted_at` IS NULL AND `books`.`id` = 1[0m
+  ↳ app/controllers/admin/borrower_controller.rb:29:in `store'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/borrower_controller.rb:29:in `store'
+  [1m[36mBook Update (7.5ms)[0m  [1m[33mUPDATE `books` SET `books`.`book_total_remaining` = 99, `books`.`updated_at` = '2022-08-08 09:30:27.454015' WHERE `books`.`id` = 1[0m
+  ↳ app/controllers/admin/borrower_controller.rb:29:in `store'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/admin/borrower_controller.rb:29:in `store'
+Redirected to http://localhost:3000/admin/borrower
+Redirected to 
+Completed 500 Internal Server Error in 283ms (ActiveRecord: 55.8ms | Allocations: 20460)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/admin/borrower_controller.rb:37:in `store'
+Started POST "/admin/borrower/store" for ::1 at 2022-08-08 16:30:54 +0700
+Processing by Admin::BorrowerController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "borrower"=>{"book_id"=>"1", "member_id"=>"1"}, "commit"=>"Simpan"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT `books`.* FROM `books` WHERE `books`.`deleted_at` IS NULL AND `books`.`id` = 1 ORDER BY `books`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/admin/borrower_controller.rb:24:in `store'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/borrower_controller.rb:27:in `store'
+  [1m[36mBorrower Create (0.8ms)[0m  [1m[32mINSERT INTO `borrowers` (`book_id`, `member_id`, `deleted_at`, `created_at`, `updated_at`) VALUES (1, 1, NULL, '2022-08-08 09:30:56.172383', '2022-08-08 09:30:56.172383')[0m
+  ↳ app/controllers/admin/borrower_controller.rb:27:in `store'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/admin/borrower_controller.rb:27:in `store'
+  [1m[36mBook Load (2.2ms)[0m  [1m[34mSELECT `books`.* FROM `books` WHERE `books`.`deleted_at` IS NULL AND `books`.`id` = 1[0m
+  ↳ app/controllers/admin/borrower_controller.rb:29:in `store'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/admin/borrower_controller.rb:29:in `store'
+  [1m[36mBook Update (3.0ms)[0m  [1m[33mUPDATE `books` SET `books`.`book_total_remaining` = 98, `books`.`updated_at` = '2022-08-08 09:30:56.194665' WHERE `books`.`id` = 1[0m
+  ↳ app/controllers/admin/borrower_controller.rb:29:in `store'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/admin/borrower_controller.rb:29:in `store'
+Redirected to http://localhost:3000/admin/borrower
+Completed 302 Found in 125ms (ActiveRecord: 19.0ms | Allocations: 19799)
+
+
+Started GET "/admin/borrower" for ::1 at 2022-08-08 16:30:56 +0700
+Processing by Admin::BorrowerController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/borrower/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.2ms | Allocations: 56)
+  Rendered admin/borrower/index.html.erb within layouts/admin (Duration: 3.7ms | Allocations: 537)
+  Rendered shared/_headeradminpage.html.erb (Duration: 6.0ms | Allocations: 1026)
+  Rendered layout layouts/admin.html.erb (Duration: 42.1ms | Allocations: 9055)
+Completed 200 OK in 79ms (Views: 44.2ms | ActiveRecord: 0.5ms | Allocations: 10880)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-08-08 16:30:56 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-08-08 16:30:56 +0700
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-08-08 16:30:56 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-08-08 16:30:57 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
