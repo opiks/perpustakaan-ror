@@ -119,13 +119,13 @@
         </div>
         <div class="form-row mt-3 row">
           <div class="form-group col-md-6">
-            <% invalid = @book.errors.include?(:book_photo) %>
+            <% invalid = @book.errors.include?(:bookphoto) %>
             <label for="inputPassword4">Foto Buku</label>
-            <%= form.file_field :book_photo, class:"form-control #{if invalid
+            <%= form.file_field :bookphoto, class:"form-control #{if invalid
             then "is-invalid" else "" end }", placeholder:"Islam" %> <% if
             invalid %>
             <div class="invalid-feedback d-block">
-              <% @book.errors.full_messages_for(:book_photo).each do
+              <% @book.errors.full_messages_for(:bookphoto).each do
               |error_message| %> <%= error_message %>. <br />
               <% end %>
             </div>

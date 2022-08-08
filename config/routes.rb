@@ -54,5 +54,8 @@ Rails.application.routes.draw do
     get "book", to: "book#index", as: "book_index"
     get "book/add", to: "book#add", as: "book_add"
     post "book/store", to: "book#store", as: "book_store"
+    get "book/destroy/:id", to: "book#destroy", as: "book_delete"
+    get "book/edit/:id", to: "book#edit", as: "book_edit"
+    patch "book/update/:id", to: "book#update", as: "book_update"
   end
 end

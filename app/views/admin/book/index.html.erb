@@ -45,10 +45,42 @@
                 <th scope="col">Aksi</th>
               </tr>
             </thead>
-            <tbody></tbody>
+            <tbody>
+              <% @books.each do |book| %>
+              <tr>
+                <td><%= @no+=1 %></td>
+                <td><%= book.name %></td>
+                <td><%= book.publisher %></td>
+                <td>
+                  <ul>
+                    <% book.book_categories.each do |book_category| %>
+                    <li><%= book_category.genre.name %></li>
+                    <% end %>
+                  </ul>
+                </td>
+                <td><%= book.book_total %></td>
+                <td><%= book.book_total_remaining %></td>
+                <td>
+                  <a
+                    href="<%= admin_book_edit_path(book.id) %>"
+                    class="btn btn-sm btn-primary"
+                    ><i class="fa fa-edit"></i> Edit</a
+                  >
+                  <button
+                    data-delete="<%= admin_book_delete_path(book.id) %>"
+                    class="btn btn-sm btn-danger btndelete"
+                  >
+                    <i class="fa fa-trash"></i> Hapus
+                  </button>
+                </td>
+              </tr>
+              <% end %>
+            </tbody>
           </table>
         </div>
-        <div style="display: flex; justify-content: center"></div>
+        <div style="display: flex; justify-content: center">
+          <%= paginate @books, inner_window: 3 %>
+        </div>
       </div>
     </div>
   </div>

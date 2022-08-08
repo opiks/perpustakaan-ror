@@ -9,7 +9,7 @@ class CreateBooks < ActiveRecord::Migration[7.0]
       t.integer :page_total, null: false
       t.text :publisher, null: false
       t.text :writer, null: false
-      t.text :book_photo, null: false
+      t.text :bookphoto
       t.integer :book_total, null: false
       t.integer :book_total_remaining, null: false
       t.timestamp :deleted_at
