@@ -82,3 +82,8 @@ gem "paranoia"
 
 # upload file
 gem 'carrierwave', '~> 2.0'
+
+#api login
+gem 'devise'
+gem 'jwt'
+gem 'simple_command'

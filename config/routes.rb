@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
@@ -63,5 +64,11 @@ Rails.application.routes.draw do
     get "borrower/add", to: "borrower#add", as: "borrower_add"
     post "borrower/store", to: "borrower#store", as: "borrower_store"
     get "borrower/return/:id", to: "borrower#return", as: "borrower_return"
+  end
+
+  # api
+  namespace :api, defaults: { format: :json } do
+    post "authenticate", to: "authentication#authenticate"
+    resources :trips, only: [:index]
   end
 end

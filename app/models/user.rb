@@ -5,6 +5,10 @@
 # password:string virtual by has_secure_password
 # password_confirmation:string virtual by has_secure_password
 class User < ApplicationRecord
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :validatable
   has_secure_password
 
   # validation

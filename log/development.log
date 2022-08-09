@@ -35353,3 +35353,224 @@ Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-08-09 11:45:30 +0700
   
 ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
   
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('2023920071367314085', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddDeviseToUsers (20220809065519)
+  [1m[35m (12.1ms)[0m  [1m[35mALTER TABLE `users` ADD `email` varchar(255) DEFAULT '' NOT NULL[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('2023920071367314085')[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('2023920071367314085', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddDeviseToUsers (20220809065519)
+  [1m[35m (104.8ms)[0m  [1m[35mALTER TABLE `users` ADD `encrypted_password` varchar(255) DEFAULT '' NOT NULL[0m
+  [1m[35m (84.4ms)[0m  [1m[35mALTER TABLE `users` ADD `reset_password_token` varchar(255)[0m
+  [1m[35m (78.4ms)[0m  [1m[35mALTER TABLE `users` ADD `reset_password_sent_at` datetime(6)[0m
+  [1m[35m (76.0ms)[0m  [1m[35mALTER TABLE `users` ADD `remember_created_at` datetime(6)[0m
+  [1m[35m (37.3ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [1m[35m (28.6ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_reset_password_token` ON `users` (`reset_password_token`)[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220809065519')[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('2023920071367314085')[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started POST "/api/authenticate" for ::1 at 2022-08-09 15:33:34 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Api::AuthenticationController#authenticate as JSON
+  Parameters: {"email"=>"admin@admin.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@admin.com' LIMIT 1[0m
+  ↳ app/commands/authenticate_user.rb:18:in `api_user'
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 4.1ms | Allocations: 14659)
+
+
+  
+NoMethodError (protected method `password_digest' called for #<User:0x0000023dd7602900>
+Did you mean?  password_digest?
+               password_digest=
+               password_digest_was):
+  
+app/commands/authenticate_user.rb:25:in `api_user'
+app/commands/authenticate_user.rb:10:in `call'
+app/controllers/api/authentication_controller.rb:5:in `authenticate'
+Started POST "/api/authenticate" for ::1 at 2022-08-09 15:54:54 +0700
+Processing by Api::AuthenticationController#authenticate as JSON
+  Parameters: {"email"=>"admin@admin.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@admin.com' LIMIT 1[0m
+  ↳ app/commands/authenticate_user.rb:18:in `api_user'
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 2.5ms | Allocations: 9031)
+
+
+  
+NoMethodError (undefined method `authenticate' for #<User:0x0000023ddac191b0>
+Did you mean?  authenticatable_salt):
+  
+app/commands/authenticate_user.rb:25:in `api_user'
+app/commands/authenticate_user.rb:10:in `call'
+app/controllers/api/authentication_controller.rb:5:in `authenticate'
+Started POST "/api/authenticate" for ::1 at 2022-08-09 15:56:37 +0700
+Processing by Api::AuthenticationController#authenticate as JSON
+  Parameters: {"email"=>"admin@admin.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@admin.com' LIMIT 1[0m
+  ↳ app/commands/authenticate_user.rb:18:in `api_user'
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.5ms | Allocations: 6121)
+
+
+  
+NoMethodError (undefined method `authenticate' for #<User:0x0000023dda9348a0>
+Did you mean?  authenticatable_salt):
+  
+app/commands/authenticate_user.rb:25:in `api_user'
+app/commands/authenticate_user.rb:10:in `call'
+app/controllers/api/authentication_controller.rb:5:in `authenticate'
+Started GET "/" for ::1 at 2022-08-09 15:56:43 +0700
+Processing by MainpagesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 177)
+  Rendered shared/_headermainpage.html.erb (Duration: 6.7ms | Allocations: 131)
+  Rendered shared/_footermainpage.html.erb (Duration: 7.4ms | Allocations: 120)
+  Rendered layout layouts/application.html.erb (Duration: 2775.9ms | Allocations: 81660)
+Completed 200 OK in 2876ms (Views: 2783.4ms | ActiveRecord: 1.0ms | Allocations: 86172)
+
+
+Started GET "/fonts/ElegantIcons.woff" for ::1 at 2022-08-09 15:56:47 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/ElegantIcons.woff"):
+  
+Started GET "/fonts/ElegantIcons.ttf" for ::1 at 2022-08-09 15:56:48 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/ElegantIcons.ttf"):
+  
+Started GET "/login" for ::1 at 2022-08-09 15:56:50 +0700
+Processing by LoginController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+Redirected to http://localhost:3000/admin/dashboard
+Filter chain halted as :check_user_not_login rendered or redirected
+Completed 302 Found in 29ms (ActiveRecord: 0.4ms | Allocations: 1588)
+
+
+Started GET "/admin/dashboard" for ::1 at 2022-08-09 15:56:50 +0700
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+  Rendering layout layouts/admin.html.erb
+  Rendering admin/dashboard/index.html.erb within layouts/admin
+  Rendered shared/_alertmainpage.html.erb (Duration: 6.5ms | Allocations: 205)
+  Rendered admin/dashboard/index.html.erb within layouts/admin (Duration: 15.0ms | Allocations: 560)
+  Rendered shared/_headeradminpage.html.erb (Duration: 29.6ms | Allocations: 1460)
+  Rendered layout layouts/admin.html.erb (Duration: 142.8ms | Allocations: 10074)
+Completed 200 OK in 164ms (Views: 145.3ms | ActiveRecord: 0.3ms | Allocations: 12012)
+
+
+Started GET "/webfonts/fa-solid-900.woff2" for ::1 at 2022-08-09 15:56:51 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff2"):
+  
+Started GET "/www.google-analytics.com/analytics.js" for ::1 at 2022-08-09 15:56:51 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/www.google-analytics.com/analytics.js"):
+  
+Started GET "/webfonts/fa-solid-900.woff" for ::1 at 2022-08-09 15:56:51 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.woff"):
+  
+Started GET "/webfonts/fa-solid-900.ttf" for ::1 at 2022-08-09 15:56:52 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/webfonts/fa-solid-900.ttf"):
+  
+Started DELETE "/logout" for ::1 at 2022-08-09 15:56:54 +0700
+Processing by LoginController#logout as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:6:in `set_current_user'
+Redirected to http://localhost:3000/
+Completed 302 Found in 20ms (ActiveRecord: 0.3ms | Allocations: 1288)
+
+
+Started GET "/" for ::1 at 2022-08-09 15:56:54 +0700
+Processing by MainpagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering mainpages/index.html.erb within layouts/application
+  Rendered mainpages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 24)
+  Rendered shared/_headermainpage.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered shared/_footermainpage.html.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 33.9ms | Allocations: 17993)
+Completed 200 OK in 52ms (Views: 34.9ms | ActiveRecord: 0.0ms | Allocations: 18721)
+
+
+Started GET "/fonts/ElegantIcons.woff" for ::1 at 2022-08-09 15:56:54 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/ElegantIcons.woff"):
+  
+Started GET "/fonts/ElegantIcons.ttf" for ::1 at 2022-08-09 15:56:55 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/ElegantIcons.ttf"):
+  
+Started GET "/login" for ::1 at 2022-08-09 15:56:59 +0700
+Processing by LoginController#index as HTML
+  Rendering layout layouts/login.html.erb
+  Rendering login/index.html.erb within layouts/login
+  Rendered shared/_alertmainpage.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered login/index.html.erb within layouts/login (Duration: 48.4ms | Allocations: 2409)
+  Rendered layout layouts/login.html.erb (Duration: 56.2ms | Allocations: 2694)
+Completed 200 OK in 76ms (Views: 58.5ms | ActiveRecord: 0.0ms | Allocations: 3794)
+
+
+Started POST "/login/store" for ::1 at 2022-08-09 15:57:11 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"admin@admin.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@admin.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:10:in `store'
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.5ms | Allocations: 6765)
+
+
+  
+NoMethodError (undefined method `authenticate' for #<User:0x0000023ddaa725c8>
+Did you mean?  authenticatable_salt):
+  
+app/controllers/login_controller.rb:11:in `store'
+Started POST "/login/store" for ::1 at 2022-08-09 15:57:22 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"admin@admin.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@admin.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:10:in `store'
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 3.8ms | Allocations: 10366)
+
+
+  
+NoMethodError (protected method `password_digest' called for #<User:0x0000023dd948bcc8>
+Did you mean?  password_digest?
+               password_digest=
+               password_digest_was):
+  
+app/controllers/login_controller.rb:11:in `store'
+Started POST "/login/store" for ::1 at 2022-08-09 15:58:22 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"admin@admin.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@admin.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:10:in `store'
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 2.8ms | Allocations: 10353)
+
+
+  
+NoMethodError (protected method `password_digest' called for #<User:0x0000023dda954fb0>
+Did you mean?  password_digest?
+               password_digest=
+               password_digest_was):
+  
+app/controllers/login_controller.rb:11:in `store'
+Started POST "/login/store" for ::1 at 2022-08-09 15:58:29 +0700
+Processing by LoginController#store as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"admin@admin.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin@admin.com' LIMIT 1[0m
+  ↳ app/controllers/login_controller.rb:10:in `store'
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 2.1ms | Allocations: 10098)
+
+
+  
+NoMethodError (undefined method `authenticate' for #<User:0x0000023ddafa43c0>
+Did you mean?  authenticatable_salt):
+  
+app/controllers/login_controller.rb:11:in `store'
