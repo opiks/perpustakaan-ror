@@ -62,5 +62,6 @@ Rails.application.routes.draw do
     get "borrower", to: "borrower#index", as: "borrower_index"
     get "borrower/add", to: "borrower#add", as: "borrower_add"
     post "borrower/store", to: "borrower#store", as: "borrower_store"
+    get "borrower/return/:id", to: "borrower#return", as: "borrower_return"
   end
 end

@@ -40,6 +40,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_08_075621) do
     t.integer "book_id", null: false
     t.integer "member_id", null: false
     t.timestamp "deleted_at"
+    t.string "statuspengembalian", default: "Belum Dikembalikan"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

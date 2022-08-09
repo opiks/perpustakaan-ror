@@ -45,13 +45,32 @@
               </tr>
             </thead>
             <tbody>
-             
+              <% @borrowers.each do |borrower| %>
+              <tr>
+                <td><%= @no+=1 %></td>
+                <td><%= borrower.book.name %></td>
+                <td><%= borrower.member.name %></td>
+                <td><%= borrower.created_at.strftime('%d %b %Y - %H:%M') %></td>
+                <% if borrower.statuspengembalian != "Belum Dikembalikan" %>
+                <td><%= borrower.updated_at.strftime('%d %b %Y - %H:%M') %></td>
+                <td>-</td>
+                <% else %>
+                <td>-</td>
+                <td>
+                  <button
+                    data-linkreturn="<%= admin_borrower_return_path(borrower.id) %>"
+                    class="btn btn-sm btn-success btnReturn"
+                  >
+                    <i class="fa fa-check"></i> Pengembalian Buku
+                  </button>
+                </td>
+                <% end %>
+              </tr>
+              <% end %>
             </tbody>
           </table>
         </div>
-        <div style="display: flex; justify-content: center">
-          
-        </div>
+        <div style="display: flex; justify-content: center"></div>
       </div>
     </div>
   </div>
@@ -60,8 +79,8 @@
 
 <% content_for :javascript do %>
 <script>
-  $(".btndelete").click(function () {
-    var linkdelete = $(this).data("delete");
+  $(".btnReturn").click(function () {
+    var linkreturn = $(this).data("linkreturn");
     const swalWithBootstrapButtons = Swal.mixin({
       customClass: {
         confirmButton: "btn btn-danger",
@@ -75,16 +94,15 @@
     swalWithBootstrapButtons
       .fire({
         title: "Apakah Yakin Ingin ?",
-        text: "Ingin Menghapus Data Tersebut",
+        text: "Buku Sudah di check dan tidak ada kerusakan",
         icon: "warning",
         showCancelButton: true,
-        confirmButtonText: "Hapus",
+        confirmButtonText: "Sudah Confirm Pengembalian",
         cancelButtonText: "Batal",
-        reverseButtons: true,
       })
       .then((result) => {
         if (result.isConfirmed) {
-          window.location.href = linkdelete;
+          window.location.href = linkreturn;
         }
       });
   });

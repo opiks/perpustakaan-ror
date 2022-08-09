@@ -34,7 +34,20 @@ class Admin::BorrowerController < ApplicationController
         render :add
       end
     else
-      redirect_to admin_borrower_add_path, flash: { :message => "Total sudah habis", :type => "success" }
+      redirect_to admin_borrower_add_path, flash: { :message => "Total sudah habis", :type => "warning" }
+    end
+  end
+
+  def return
+    @Borrower = Borrower.find(params[:id]) rescue nil
+    if !@Borrower.nil?
+      @Book = Book.where(:id => @Borrower[:book_id]).first
+      booktotal = @Book["book_total_remaining"] + 1
+      Book.where(:id => @Borrower[:book_id]).update(:book_total_remaining => booktotal)
+      Borrower.where(:id => @Borrower[:id]).update(:statuspengembalian => "Sudah Dikembalikan")
+      redirect_to admin_borrower_index_path, flash: { :message => "Pengembalian sukses", :type => "success" }
+    else
+      redirect_to admin_borrower_index_path, flash: { :message => "Data Tidak ditemukan", :type => "warning" }
     end
   end
 
